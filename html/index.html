@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <!--支持ie8-js-->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/respond.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--最外层布局-->
+<div class="container-fluid">
+      <div class="header">
+          <div class="container">
+              <ul class="heaer-munu pull-right">
+                  <li><a href="index.html">首页</a></li>
+                  <li><a href="history.html">历史</a></li>
+                  <li><a href="registration.html">报名</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="page-body">
+          <div class="container">
+              <!--轮播-->
+              <div class="carousel slide" id="mycarousel">
+                  <!-- 画廊点选区 -->
+                  <ul class="carousel-indicators">
+                      <li class="active" data-target="#mycarousel" data-slide-to="0"></li>
+                      <li data-target="#mycarousel" data-slide-to="1"></li>
+                      <li data-target="#mycarousel" data-slide-to="2"></li>
+                   </ul>
+                  <!-- 画廊内容区 -->
+                  <div class="carousel-inner">
+                      <!-- 画廊图片组件区，并默认定义一个激活(active)的画廊显示区 -->
+                      <div class="item active">
+                          <img src="../images/indexCarsole/banner1.jpg" alt="">
+                          <div class="carousel-caption">
+                              <h2>北京会议</h2>
+                              <p>地点：
+                                  北京市海淀区中关村南四街4号中国科学院软件研究所5号楼4层大报告厅, 地铁10号线"知春里站"下
+                                </p>
+                              <p>
+                                  时间：2015-10-17
+                              </p>
+                          </div>
+                      </div>
+                      <div class="item">
+                          <img src="../images/indexCarsole/banner2.jpg" alt="">
+                          <div class="carousel-caption">
+                              <h2>上海会议</h2>
+                              <p>地点：
+                                  上海市长宁区金钟路968号 凌空SOHO 8号楼 携程大厦
+                              </p>
+                              <p>
+                                  时间：2015-10-25
+                              </p>
+                          </div>
+                      </div>
+                      <div class="item">
+                          <img src="../images/indexCarsole/banner5.jpg" alt="">
+                          <div class="carousel-caption">
+                              <h2>成都会议</h2>
+                              <p>地点：
+                                  成都天府软件园D区D5负一层灵感咖啡
+                              </p>
+                              <p>
+                                  时间：2015-11-07
+                              </p>
+                          </div>
+                      </div>
+
+                  </div>
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                   </a>
+                  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                   </a>
+              </div>
+              <div class="turn">
+                  <a href="#beijingCaption">北京</a>
+                  <a href="#shanghaiCaption">上海</a>
+                  <a href="#chengduCaption">成都</a>
+              </div>
+              <!--站点培训计划及讲师介绍-->
+                <div class="theCaption">
+                  <div id="beijingCaption">
+                    <h4 class="page-header beijingShow">北京会议介绍</h4>
+                    <!--头像文字介绍部分-->
+
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                            <div class="guest_item gallery-icon">
+                                <img class="guest_avatar" src="../images/humanIcon/example.png" alt="衣国磊">
+                                <p class="guest_name"><span style="font-weight: bolder">分享人：</span>衣国磊</p>
+                                <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《百度Elasticsearch大数据分析实践》
+                                </p>
+                                <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span> 百度大数据部高级工程师，先后在微软，百度从事分布式系统的研发工作。目前在百度负责ES的改进和推广。
+                                </p>
+                                <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                    1. ES在百度的发展
+
+                                    2. ES在百度的典型应用
+
+                                    3. 遇到的问题
+
+                                    4. 百度对ES的改进
+                                </p>
+                            </div>
+
+                    </div>
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="凌霄">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>凌霄</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《Sina ELK，从运维到服务之路》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span> 新浪数据智能平台ELK服务，微博多媒体下载SRE负责人。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                ELK服务作为一个日志的解决方案，解决了大家在运维中日志集中管理，分析，
+                                检索和可视化等多样化的需求，简单方便的实现也受到了广大互联网行业用户的推崇。
+                                但是，当服务的规模不断扩大后，如何保证集群稳定性和性能，如何标准化日志的管理，
+                                以及给用户提供简单更实用的产品还是有很大的挑战的。该演讲主要和大家分享新浪/微博在ELK的实践中从运维，
+                                到平台建设，产品设计三个阶段的心得和感悟，以及集群规模从几台发展到50+台的过程中，我们遇到的问题和踩过的坑。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="张磊">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>张磊</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《Elasticsearch应用在数据中心的实时协议分析和威胁检测》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span> BIGLog创始人，专注于大数据与信息安全结合的研究与实践。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                网络安全问题是当下数据中心产业共同面临的挑战，传统安全设备的组合很难灵活应对当下数据中心的大流量、
+                                细粒度、高实时、以及定制化的分析需求。
+
+                                本议题将解析：如何在实际流量10Gbps的网络环境下，
+                                构建一套企业级的高实时网络威胁分析系统，结合Elasticsearch的大数据搜索平台，秒级发现DDOS流量、
+                                应用层安全攻击、精准统计用户层协议流量、甚至提供业务层的行为审计与取证，并保持整套架构的线性可扩展能力。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="刘波涛">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>刘波涛</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《芒果TV ElasticSearch实践》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span>
+
+                                负责芒果TV MPP(Mobile,PAD,PC)业务系统架构。ElasticSearch爱好者
+                                09-11年  上海PPS网络公司
+                                11年-    湖南卫视芒果TV。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                1.芒果TV搜索方案选型(Sphinx->xapian-ES)
+
+                                2.ES从0到1实践
+
+                                3.ES在数据分析应用（nginx+kafak+logstash+ES）
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="饶琛琳">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>饶琛琳</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《{{more}} Kibana 4》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span> 新浪微博系统架构师，负责手机微博的自动化运维和数据分析体系建设。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+
+                                Kibana开发组从去年4月开始重构新版，终于在今年发布了崭新的version 4.0。和version 3.1相比，从设计，操作，插件架构方面都有相当大的不同。
+                                本次分享会跟大家聊聊Kibana4的新特性新用法，并以sankey实例，介绍在新版插件架构下，如何开发全新的visualize，server plugin等。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="Medcl">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>Medcl</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《Analyzer101》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span>  Elasticsearch爱好者, Elasticsearch中文社区发起人。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                Analyzer?分词器?Tokenizer?filter?这都什么鬼?
+                                什么情况下用什么分词器,搜索的时候又该选用哪种查询,搜索性能和它又有啥关系?配置为什么老是不成功?这些问题让Medcl告诉你。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="宋兵强">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>宋兵强</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《ElasticSearch 在AdMaster社会化数据分析系统中的大规模实践》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span>  曾就职于百度基础架构部，现为AdMaster资深工程师，
+                                 负责社会化大数据研发。对分布式存储和计算系统有很强实践经验，
+                                对大数据处理理解很深，研究方向为Hbase、Hadoop、Redis、ElasticSearch、MySql等系统。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                ElasticSearch 作为一个优秀的全文检索和实时数据分析系统，在大数据分析方面扮演着愈加重要的角色。
+                                本文重点介绍其在AdMaster社会化数据分析系统中的大规模应用，涉及系统架构、大规模索引构建、分词处理、查询优化以及一些运维经验，
+                                希望起到一个抛砖引玉的作用，呈现ElasticSearch在大数据数据分析处理方面的冰山一角。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="OneAPM">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>OneAPM</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《像玩乐高积木一样开发 ElasticSearch 应用》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span>
+                                杰出工程师 姜宁,前红帽软件首席软件工程师，有十余年企业级开源中间件开发经验，有丰富的Java开发和使用经验，
+                                函数式编程爱好者。从2006年开始一直从事Apache开源中间件项目的开发工作，先后参与Apache CXF、Apache ActiveMQ、
+                                Apache Camel以及Apache ServiceMix的开发工作。2007年开始参与Apache Camel项目开发，目前是该项目的主要维护者，
+                                对WebServices、Enterprise Integration Pattern、SOA、OSGi有比较深入的研究。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                如何将文本检索的利器 ElasticSearch 与其他应用进行集成，进而实现比较复杂的业务逻辑呢？
+                                这是大家在使用 ElasticSearch 时经常遇到的问题。Apache Camel 提供了消息路由引擎，
+                                丰富的组件集成第三方应用以及企业应用集成模式DSL ，
+                                可以让大家像使用乐高积木一样搭建复杂的应用系统。 本次讲座将介绍如何将 Camel
+                                以及 ElasticSearch 集成在一起，让 ElasticSearch 应用开发变得像搭建乐高积木一样简单。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="秦强强">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>秦强强</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《规模不大的es集群 在日志收集场景下的一些优化》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span> 折800 架构组工程师。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                             </p>
+                        </div>
+
+                    </div>
+                  </div>
+                    <!--上海-->
+                    <div style="clear:both;"></div>
+                  <div id="shanghaiCaption">
+                    <h4 class="page-header shanghaiShow">上海会议介绍</h4>
+                    <!--头像文字介绍部分-->
+
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="虞冰">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>虞冰</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《打造以ES为核心的系统》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span> 前百姓网架构师、技术总监，现自主创业中。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                随着ES的流行，越来越多公司拿它来分析Log，不过真正将核心系统围绕ES打造，每个请求都从ES获取数据的企业并不多，
+                                百姓网恰好是其中的一个。  百姓网从06年开始用Lucence自研搜索引擎，08改用SOLR，12年全面换做ES，
+                                现核心集群有20+服务器，上T内存，每秒QPS上万，每天数据更新上千万次。本议题将着重介绍在全公司推行搜索为基础的
+                                系统中碰到的核心问题和应对方案。Agenda如下：
+                                1. 为什么以搜索为核心而不是数据库？
+                                2. 百姓搜索系统设计详解。
+                                3. 全公司推行前必须做好的准备工作。
+                            </p>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="吴晓刚">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>吴晓刚</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《高吞吐ELK实践》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span> 携程旅行网系统研发总监，负责网站运维监控与自动化工具的研发。15年通讯与IT行业从业经历，
+                                曾主要供职于Strategic Systems Solutions、eBay、Morgan Stanley等跨国企业，在软件研发与集成，
+                                大规模分布式系统技术支持方面有比较丰富的经验。目前感兴趣的研究方向是如何将大数据分析技术有效用于网站监控。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                大型网站遇到性能瓶颈或发生故障时，分析日志往往是发现问题根源最有效的手段。
+                                传统的日志分析手段不外乎以下几类:1. 运维人员用脚本grep，分析再汇总2. 通过流式计算引擎,storm/spark实时产生汇总
+                                数据，供监控分析3. 将数据堆放到HDFS，之后通过map/reduce定期做批量分析
+
+                                基于ELK的解决方案则提供了另外一种思路，利用搜索引擎将数据索引起来，支持实时的多维度组合查询和聚合分析。
+                                这非常契合问题排查过程，即先通过上层统计数据发现数据异常之方向，再通过不断细化过滤条件缩小范围，
+                                实现对日志的下钻式分析。
+
+                                ELK上手成本虽低，扩展到海量数据规模场景却很不易。很多用户面临诸如集群稳定性差，写入吞吐量不理想，
+                                查询速度慢，安全把控头痛，不知道如何监控等问题。 携程旅行网从2013年开始基于ELK打造实时日志分析平台，
+                                不到2年时间，集群结点从5个增长到30多个的，日处理数据从亿级到百亿级，集群从不稳定到连续200多天没出任何故障
+                                这样一个飞跃。 本议题将结合携程elk用例，分享集群的架构、监控以及优化方面的经验心得。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="Bio">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>Bio</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《 What's new in Elasticsearch 2.0》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span> Igor Motov is a software developer on the Elasticsearch core team based
+                                out of the Boston area where he
+                                also serves as a co-organizer of the Boston Elasticsearch Meetup Group. Prior to joining Elastic,
+                                Igor worked on search solutions for companies ranging from small startups to large corporations.
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                The Elasticsearch 2.0 release is just around the corner. In this talk we will
+                                cover new features, breaking changes and migration strategy for the next major release.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="饶琛琳">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>饶琛琳</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《{{more}} Kibana 4》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span>
+
+                                新浪微博系统架构师，负责手机微博的自动化运维和数据分析体系建设。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                Kibana开发组从去年4月开始重构新版，终于在今年发布了崭新的version 4.0。和version 3.1相比，从设计，操作，
+                                插件架构方面都有相当大的不同。本次分享会跟大家聊聊Kibana4的新特性新用法，并以sankey实例，
+                                介绍在新版插件架构下，如何开发全新的visualize，server plugin等。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div style="clear:both;"></div>
+                    <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="Beats">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>Beats</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《Get started with Beats》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span> Elastic新成员。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                Elastic新成员Beats究竟是什么核武器,能够为您的企业带来什么价值呢,都有那些应用场景呢?到底怎么玩呢?本次分享将为你解读Beats。
+                            </p>
+                        </div>
+
+                    </div>
+                  </div>
+
+                    <div style="clear:both;"></div>
+                  <div id="chengduCaption">
+                    <h4 class="page-header chengduShow">成都会议介绍</h4>
+                    <!--头像文字介绍部分-->
+
+                     <div class="topic">
+                        <p class="topic-title"></p>
+
+                        <div class="guest_item gallery-icon">
+                            <img class="guest_avatar" src="../images/humanIcon/example.png" alt="吴友强">
+                            <p class="guest_name"><span style="font-weight: bolder">分享人：</span>吴友强</p>
+                            <p class="guest_subject"><span style="font-weight: bolder">
+                                    主题：</span>《基于es构建实时日志检索平台》
+                            </p>
+                            <p class="guest_title" style="">
+                                    <span style="font-weight: bolder">
+                                        分享人介绍：</span> 京东成都研究院工具部负责人兼系统架构师。
+                            </p>
+                            <p class="guest_intro"><span style="font-weight: bolder">
+                                    主题介绍：</span>
+                                2011年毕业后加入京东，作为项目技术负责人以及架构师参与了hadoop生态系统建设一期、云存储一期、统一日志、公有PAAS平台和基于容器技术的自动部署等项目。目前在京东成都研究院工具部主要负责工具部各个项目系统架构和产品优化和创新。作为一个技术极客希望组建一支一流的技术团队，同时希望和各位技术爱好者一起交流技术以及技术创新。
+                                提纲：1.系统整体架构介绍
+                                2.日志采集方案以及实现原理介绍
+                                3.日志转发方案以及实现原理介绍
+                                4.日志搜索实现
+                                5.es优化简介。
+                            </p>
+                        </div>
+
+                    </div>
+                      <br>
+                      <div style="clear:both;"></div>
+                  </div>
+                    <br>
+                     <div style="clear:both;"></div>
+                   </div>
+              <!--ppt下载-->
+              <div class="Schedule">
+                   <h4 class="page-header">PPT下载</h4>
+                   <span>
+                        <a href="http://pan.baidu.com/s/1i3qsoBF#path=%252FESCC%25233">http://pan.baidu.com/s/1i3qsoBF#path=%252FESCC%25233</a>
+                   </span>
+              </div>
+          </div>
+      </div>
+      <div class="footer">
+             <span>&copy;2015</span>
+      </div>
+</div>
+<script type="text/javascript">
+    //轮播图片js
+    jQuery('.carousel').carousel({
+        interval:3500
+    });
+</script>
+ </body>
+</html>
