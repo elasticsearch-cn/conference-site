@@ -14,6 +14,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
+
 <!--最外层布局-->
 <div class="container-fluid">
     <div class="header">
@@ -22,6 +23,7 @@
                 <li><a href="index.html">首页</a></li>
                 <li><a href="history.html">历史</a></li>
                 <li><a href="http://form.mikecrm.com/f.php?t=mOUa1M">报名</a></li>
+                <li><a href="live.html">第四届ES开发者大会北京站直播</a></li>
             </ul>
         </div>
     </div>
@@ -93,15 +95,27 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
             </div>
-            <div class="turn">
-                <a href="#beijingCaption">北京</a>
-                <a href="#shanghaiCaption">上海</a>
-                <a href="#chengduCaption">成都</a>
-            </div>
+            <!--<div class="turn">-->
+                <!--<a href="#beijingCaption">北京</a>-->
+                <!--<a href="#shanghaiCaption">上海</a>-->
+                <!--<a href="#chengduCaption">成都</a>-->
+            <!--</div>-->
+
+            <br/>
+
+            <ul id="mytab" class="nav nav-tabs">
+                <li class="active"><a href="#beijingCaption" data-toggle="tab">北京会议介绍</a></li>
+                <li><a href="#shanghaiCaption" data-toggle="tab">上海会议介绍</a></li>
+                <li><a href="#chengduCaption" data-toggle="tab">成都会议介绍</a></li>
+            </ul>
+
+
+
+
             <!--站点培训计划及讲师介绍-->
-            <div class="theCaption">
-                <div id="beijingCaption">
-                    <h4 class="page-header beijingShow">北京会议介绍</h4>
+            <div class="theCaption tab-content">
+                <div class="tab-pane active" id="beijingCaption">
+                    <!--<h4 class="page-header beijingShow">北京会议介绍</h4>-->
                     <!--头像文字介绍部分-->
 
                     <div class="topic">
@@ -135,8 +149,8 @@
 
                     </div>
                     <br>
-
                     <div style="clear:both;"></div>
+
                     <div class="topic">
                         <p class="topic-title"></p>
 
@@ -165,10 +179,9 @@
                         </div>
 
                     </div>
-
-
                     <br>
                     <div style="clear:both;"></div>
+
                     <div class="topic">
                         <p class="topic-title"></p>
 
@@ -196,11 +209,9 @@
                             </p>
                         </div>
                     </div>
-
-
                     <br>
-
                     <div style="clear:both;"></div>
+
                     <div class="topic">
                         <p class="topic-title"></p>
 
@@ -233,18 +244,14 @@
                         </div>
 
                     </div>
-
                     <br>
-
                     <div style="clear:both;"></div>
+
                     <div class="topic">
                         <p class="topic-title"></p>
-
                         <div class="guest_item gallery-icon">
                             <img class="guest_avatar" src="images/humanIcon/饶琛琳.jpg" alt="饶琛琳">
-
                             <p class="guest_name"><span style="font-weight: bolder">分享人：</span>饶琛琳</p>
-
                             <p class="guest_subject"><span style="font-weight: bolder">
                                     主题：</span>《{{more}} Kibana 4》
                             </p>
@@ -263,10 +270,9 @@
                         </div>
 
                     </div>
-
                     <br>
-
                     <div style="clear:both;"></div>
+
                     <div class="topic">
                         <p class="topic-title"></p>
 
@@ -292,7 +298,6 @@
                         </div>
 
                     </div>
-
                     <br>
                     <div style="clear:both;"></div>
                     <div class="topic">
@@ -391,8 +396,9 @@
                 </div>
                 <!--上海-->
                 <div style="clear:both;"></div>
-                <div id="shanghaiCaption">
-                    <h4 class="page-header shanghaiShow">上海会议介绍</h4>
+
+                <div class="tab-pane" id="shanghaiCaption">
+                    <!--<h4 class="page-header shanghaiShow">上海会议介绍</h4>-->
                     <!--头像文字介绍部分-->
 
                     <div class="topic">
@@ -563,8 +569,8 @@
                 </div>
 
                 <div style="clear:both;"></div>
-                <div id="chengduCaption">
-                    <h4 class="page-header chengduShow">成都会议介绍</h4>
+                <div class="tab-pane" id="chengduCaption">
+                    <!--<h4 class="page-header chengduShow">成都会议介绍</h4>-->
                     <!--头像文字介绍部分-->
 
                     <div class="topic">
