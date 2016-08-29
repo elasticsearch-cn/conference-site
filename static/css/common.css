@@ -1,1 +1,25 @@
 @charset "UTF-8";
+img {
+    max-width: 100%;
+}
+
+.icon {
+    display:block;
+
+}
+
+.icon.icon-weibo {
+    background: white  url("../images/logo/weibo-logo-48x48.png") no-repeat center;
+    background-size: auto 80%;
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+}
+
+.icon.icon-github {
+    background: white url("../images/logo/github-logo-48x48.png") no-repeat center;
+    background-size: auto 80%;
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+}

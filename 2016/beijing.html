@@ -14,6 +14,7 @@
 
     <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../static/css/main.css" rel="stylesheet">
+    <link href="../static/css/common.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -40,22 +41,21 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="curr-city">首页</span> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="/2016/beijing.html">北京</a></li>
-                        <li><a href="/2016/shanghai.html">上海</a></li>
-                        <li><a href="/2016/guangzhou.html">广州</a></li>
-                        <li><a href="/2016/chengdu.html">成都</a></li>
+                        <!--<li><a href="/2016/shanghai.html">上海</a></li>-->
+                        <!--<li><a href="/2016/guangzhou.html">广州</a></li>-->
+                        <!--<li><a href="/2016/chengdu.html">成都</a></li>-->
                     </ul>
                 </li>
                 <li><a data-scroll href="#schedule">会议日程</a></li>
                 <li><a data-scroll href="#speaker">嘉宾介绍</a></li>
                 <li><a data-scroll href="#partner">赞助商</a></li>
                 <li><a data-scroll href="#supporters">媒体支持</a></li>
+                <li><a data-scroll href="#team">组织与志愿者</a></li>
                 <li><a data-scroll href="#signup">报名</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="history-conf"></span>往届 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="/2015/beijing.html">2015</a></li>
-                        <li><a href="/2014/beijing.html">2014</a></li>
-                        <li><a href="/2013/beijing.html">2013</a></li>
                     </ul>
                 </li>
             </ul>
@@ -65,15 +65,17 @@
 <header id="site-header" class="site-header valign-center">
     <div class="intro">
         <h1>中国 北京 第五届 Elastic China 开发者大会</h1>
-        <h2>时间:2016-05-16 09:00 ~ 2016-05-17 18:00</h2>
-        <p>地址: 东城区 工体北路新中西街8号 亚洲大酒店</p>
+        <h2>时间:2016-11-26 09:00 ~ 2016-11-26 18:00</h2>
+        <p>地址: 北京，具体场地待定</p>
 
-        <a type="button" class="btn btn-success btn-lg" href="#signup">我要报名</a>
+        <a type="button" class="btn btn-success btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">赞助商合作</a>
+        <a type="button" class="btn btn-success btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/x0y56G">演讲者申请</a>
+        <a type="button" class="btn btn-success btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/n5BVwP">志愿者申请</a>
 
     </div>
 </header>
 
-<section id="schedule" class="section schedule">
+<section id="schedule" class="section bg-white schedule">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -150,23 +152,23 @@
     </div>
 </section>
 
-<section id="speaker" class="section speaker">
+<section id="speaker" class="section bg-grey speaker">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">嘉宾介绍</h3>
+                <h3 class="section-title">嘉宾介绍 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/x0y56G">在线申请</a>)</small></h3>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="高攀">
+                    <img class="user-avatar-poster" src="../static/images/2015/speakers/gp@2x.jpg" alt="高攀">
                     <div class="caption">
                         <h3 class="topic">百度Elasticsearch大数据分析实践</h3>
                         <p class="summary">1. ES在百度的发展 2. ES在百度的典型应用 3. 遇到的问题 4. 百度对ES的改进</p>
                     </div>
                     <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/demo.jpg" alt="高攀">
+                        <img class="user-avatar" src="../static/images/2015/speakers/gp.jpg" alt="高攀">
                         <h4 class="">高攀</h4>
                         <p>百度大数据部高级工程师，先后在易车网，百度从事搜索引擎及分布式系统的研发工作。目前在百度负责ES的改进和推广。</p>
                     </div>
@@ -174,7 +176,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="凌霄">
+                    <img class="user-avatar-poster" src="../static/images/2015/speakers/lx@2x.jpg" alt="凌霄">
                     <div class="caption">
                         <h3 class="topic">Sina ELK，从运维到服务之路</h3>
                         <p class="summary">ELK服务作为一个日志的解决方案，解决了大家在运维中日志集中管理，分析， 检索和可视化等多样化的需求，简单方便的实现也受到了广大互联网行业用户的推崇。 但是，当服务的规模不断扩大后，如何保证集群稳定性和性能，如何标准化日志的管理， 以及给用户提供简单更实用的产品还是有很大的挑战的。该演讲主要和大家分享新浪/微博在ELK的实践中从运维， 到平台建设，产品设计三个阶段的心得和感悟，以及集群规模从几台发展到50+台的过程中，我们遇到的问题和踩过的坑。</p>
@@ -188,7 +190,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="../static/images/2015/speakers/demo@2x.jpg" alt="宋兵强">
+                    <img class="user-avatar-poster" src="../static/images/2015/speakers/sbq@2x.jpg" alt="宋兵强">
                     <div class="caption">
                         <h3 class="topic">ElasticSearch 在AdMaster社会化数据分析系统中的大规模实践</h3>
                         <p class="summary">ElasticSearch 作为一个优秀的全文检索和实时数据分析系统，在大数据分析方面扮演着愈加重要的角色。 本文重点介绍其在AdMaster社会化数据分析系统中的大规模应用，涉及系统架构、大规模索引构建、分词处理、查询优化以及一些运维经验， 希望起到一个抛砖引玉的作用，呈现ElasticSearch在大数据数据分析处理方面的冰山一角。</p>
@@ -202,7 +204,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="刘波涛">
+                    <img class="user-avatar-poster" src="../static/images/2015/speakers/lbt@2x.jpg" alt="刘波涛">
                     <div class="caption">
                         <h3 class="topic">芒果TV ElasticSearch实践</h3>
                         <p class="summary">1.芒果TV搜索方案选型(Sphinx->xapian-ES) 2.ES从0到1实践 3.ES在数据分析应用（nginx+kafak+logstash+ES）</p>
@@ -216,7 +218,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="饶琛琳">
+                    <img class="user-avatar-poster" src="../static/images/2015/speakers/rcl@2x.jpg" alt="饶琛琳">
                     <div class="caption">
                         <h3 class="topic">{{more}} Kibana 4</h3>
                         <p class="summary">Kibana开发组从去年4月开始重构新版，终于在今年发布了崭新的version 4.0。和version 3.1相比，从设计，操作，插件架构方面都有相当大的不同。 本次分享会跟大家聊聊Kibana4的新特性新用法，并以sankey实例，介绍在新版插件架构下，如何开发全新的visualize，server plugin等。</p>
@@ -230,7 +232,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="Medcl">
+                    <img class="user-avatar-poster" src="../static/images/2015/speakers/Medcl@2x.jpg" alt="Medcl">
                     <div class="caption">
                         <h3 class="topic">Analyzer101</h3>
                         <p class="summary">Analyzer?分词器?Tokenizer?filter?这都什么鬼? 什么情况下用什么分词器,搜索的时候又该选用哪种查询,搜索性能和它又有啥关系?配置为什么老是不成功?这些问题让Medcl告诉你。</p>
@@ -244,7 +246,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="张磊">
+                    <img class="user-avatar-poster" src="../static/images/2015/speakers/zl@2x.jpg" alt="张磊">
                     <div class="caption">
                         <h3 class="topic">Elasticsearch应用在数据中心的实时协议分析和威胁检测</h3>
                         <p class="summary">网络安全问题是当下数据中心产业共同面临的挑战，传统安全设备的组合很难灵活应对当下数据中心的大流量、 细粒度、高实时、以及定制化的分析需求。 本议题将解析：如何在实际流量10Gbps的网络环境下， 构建一套企业级的高实时网络威胁分析系统，结合Elasticsearch的大数据搜索平台，秒级发现DDOS流量、 应用层安全攻击、精准统计用户层协议流量、甚至提供业务层的行为审计与取证，并保持整套架构的线性可扩展能力。</p>
@@ -258,7 +260,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="姜宁">
+                    <img class="user-avatar-poster" src="../static/images/2015/speakers/jn@2x.jpg" alt="姜宁">
                     <div class="caption">
                         <h3 class="topic">像玩乐高积木一样开发 ElasticSearch 应用</h3>
                         <p class="summary">如何将文本检索的利器 ElasticSearch 与其他应用进行集成，进而实现比较复杂的业务逻辑呢？ 这是大家在使用 ElasticSearch 时经常遇到的问题。Apache Camel 提供了消息路由引擎， 丰富的组件集成第三方应用以及企业应用集成模式DSL ， 可以让大家像使用乐高积木一样搭建复杂的应用系统。 本次讲座将介绍如何将 Camel 以及 ElasticSearch 集成在一起，让 ElasticSearch 应用开发变得像搭建乐高积木一样简单。</p>
@@ -274,11 +276,11 @@
     </div>
 </section>
 
-<section id="partner" class="section partner">
+<section id="partner" class="section bg-white partner">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">联合主办方</h3>
+                <h3 class="section-title">联合主办方 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
             </div>
         </div>
         <div class="row">
@@ -290,155 +292,196 @@
         </div>
     </div>
 </section>
-<section class="section partner">
+
+<section class="section bg-white partner">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">钻石赞助商</h3>
+                <h3 class="section-title">白金赞助商 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-3">
                 <a class="partner-box ">
-                    <img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">
+                    <div class="partner-blank">虚位以待</div>
+                    <!--<img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">-->
                 </a>
             </div>
             <div class="col-sm-3">
                 <a class="partner-box ">
-                    <img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">
+                    <!--<img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">-->
+                    <div class="partner-blank">虚位以待</div>
                 </a>
             </div>
         </div>
     </div>
 </section>
-<section class="section partner">
+<section class="section bg-white partner">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">白金赞助商</h3>
+                <h3 class="section-title">金牌赞助商 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-3">
                 <a class="partner-box ">
-                    <img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">
+                    <div class="partner-blank">虚位以待</div>
+                    <!--<img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">-->
                 </a>
             </div>
             <div class="col-sm-3">
                 <a class="partner-box ">
-                    <img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">
+                    <div class="partner-blank">虚位以待</div>
+                    <!--<img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">-->
                 </a>
             </div>
         </div>
     </div>
 </section>
-<section class="section partner">
+<section class="section bg-white partner">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">金牌赞助商</h3>
+                <h3 class="section-title">银牌赞助商 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-3">
                 <a class="partner-box ">
-                    <img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">
+                    <div class="partner-blank">虚位以待</div>
+                    <!--<img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">-->
                 </a>
             </div>
             <div class="col-sm-3">
                 <a class="partner-box ">
-                    <img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">
+                    <div class="partner-blank">虚位以待</div>
+                    <!--<img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">-->
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-white partner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">合作伙伴 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box ">
+                    <div class="partner-blank">虚位以待</div>
+                    <!--<img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">-->
                 </a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section partner">
+<section id="supporters" class="section bg-grey supporters">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">银牌赞助商</h3>
+                <h3 class="section-title">媒体支持 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-3">
                 <a class="partner-box ">
-                    <img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">
+                    <div class="partner-blank">虚位以待</div>
+                    <!--<img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">-->
                 </a>
             </div>
             <div class="col-sm-3">
                 <a class="partner-box ">
-                    <img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">
+                    <div class="partner-blank">虚位以待</div>
+                    <!--<img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">-->
                 </a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section partner">
+<section id="team" class="section bg-white team">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">合作伙伴</h3>
+                <h3 class="section-title">组织者与志愿者 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/n5BVwP">在线申请</a>)</small></h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">
-                </a>
+            <div class="col-md-3 col-sm-6 col-xs-12 ">
+                <div class="volunteer">
+                    <div class="image-holder">
+                        <img class="background-image" alt="Kai Yeow Yap" src="/static/images/default-avatar.png">
+                        <div class="hover-state text-center preserve3d">
+                            <div class="social-links vertical-align">
+                                <a target="default" href="http://weibo.com/"><i class="icon icon-weibo"></i></a>
+                                <a target="default" href="https://github.com/"><i class="icon icon-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="volunteer-name">姓名/网名/昵称</span>
+                    <span> 公司/职位/一句话简单介绍 </span>
+                </div>
             </div>
+            <div class="col-md-3  col-sm-6 col-xs-12 ">
+                <div class="volunteer">
+                    <div class="image-holder">
+                        <img class="background-image" alt="Kai Yeow Yap" src="/static/images/default-avatar.png">
+                    </div>
+                    <span class="volunteer-name">张小风</span>
+                    <span> google广告搜索部/搜索工程师 </span>
+                </div>
+            </div>
+            <div class="col-md-3  col-sm-6 col-xs-12 ">
+                <div class="volunteer">
+                    <div class="image-holder">
+                        <img class="background-image" alt="Kai Yeow Yap" src="/static/images/default-avatar.png"><div class="hover-state text-center preserve3d">
+                        <div class="social-links vertical-align">
+                            <a target="default" href="http://weibo.com/"><i class="icon icon-weibo"></i></a>
+                        </div>
+                    </div>
+                    </div>
+                    <span class="volunteer-name">张小风</span>
+                    <span> google广告搜索部/搜索工程师 </span>
+                </div>
+            </div>
+            <div class="col-md-3  col-sm-6 col-xs-12 ">
+                <div class="volunteer">
+                    <div class="image-holder">
+                        <img class="background-image" alt="Kai Yeow Yap" src="/static/images/default-avatar.png">
+                    </div>
+                    <span class="volunteer-name">张小风</span>
+                    <span> google广告搜索部/搜索工程师 </span>
+                </div>
+            </div>
+            <div class="col-md-3  col-sm-6 col-xs-12 ">
+                <div class="volunteer">
+                    <div class="image-holder">
+                        <img class="background-image" alt="Kai Yeow Yap" src="/static/images/default-avatar.png">
+                    </div>
+                    <span class="volunteer-name">Kai Yeow Yap</span>
+                    <span> Python / University of Tsukuba </span>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<section id="supporters" class="section supporters">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">媒体支持</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="signup" class="section signup">
+<section id="signup" class="section bg-grey signup">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
                 <h3 class="section-title">会议地址</h3>
                 <address>
-                    <p>北京 东城区<br>工体北路新中西街8号<br>亚洲大酒店</p>
+                    <!--<p>北京 东城区<br>工体北路新中西街8号<br>亚洲大酒店</p>-->
+                    <p>北京 <br>具体场地待定</p>
                 </address>
-                <a type="button" class="btn btn-success btn-lg" href="#signup">我要报名</a>
+                <a type="button" class="btn btn-success btn-lg disabled" href="javascript:void(0);">报名暂未开启</a>
             </div>
             <div class="col-sm-9">
                 <div class="map" id="mapContainer"></div>
@@ -447,7 +490,7 @@
     </div>
 </section>
 
-<section class="section signup">
+<section class="section bg-white contact">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -455,7 +498,12 @@
             </div>
             <div class="col-sm-9">
                 <p class="lead">如果您有赞助与合作意向，请联系 <strong>Medcl</strong> (Elastic中文社区负责人)。</p>
-                <p class="lead"><strong>email:medcl@gmail.com</strong></p>
+                <p class="lead"><strong>medcl@gmail.com</strong></p>
+                <p class="lead">附:2016 Elastic国内开发者大会相关申请链接,如下</p>
+                <p class="lead"><strong><a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">赞助商合作</a></strong></p>
+                <p class="lead"><strong><a target="_blank" href="http://elasticsearch.mikecrm.com/x0y56G">演讲者申请</a></strong></p>
+                <p class="lead"><strong><a target="_blank" href="http://elasticsearch.mikecrm.com/n5BVwP">志愿者申请</a></strong></p>
+
             </div>
         </div>
     </div>
