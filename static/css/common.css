@@ -210,7 +210,7 @@ li {
 }
 
 .right-tool li.go-top {
-    display: block;
+    display: none;
     font-size: 24px;
 }
 
