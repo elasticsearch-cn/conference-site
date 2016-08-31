@@ -65,3 +65,42 @@ function getCurrPage(url) {
     }
     return null;
 }
+
+$(function(){
+    /**
+     * 关闭弹出层
+     */
+    $('#layer-shade').on('click', function(){
+        $(this).css('display','none');
+        $('#layer').css('display','none');
+    });
+
+    //回到顶部
+    $(".right-tool").on("click",'.go-top', function(){
+        var _this = $(this);
+        $('html,body').animate({ scrollTop: 0 }, 500 ,function(){
+            _this.hide();
+        });
+    }).on("click",'.share-qrcode', function(){
+        $('#layer-shade').show();
+        $('#layer').show();
+    }).on("mouseover",'.share-qrcode', function(){
+        $(this).children('.text').show();
+        $(this).children('.img').hide();
+    }).on("mouseout",'.share-qrcode', function(){
+        $(this).children('.text').hide();
+        $(this).children('.img').show();
+    });
+
+    $(window).scroll(function(){
+        var htmlTop = $(document).scrollTop();
+        var headerHeight = $('#site-header').height();
+        if( htmlTop > headerHeight){
+            $(".go-top").show();
+        }else{
+            $(".go-top").hide();
+        }
+    });
+
+});
+
