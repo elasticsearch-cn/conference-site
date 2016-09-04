@@ -102,5 +102,8 @@ $(function(){
         }
     });
 
+    //精彩图集图片轮播
+    $('.carousel').carousel();
+
 });
 

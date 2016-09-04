@@ -180,7 +180,7 @@ li {
 
 .right-tool {
     position: fixed;
-    right: 15px;
+    right: 5px;
     bottom: 40px;
     z-index: 99;
 }

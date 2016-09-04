@@ -215,9 +215,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #777;
 }
 
-.signup {}
+.conf-address {}
 
-.partner .partner-box,.supporters .partner-box {
+.partner .partner-box {
     display: block;
     opacity: 0.5;
     height: 150px;
@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.5s all linear;
 }
 
-.partner .partner-box:hover,.supporters .partner-box:hover {
+.partner .partner-box:hover {
     opacity: 1;
 }
 
@@ -235,8 +235,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-.partner .partner-blank,.supporters .partner-blank {
-    font-size: 20px;
+.partner .partner-blank {
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     line-height: 84px;
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .team .volunteer span {
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     color:#777777;
 }
 
@@ -321,6 +321,22 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     margin-left: 6px;
 }
+
+.team .about-text {
+    text-indent: 2em;
+    font-size: 18px;
+    /*line-height: 20px;*/
+}
+
+.gallery {}
+
+.gallery .conf-img {
+    width: 100%;
+}
+
+.resource {}
+
+.live {}
 
 .map {
     width: 100%;
