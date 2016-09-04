@@ -5,7 +5,9 @@ img {
 li {
     list-style: none;
 }
-
+p {
+    word-break: break-all;
+}
 .icon {
     display:block;
 

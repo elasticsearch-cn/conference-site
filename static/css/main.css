@@ -24,7 +24,22 @@ a.elastic-logo span {
     min-height: 100vh;
     position: relative;
     text-align: center;
+}
+
+.site-header a{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.site-header.bj-2016 {
     background: url("../images/2016/bg/header_2016.jpg") no-repeat center center/cover;
+}
+
+.site-header.bj-2015 {
+    background: url("../images/2015/gallery/2015001.jpg") no-repeat center center/cover;
+}
+.site-header.bj-2014 {
+    background: url("../images/2014/bg/header.jpg") no-repeat center center/cover;
 }
 
 .valign-center {
@@ -245,6 +260,10 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px dotted lightblue;
 }
 
+.partner .partner-blank.no-img {
+    border: 2px solid lightblue;
+}
+
 .team {}
 
 .team .volunteer {
@@ -337,6 +356,13 @@ h1, h2, h3, h4, h5, h6 {
 .resource {}
 
 .live {}
+.live .screen-wrap {
+    text-align: center;
+    width: 100%;
+    min-height: 300px;
+    background: #000!important;
+    margin:15px 0;
+}
 
 .map {
     width: 100%;

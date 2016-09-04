@@ -7,13 +7,13 @@
     <meta name="renderer" content="webkit">
     <meta name="keywords" content="Elasticsearch中国开发者大会,ES,ES大会 Elastic Stack，ELK，elasticsearch、logstash、kibana、beats等相关技术交流探讨">
     <meta name="description" content="Elasticsearch中国开发者大会,ES,ES大会 Elastic Stack，ELK，elasticsearch、logstash、kibana、beats等相关技术交流探讨">
-    <!--<link rel="shortcut icon" type="image/x-icon" href="http://elasticsearch.cn/static/css/default/img/favicon.ico?v=20151125">-->
     <link rel="shortcut icon" type="image/png" href="/static/images/logo/elastic-logo-32x32.png">
 
-    <title>Elastic 中国开发者大会</title>
+    <title>2015年 Elastic 中国开发者大会 成都站</title>
 
     <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../static/css/main.css" rel="stylesheet">
+    <link href="../static/css/common.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -21,6 +21,7 @@
     <![endif]-->
 </head>
 <body  data-spy="scroll" data-target="#site-nav">
+<!-- 导航 start -->
 <nav id="site-nav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
         <div class="navbar-header">
@@ -30,51 +31,69 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a data-scroll class="navbar-brand elastic-logo" href="#">
+            <a class="navbar-brand elastic-logo" href="../index.html">
                 <span>Elastic China 2015</span>
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <!--<li><a data-scroll href="#">首页</a></li>-->
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">首页 <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="curr-city">首页</span> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/2016/beijing.html">北京</a></li>
-                        <li><a href="/2016/shanghai.html">上海</a></li>
-                        <li><a href="/2016/guangzhou.html">广州</a></li>
-                        <li><a href="/2016/chengdu.html">成都</a></li>
+                        <li><a href="/2015/beijing.html">北京</a></li>
+                        <li><a href="/2015/shanghai.html">上海</a></li>
+                        <li><a href="/2015/chengdu.html">成都</a></li>
                     </ul>
                 </li>
                 <li><a data-scroll href="#schedule">会议日程</a></li>
                 <li><a data-scroll href="#speaker">嘉宾介绍</a></li>
-                <li><a data-scroll href="#partner">赞助商</a></li>
-                <li><a data-scroll href="#supporters">媒体支持</a></li>
-                <li><a data-scroll href="#signup">报名</a></li>
+                <li><a data-scroll href="#partner">合作赞助</a></li>
+                <li><a data-scroll href="#gallery">精彩图集</a></li>
+                <li><a data-scroll href="#resource">大会PPT</a></li>
+                <li><a data-scroll href="#contact">联系我们</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">往届 <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="history-conf"></span>往届 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/2015/beijing.html">2015</a></li>
+                        <li><a href="/2016/beijing.html">2016</a></li>
                         <li><a href="/2014/beijing.html">2014</a></li>
-                        <li><a href="/2013/beijing.html">2013</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<header id="site-header" class="site-header valign-center">
+<!-- 导航 end -->
+<!-- 首页大图 start -->
+<header id="site-header" class="site-header bj-2015 valign-center">
     <div class="intro">
-        <h1>中国 北京 第四届 Elastic China 开发者大会</h1>
-        <h2>时间:2016-05-16 09:00 ~ 2016-05-17 18:00</h2>
-        <p>地址: 东城区 工体北路新中西街8号 亚洲大酒店</p>
+        <h1>中国 成都 第四届 Elastic China 开发者大会</h1>
+        <h2>时间:2015-11-07</h2>
+        <p>地址: 四川成都市天府软件园D区D5负一层灵感咖啡</p>
 
-        <a type="button" class="btn btn-success btn-lg disabled" href="#">报名已结束</a>
-
+        <a type="button" class="btn btn-success btn-lg" href="#resource">资源下载</a>
     </div>
 </header>
-
-<section id="schedule" class="section schedule">
+<!-- 首页大图 end -->
+<!-- 大会介绍 start -->
+<section class="section bg-grey team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">大会介绍</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 ">
+                <p class="about-text">
+                    Elastic国内开发者大会，是由Elastic中文社区每年定期举办的线下交流活动，今年已经是第4届了，会议主要围绕与开源技术elasticsearch、logstash、kibana和beats相关的领域和技术，探讨在搜索、数据实时分析、日志分析等相关领域的实践与应用，大会倡导干货接地气纯粹的技术交流。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 大会介绍 end -->
+<!-- 会议日程 start -->
+<section id="schedule" class="section bg-white schedule">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -92,56 +111,24 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td align="center" rowspan="13" valign="middle">4月16日<br>周六</td>
-                    <td>08:20-8:50</td>
+                    <td align="center" rowspan="13" valign="middle">11月07日<br>周六</td>
+                    <td>09:00-9:30</td>
                     <td>入场报到</td>
                 </tr>
                 <tr>
-                    <td>08:50-9:00</td>
+                    <td>9:30-9:45</td>
                     <td>大会介绍</td>
                 </tr>
                 <tr>
-                    <td>09:00-09:10</td>
+                    <td>09:45-09:55</td>
                     <td>主办方致辞</td>
                 </tr>
                 <tr>
-                    <td>09:10-10:00</td>
-                    <td>高攀,百度       百度Elasticsearch大数据分析实践</td>
+                    <td>10:00-11:00</td>
+                    <td>吴友强,京东  基于es构建实时日志检索平台</td>
                 </tr>
                 <tr>
-                    <td>10:05-10:55</td>
-                    <td>凌霄,新浪       Sina ELK，从运维到服务之路</td>
-                </tr>
-                <tr>
-                    <td>11:00-11:50</td>
-                    <td>宋兵强,AdMaster           ElasticSearch 在AdMaster社会化数据分析系统中的大规模实践</td>
-                </tr>
-                <tr>
-                    <td>13:10-14:00</td>
-                    <td>刘波涛,芒果TV        芒果TV ElasticSearch实践</td>
-                </tr>
-                <tr>
-                    <td>14:05-14:55</td>
-                    <td>饶琛琳,新浪     {{more}} Kibana 4</td>
-                </tr>
-                <tr>
-                    <td>14:55-15:15</td>
-                    <td>茶歇</td>
-                </tr>
-                <tr>
-                    <td>15:15-16:05</td>
-                    <td>Medcl,Elastic        Analyzer101</td>
-                </tr>
-                <tr>
-                    <td>16:10-17:00</td>
-                    <td>张磊,BIGLog      Elasticsearch应用在数据中心的实时协议分析和威胁检测</td>
-                </tr>
-                <tr>
-                    <td>17:05-17:55</td>
-                    <td>姜宁,OneAPM      像玩乐高积木一样开发 ElasticSearch 应用</td>
-                </tr>
-                <tr>
-                    <td>18:00- ~~</td>
+                    <td>11:00- ~~</td>
                     <td>大会结束</td>
                 </tr>
 
@@ -150,8 +137,9 @@
         </div>
     </div>
 </section>
-
-<section id="speaker" class="section speaker">
+<!-- 会议日程 end -->
+<!-- 嘉宾介绍 start -->
+<section id="speaker" class="section bg-grey speaker">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -161,121 +149,25 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="高攀">
+                    <img class="user-avatar-poster" src="../static/images/default-avatar@2x.png" alt="吴友强">
                     <div class="caption">
-                        <h3 class="topic">百度Elasticsearch大数据分析实践</h3>
-                        <p class="summary">1. ES在百度的发展 2. ES在百度的典型应用 3. 遇到的问题 4. 百度对ES的改进</p>
+                        <h3 class="topic">基于es构建实时日志检索平台</h3>
+                        <p class="summary">2011年毕业后加入京东，作为项目技术负责人以及架构师参与了hadoop生态系统建设一期、云存储一期、统一日志、公有PAAS平台和基于容器技术的自动部署等项目。目前在京东成都研究院工具部主要负责工具部各个项目系统架构和产品优化和创新。作为一个技术极客希望组建一支一流的技术团队，同时希望和各位技术爱好者一起交流技术以及技术创新。 提纲：1.系统整体架构介绍 2.日志采集方案以及实现原理介绍 3.日志转发方案以及实现原理介绍 4.日志搜索实现 5.es优化简介。</p>
                     </div>
                     <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/demo.jpg" alt="高攀">
-                        <h4 class="">高攀</h4>
-                        <p>百度大数据部高级工程师，先后在易车网，百度从事搜索引擎及分布式系统的研发工作。目前在百度负责ES的改进和推广。</p>
+                        <img class="user-avatar" src="../static/images/default-avatar.png" alt="吴友强">
+                        <h4 class="">吴友强</h4>
+                        <p>京东成都研究院工具部负责人兼系统架构师。</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="凌霄">
-                    <div class="caption">
-                        <h3 class="topic">Sina ELK，从运维到服务之路</h3>
-                        <p class="summary">ELK服务作为一个日志的解决方案，解决了大家在运维中日志集中管理，分析， 检索和可视化等多样化的需求，简单方便的实现也受到了广大互联网行业用户的推崇。 但是，当服务的规模不断扩大后，如何保证集群稳定性和性能，如何标准化日志的管理， 以及给用户提供简单更实用的产品还是有很大的挑战的。该演讲主要和大家分享新浪/微博在ELK的实践中从运维， 到平台建设，产品设计三个阶段的心得和感悟，以及集群规模从几台发展到50+台的过程中，我们遇到的问题和踩过的坑。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/lx.jpg" alt="凌霄">
-                        <h4 class="">凌霄</h4>
-                        <p>新浪数据智能平台ELK服务，微博多媒体下载SRE负责人。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="../static/images/2015/speakers/demo@2x.jpg" alt="宋兵强">
-                    <div class="caption">
-                        <h3 class="topic">ElasticSearch 在AdMaster社会化数据分析系统中的大规模实践</h3>
-                        <p class="summary">ElasticSearch 作为一个优秀的全文检索和实时数据分析系统，在大数据分析方面扮演着愈加重要的角色。 本文重点介绍其在AdMaster社会化数据分析系统中的大规模应用，涉及系统架构、大规模索引构建、分词处理、查询优化以及一些运维经验， 希望起到一个抛砖引玉的作用，呈现ElasticSearch在大数据数据分析处理方面的冰山一角。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/sbq.jpg" alt="宋兵强">
-                        <h4 class="">宋兵强</h4>
-                        <p>曾就职于百度基础架构部，现为AdMaster资深工程师， 负责社会化大数据研发。对分布式存储和计算系统有很强实践经验， 对大数据处理理解很深，研究方向为Hbase、Hadoop、Redis、ElasticSearch、MySql等系统。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="刘波涛">
-                    <div class="caption">
-                        <h3 class="topic">芒果TV ElasticSearch实践</h3>
-                        <p class="summary">1.芒果TV搜索方案选型(Sphinx->xapian-ES) 2.ES从0到1实践 3.ES在数据分析应用（nginx+kafak+logstash+ES）</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/lbt.jpg" alt="刘波涛">
-                        <h4 class="">刘波涛</h4>
-                        <p>负责芒果TV MPP(Mobile,PAD,PC)业务系统架构。ElasticSearch爱好者 09-11年 上海PPS网络公司 11年- 湖南卫视芒果TV。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="饶琛琳">
-                    <div class="caption">
-                        <h3 class="topic">{{more}} Kibana 4</h3>
-                        <p class="summary">Kibana开发组从去年4月开始重构新版，终于在今年发布了崭新的version 4.0。和version 3.1相比，从设计，操作，插件架构方面都有相当大的不同。 本次分享会跟大家聊聊Kibana4的新特性新用法，并以sankey实例，介绍在新版插件架构下，如何开发全新的visualize，server plugin等。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/rcl.jpg" alt="饶琛琳">
-                        <h4 class="">饶琛琳</h4>
-                        <p>新浪微博系统架构师，负责手机微博的自动化运维和数据分析体系建设。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="Medcl">
-                    <div class="caption">
-                        <h3 class="topic">Analyzer101</h3>
-                        <p class="summary">Analyzer?分词器?Tokenizer?filter?这都什么鬼? 什么情况下用什么分词器,搜索的时候又该选用哪种查询,搜索性能和它又有啥关系?配置为什么老是不成功?这些问题让Medcl告诉你。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/Medcl.jpg" alt="Medcl">
-                        <h4 class="">Medcl</h4>
-                        <p>Elasticsearch爱好者, Elasticsearch中文社区发起人。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="张磊">
-                    <div class="caption">
-                        <h3 class="topic">Elasticsearch应用在数据中心的实时协议分析和威胁检测</h3>
-                        <p class="summary">网络安全问题是当下数据中心产业共同面临的挑战，传统安全设备的组合很难灵活应对当下数据中心的大流量、 细粒度、高实时、以及定制化的分析需求。 本议题将解析：如何在实际流量10Gbps的网络环境下， 构建一套企业级的高实时网络威胁分析系统，结合Elasticsearch的大数据搜索平台，秒级发现DDOS流量、 应用层安全攻击、精准统计用户层协议流量、甚至提供业务层的行为审计与取证，并保持整套架构的线性可扩展能力。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/zl.jpg" alt="张磊">
-                        <h4 class="">张磊</h4>
-                        <p>BIGLog创始人，专注于大数据与信息安全结合的研究与实践。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/demo@2x.jpg" alt="姜宁">
-                    <div class="caption">
-                        <h3 class="topic">像玩乐高积木一样开发 ElasticSearch 应用</h3>
-                        <p class="summary">如何将文本检索的利器 ElasticSearch 与其他应用进行集成，进而实现比较复杂的业务逻辑呢？ 这是大家在使用 ElasticSearch 时经常遇到的问题。Apache Camel 提供了消息路由引擎， 丰富的组件集成第三方应用以及企业应用集成模式DSL ， 可以让大家像使用乐高积木一样搭建复杂的应用系统。 本次讲座将介绍如何将 Camel 以及 ElasticSearch 集成在一起，让 ElasticSearch 应用开发变得像搭建乐高积木一样简单。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/jn.jpg" alt="姜宁">
-                        <h4 class="">姜宁</h4>
-                        <p>OneAPM杰出工程师 姜宁,前红帽软件首席软件工程师，有十余年企业级开源中间件开发经验，有丰富的Java开发和使用经验， 函数式编程爱好者。从2006年开始一直从事Apache开源中间件项目的开发工作，先后参与Apache CXF、Apache ActiveMQ、 Apache Camel以及Apache ServiceMix的开发工作。2007年开始参与Apache Camel项目开发，目前是该项目的主要维护者， 对WebServices、Enterprise Integration Pattern、SOA、OSGi有比较深入的研究。</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
-
-<section id="partner" class="section partner">
+<!-- 嘉宾介绍 end -->
+<!-- 合作赞助 start -->
+<section id="partner" class="section bg-white partner">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -285,161 +177,24 @@
         <div class="row">
             <div class="col-sm-3">
                 <a class="partner-box ">
-                    <img alt="elastic中文社区" border="0" src="http://elasticsearch.cn/static/css/default/img/logo@2x.png" title="elastic中文社区">
+                    <img alt="Elastic中文社区" border="0" src="http://elasticsearch.cn/static/css/default/img/logo@2x.png" title="Elastic中文社区">
                 </a>
             </div>
         </div>
     </div>
-</section>
-<section class="section partner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">钻石赞助商</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section partner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">白金赞助商</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section partner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">金牌赞助商</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section class="section partner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">银牌赞助商</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">
-                </a>
-            </div>
-        </div>
-    </div>
 </section>
-
-<section class="section partner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">合作伙伴</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="supporters" class="section supporters">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">媒体支持</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="signup" class="section signup">
+<!-- 合作赞助 end -->
+<!-- 大会地址 start -->
+<section id="conf-address" class="section bg-grey conf-address">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
                 <h3 class="section-title">会议地址</h3>
                 <address>
-                    <p>北京 东城区<br>工体北路新中西街8号<br>亚洲大酒店</p>
+                    <p>四川省 成都市<br>天府软件园D区D5负一层灵感咖啡</p>
                 </address>
-                <a type="button" class="btn btn-success btn-lg disabled" href="#signup">报名已结束</a>
+                <a type="button" class="btn btn-success btn-lg disabled" href="javascript:void(0);">已结束</a>
             </div>
             <div class="col-sm-9">
                 <div class="map" id="mapContainer"></div>
@@ -447,8 +202,78 @@
         </div>
     </div>
 </section>
+<!-- 大会地址 end -->
+<!-- 精彩图集 start -->
+<section id="gallery" class="section bg-grey gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">精彩图集</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 ">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
 
-<section class="section signup">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="conf-img" src="../static/images/2015/gallery/2015001.jpg">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="conf-img" src="../static/images/2015/gallery/2015002.jpg">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="conf-img" src="../static/images/2015/gallery/2015003.jpg">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 精彩图集 end -->
+<!-- 大会PPT start -->
+<section id="resource" class="section bg-white resource">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3 class="section-title">大会PPT</h3>
+            </div>
+            <div class="col-sm-9">
+                <p class="lead">大会PPT下载地址:</p>
+                <p class="lead">http://pan.baidu.com/s/1i3qsoBF#path=%252FESCC%25233</p>
+                <a href="http://pan.baidu.com/s/1i3qsoBF#path=%252FESCC%25233" target="_blank" class="btn btn-primary btn-sm" role="button">下载</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 大会PPT end -->
+
+<!-- 联系我们 start -->
+<section id="contact" class="section bg-white contact">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -456,24 +281,47 @@
             </div>
             <div class="col-sm-9">
                 <p class="lead">如果您有赞助与合作意向，请联系 <strong>Medcl</strong> (Elastic中文社区负责人)。</p>
-                <p class="lead"><strong>email:medcl@gmail.com</strong></p>
+                <p class="lead"><strong>medcl@gmail.com</strong></p>
             </div>
         </div>
     </div>
 </section>
-
+<!-- 联系我们 end -->
+<!-- 底部 start -->
 <footer class="footer">
     <div class="container">
         Copyright © 2016 <span> · <a href="http://elasticsearch.cn/" target="blank">Elastic中文社区</a></span>
     </div>
 </footer>
+<!-- 底部 end -->
+<!-- 右侧悬浮小工具 start -->
+<div id="layer-shade" class="layer-shade opacity"></div>
+<div id="layer" class="layer show-qrcode layer-anim">
+    <div class="layer-content">
+        <div class="qrcode">
+            <img src="../static/images/2016/github-escc-url.png">
+            <div class="des">微信“扫一扫”分享给好友</div>
+        </div>
+    </div>
+</div>
+
+<ul class="right-tool">
+    <li class="share-qrcode">
+        <p class="text">微信<br>分享</p>
+        <img class="img" src="../static/images/qrcode-icon.png">
+    </li>
+    <li class="go-top">
+        <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+    </li>
+</ul>
+<!-- 右侧悬浮小工具 end -->
 
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4&s=1"></script>
 <script type="text/javascript">
 
     var map = new BMap.Map("mapContainer");
 
-    var point = new BMap.Point(116.445605, 39.939396);
+    var point = new BMap.Point(104.081684, 30.546724);
 
     map.centerAndZoom(point, 15);
 

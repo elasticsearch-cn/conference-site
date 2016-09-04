@@ -26,7 +26,7 @@ smoothScroll.init();
 $(function(){
     var url = window.location.href ;
     var currCity = getCurrCity(url);
-    $("#navbar").find(".curr-city").text(currCity);
+    $(".curr-city").text(currCity);
 
 });
 
