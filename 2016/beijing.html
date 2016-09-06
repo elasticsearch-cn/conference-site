@@ -44,13 +44,9 @@
                         <li><a href="/2016/beijing.html">北京</a></li>
                     </ul>
                 </li>
-                <li><a data-scroll href="#schedule">会议日程</a></li>
-                <li><a data-scroll href="#speaker">嘉宾介绍</a></li>
                 <li><a data-scroll href="#partner">合作赞助</a></li>
                 <li><a data-scroll href="#team">志愿者</a></li>
-                <li><a data-scroll href="#gallery">精彩图集</a></li>
-                <li><a data-scroll href="#resource">大会PPT</a></li>
-                <li><a data-scroll href="#live">直播</a></li>
+                <li><a data-scroll href="#gallery">精彩回顾</a></li>
                 <li><a data-scroll href="#contact">联系我们</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="history-conf"></span>往届 <span class="caret"></span></a>
@@ -97,214 +93,17 @@
 </section>
 <!-- 大会介绍 end -->
 <!-- 会议日程 start -->
-<section id="schedule" class="section bg-white schedule">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">会议日程</h3>
-            </div>
-        </div>
-        <div class="row">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th class="am-u-sm-offset-1">日期</th>
-                    <th>时间</th>
-                    <th>日程安排</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td align="center" rowspan="13" valign="middle">10月17日<br>周六</td>
-                    <td>08:20-8:50</td>
-                    <td>入场报到</td>
-                </tr>
-                <tr>
-                    <td>08:50-9:00</td>
-                    <td>大会介绍</td>
-                </tr>
-                <tr>
-                    <td>09:00-09:10</td>
-                    <td>主办方致辞</td>
-                </tr>
-                <tr>
-                    <td>09:10-10:00</td>
-                    <td>高攀,百度       百度Elasticsearch大数据分析实践</td>
-                </tr>
-                <tr>
-                    <td>10:05-10:55</td>
-                    <td>凌霄,新浪       Sina ELK，从运维到服务之路</td>
-                </tr>
-                <tr>
-                    <td>11:00-11:50</td>
-                    <td>宋兵强,AdMaster           ElasticSearch 在AdMaster社会化数据分析系统中的大规模实践</td>
-                </tr>
-                <tr>
-                    <td>13:10-14:00</td>
-                    <td>刘波涛,芒果TV        芒果TV ElasticSearch实践</td>
-                </tr>
-                <tr>
-                    <td>14:05-14:55</td>
-                    <td>饶琛琳,新浪     {{more}} Kibana 4</td>
-                </tr>
-                <tr>
-                    <td>14:55-15:15</td>
-                    <td>茶歇</td>
-                </tr>
-                <tr>
-                    <td>15:15-16:05</td>
-                    <td>Medcl,Elastic        Analyzer101</td>
-                </tr>
-                <tr>
-                    <td>16:10-17:00</td>
-                    <td>张磊,BIGLog      Elasticsearch应用在数据中心的实时协议分析和威胁检测</td>
-                </tr>
-                <tr>
-                    <td>17:05-17:55</td>
-                    <td>姜宁,OneAPM      像玩乐高积木一样开发 ElasticSearch 应用</td>
-                </tr>
-                <tr>
-                    <td>18:00- ~~</td>
-                    <td>大会结束</td>
-                </tr>
 
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
 <!-- 会议日程 end -->
 <!-- 嘉宾介绍 start -->
-<section id="speaker" class="section bg-grey speaker">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">嘉宾介绍 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/x0y56G">在线申请</a>)</small></h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/gp@2x.jpg" alt="高攀">
-                    <div class="caption">
-                        <h3 class="topic">百度Elasticsearch大数据分析实践</h3>
-                        <p class="summary">1. ES在百度的发展 2. ES在百度的典型应用 3. 遇到的问题 4. 百度对ES的改进</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/gp.jpg" alt="高攀">
-                        <h4 class="">高攀</h4>
-                        <p>百度大数据部高级工程师，先后在易车网，百度从事搜索引擎及分布式系统的研发工作。目前在百度负责ES的改进和推广。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/lx@2x.jpg" alt="凌霄">
-                    <div class="caption">
-                        <h3 class="topic">Sina ELK，从运维到服务之路</h3>
-                        <p class="summary">ELK服务作为一个日志的解决方案，解决了大家在运维中日志集中管理，分析， 检索和可视化等多样化的需求，简单方便的实现也受到了广大互联网行业用户的推崇。 但是，当服务的规模不断扩大后，如何保证集群稳定性和性能，如何标准化日志的管理， 以及给用户提供简单更实用的产品还是有很大的挑战的。该演讲主要和大家分享新浪/微博在ELK的实践中从运维， 到平台建设，产品设计三个阶段的心得和感悟，以及集群规模从几台发展到50+台的过程中，我们遇到的问题和踩过的坑。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/lx.jpg" alt="凌霄">
-                        <h4 class="">凌霄</h4>
-                        <p>新浪数据智能平台ELK服务，微博多媒体下载SRE负责人。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/sbq@2x.jpg" alt="宋兵强">
-                    <div class="caption">
-                        <h3 class="topic">ElasticSearch 在AdMaster社会化数据分析系统中的大规模实践</h3>
-                        <p class="summary">ElasticSearch 作为一个优秀的全文检索和实时数据分析系统，在大数据分析方面扮演着愈加重要的角色。 本文重点介绍其在AdMaster社会化数据分析系统中的大规模应用，涉及系统架构、大规模索引构建、分词处理、查询优化以及一些运维经验， 希望起到一个抛砖引玉的作用，呈现ElasticSearch在大数据数据分析处理方面的冰山一角。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/sbq.jpg" alt="宋兵强">
-                        <h4 class="">宋兵强</h4>
-                        <p>曾就职于百度基础架构部，现为AdMaster资深工程师， 负责社会化大数据研发。对分布式存储和计算系统有很强实践经验， 对大数据处理理解很深，研究方向为Hbase、Hadoop、Redis、ElasticSearch、MySql等系统。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/lbt@2x.jpg" alt="刘波涛">
-                    <div class="caption">
-                        <h3 class="topic">芒果TV ElasticSearch实践</h3>
-                        <p class="summary">1.芒果TV搜索方案选型(Sphinx->xapian-ES) 2.ES从0到1实践 3.ES在数据分析应用（nginx+kafak+logstash+ES）</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/lbt.jpg" alt="刘波涛">
-                        <h4 class="">刘波涛</h4>
-                        <p>负责芒果TV MPP(Mobile,PAD,PC)业务系统架构。ElasticSearch爱好者 09-11年 上海PPS网络公司 11年- 湖南卫视芒果TV。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/rcl@2x.jpg" alt="饶琛琳">
-                    <div class="caption">
-                        <h3 class="topic">{{more}} Kibana 4</h3>
-                        <p class="summary">Kibana开发组从去年4月开始重构新版，终于在今年发布了崭新的version 4.0。和version 3.1相比，从设计，操作，插件架构方面都有相当大的不同。 本次分享会跟大家聊聊Kibana4的新特性新用法，并以sankey实例，介绍在新版插件架构下，如何开发全新的visualize，server plugin等。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/rcl.jpg" alt="饶琛琳">
-                        <h4 class="">饶琛琳</h4>
-                        <p>新浪微博系统架构师，负责手机微博的自动化运维和数据分析体系建设。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/Medcl@2x.jpg" alt="Medcl">
-                    <div class="caption">
-                        <h3 class="topic">Analyzer101</h3>
-                        <p class="summary">Analyzer?分词器?Tokenizer?filter?这都什么鬼? 什么情况下用什么分词器,搜索的时候又该选用哪种查询,搜索性能和它又有啥关系?配置为什么老是不成功?这些问题让Medcl告诉你。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/Medcl.jpg" alt="Medcl">
-                        <h4 class="">Medcl</h4>
-                        <p>Elasticsearch爱好者, Elasticsearch中文社区发起人。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/zl@2x.jpg" alt="张磊">
-                    <div class="caption">
-                        <h3 class="topic">Elasticsearch应用在数据中心的实时协议分析和威胁检测</h3>
-                        <p class="summary">网络安全问题是当下数据中心产业共同面临的挑战，传统安全设备的组合很难灵活应对当下数据中心的大流量、 细粒度、高实时、以及定制化的分析需求。 本议题将解析：如何在实际流量10Gbps的网络环境下， 构建一套企业级的高实时网络威胁分析系统，结合Elasticsearch的大数据搜索平台，秒级发现DDOS流量、 应用层安全攻击、精准统计用户层协议流量、甚至提供业务层的行为审计与取证，并保持整套架构的线性可扩展能力。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/zl.jpg" alt="张磊">
-                        <h4 class="">张磊</h4>
-                        <p>BIGLog创始人，专注于大数据与信息安全结合的研究与实践。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img class="user-avatar-poster" src="../static/images/2015/speakers/jn@2x.jpg" alt="姜宁">
-                    <div class="caption">
-                        <h3 class="topic">像玩乐高积木一样开发 ElasticSearch 应用</h3>
-                        <p class="summary">如何将文本检索的利器 ElasticSearch 与其他应用进行集成，进而实现比较复杂的业务逻辑呢？ 这是大家在使用 ElasticSearch 时经常遇到的问题。Apache Camel 提供了消息路由引擎， 丰富的组件集成第三方应用以及企业应用集成模式DSL ， 可以让大家像使用乐高积木一样搭建复杂的应用系统。 本次讲座将介绍如何将 Camel 以及 ElasticSearch 集成在一起，让 ElasticSearch 应用开发变得像搭建乐高积木一样简单。</p>
-                    </div>
-                    <div class="user-brief">
-                        <img class="user-avatar" src="../static/images/2015/speakers/jn.jpg" alt="姜宁">
-                        <h4 class="">姜宁</h4>
-                        <p>OneAPM杰出工程师 姜宁,前红帽软件首席软件工程师，有十余年企业级开源中间件开发经验，有丰富的Java开发和使用经验， 函数式编程爱好者。从2006年开始一直从事Apache开源中间件项目的开发工作，先后参与Apache CXF、Apache ActiveMQ、 Apache Camel以及Apache ServiceMix的开发工作。2007年开始参与Apache Camel项目开发，目前是该项目的主要维护者， 对WebServices、Enterprise Integration Pattern、SOA、OSGi有比较深入的研究。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <!-- 嘉宾介绍 end -->
 <!-- 合作赞助 start -->
 <section id="partner" class="section bg-white partner">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">联合主办方 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
+                <h3 class="section-title">主办方</h3>
             </div>
         </div>
         <div class="row">
@@ -318,36 +117,18 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">合作伙伴 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
+                <h3 class="section-title">协办方 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-3">
                 <a class="partner-box ">
                     <div class="partner-blank">虚位以待</div>
-                    <!--<img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">-->
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">媒体支持 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <a class="partner-box ">
-                    <div class="partner-blank">虚位以待</div>
-                    <!--<img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">-->
                 </a>
             </div>
             <div class="col-sm-3">
                 <a class="partner-box ">
                     <div class="partner-blank">虚位以待</div>
-                    <!--<img alt="infq" border="0" src="http://www.gopherchina.org/static/images/partner/infoq.jpg" title="infq">-->
                 </a>
             </div>
         </div>
@@ -414,6 +195,28 @@
                 <a class="partner-box ">
                     <div class="partner-blank">虚位以待</div>
                     <!--<img alt="华为" border="0" src="http://2015.gopherchina.org/static/images/huawei.png" title="华为">-->
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">合作伙伴 <small>(<a target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">在线申请</a>)</small></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box ">
+                    <div class="partner-blank">虚位以待</div>
+                    <!--<img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">-->
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box ">
+                    <div class="partner-blank">虚位以待</div>
+                    <!--<img alt="七牛" border="0" src="http://2015.gopherchina.org/static/images/qiniu.jpg" title="七牛">-->
                 </a>
             </div>
         </div>
@@ -495,16 +298,6 @@
                     <span> google广告搜索部/搜索工程师 </span>
                 </div>
             </div>
-            <div class="col-md-3  col-sm-6 col-xs-12 ">
-                <div class="volunteer">
-                    <div class="image-holder">
-                        <img class="background-image" alt="Kai Yeow Yap" src="/static/images/default-avatar.png">
-                    </div>
-                    <span class="volunteer-name">Kai Yeow Yap</span>
-                    <span> Python / University of Tsukuba </span>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
@@ -581,25 +374,6 @@
 </section>
 <!-- 大会PPT end -->
 <!-- 直播 start -->
-<section id="live" class="section bg-white live">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <h3 class="section-title">直播</h3>
-            </div>
-            <div class="col-sm-7">
-                <p class="lead">第四届ES开发者大会<span class="curr-city">首页</span>站 趣看直播</p>
-                <div class="screen-wrap">
-                    <!--<iframe width="390" height="520" frameborder="0" src="http://www.quklive.com/q3/play?autoPlay=true&amp;uid_x=aHR0cDovL2hkbC1kLnF1a2xpdmUuY29tL2FjdGl2aXR5L2JwNDQ0NTA1OTA3NjM4MjE2NQ=="></iframe>-->
-                </div>
-                <p class="lead">
-                    <a target="_blank" href="http://www.quklive.com/q3/l/4445059076382165">视频回看1</a>
-                    <a target="_blank" href="http://www.quklive.com/q3/l/4445058858877095">视频回看2</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
 <!-- 直播 end -->
 <!-- 联系我们 start -->
 <section id="contact" class="section bg-white contact">
