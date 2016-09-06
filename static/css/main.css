@@ -38,6 +38,12 @@ a.elastic-logo span {
 .site-header.bj-2015 {
     background: url("../images/2015/gallery/2015001.jpg") no-repeat center center/cover;
 }
+
+.site-header.sh-2015 {
+    background: url("../images/2015/gallery/shanghai.JPG") no-repeat center center/cover;
+}
+
+
 .site-header.bj-2014 {
     background: url("../images/2014/bg/header.jpg") no-repeat center center/cover;
 }
