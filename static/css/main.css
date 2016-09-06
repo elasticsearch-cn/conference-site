@@ -233,13 +233,14 @@ h1, h2, h3, h4, h5, h6 {
 .conf-address {}
 
 .partner .partner-box {
-    display: block;
     opacity: 0.5;
     height: 150px;
     width: 150px;
     margin: 25px auto;
     -webkit-transition: 0.5s all linear;
     transition: 0.5s all linear;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 .partner .partner-box:hover {
