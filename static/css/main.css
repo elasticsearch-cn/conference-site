@@ -370,8 +370,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     width: 100%;
     min-height: 300px;
-    background: #000!important;
-    margin:15px 0;
+    margin:15px 0 40px 0;
+}
+
+.live .screen-wrap .video {
+    width: 100%;
+    min-height: 300px;
 }
 
 .map {
@@ -413,6 +417,12 @@ h1, h2, h3, h4, h5, h6 {
     .section-title {
         margin: 0 0 30px;
     }
+
+
+    .live .screen-wrap .video {
+        width: 660px;
+        height: 412px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -429,6 +439,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-custom .navbar-nav>.open>a, .navbar-custom .navbar-nav>.open>a:focus, .navbar-custom .navbar-nav>.open>a:hover {
         color: #777;
     }
+
 }
 
 @media (min-width: 768px) and (max-width:991px) {
