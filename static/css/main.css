@@ -83,7 +83,7 @@ a.elastic-logo span {
 
 .site-header .intro h2 {
     margin-top: 0px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -94,10 +94,11 @@ h1, h2, h3, h4, h5, h6 {
 .site-header .intro h1 {
     margin-top: 0px;
     font-size: 30px;
+    margin-bottom:20px;
 }
 
 .site-header .intro p {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 30px;
     font-weight: 300;
 }
@@ -416,6 +417,14 @@ h1, h2, h3, h4, h5, h6 {
     }
     .section-title {
         margin: 30px 0 30px;
+    }
+
+    .site-header .intro h2 {
+        font-size: 25px;
+    }
+
+    .site-header .intro p {
+        font-size: 20px;
     }
 
 
