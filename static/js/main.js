@@ -2,7 +2,11 @@
  * Created by shiyang on 16/5/8.
  */
 
+//begin include third-party js
 
+document.writeln('<script language="javascript" charset="utf-8" src="google-analytics.js"></script>');
+
+//end include third-party js
 $(window).scroll(function(){
     handleTopNavAnimation();
 });
