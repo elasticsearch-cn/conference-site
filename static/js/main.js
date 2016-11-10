@@ -4,7 +4,7 @@
 
 //begin include third-party js
 
-document.writeln('<script language="javascript" charset="utf-8" src="google-analytics.js"></script>');
+document.writeln('<script language="javascript" charset="utf-8" src="/static/js/google-analytics.js"></script>');
 
 //end include third-party js
 $(window).scroll(function(){

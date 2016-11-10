@@ -210,7 +210,8 @@ h1, h2, h3, h4, h5, h6 {
 .speaker {}
 
 .speaker .thumbnail {
-    min-height: 465px;
+    /*min-height: 465px;*/
+    min-height: 535px;
 }
 
 .speaker .thumbnail .user-avatar-poster {
