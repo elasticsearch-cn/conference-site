@@ -207,6 +207,11 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.schedule {}
+.schedule .date-col{
+    display: none;
+}
+
 .speaker {}
 
 .speaker .thumbnail {
@@ -431,6 +436,9 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 20px;
     }
 
+    .schedule .date-col{
+        display:table-cell;
+    }
 
     .live .screen-wrap .video {
         width: 660px;
