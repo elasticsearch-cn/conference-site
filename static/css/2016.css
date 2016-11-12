@@ -35,22 +35,6 @@ a.elastic-logo span {
     background: url("../images/2016/bg/header_2016.jpg") no-repeat center center/cover;
 }
 
-.site-header.bj-2015 {
-    background: url("../images/2015/gallery/2015001.jpg") no-repeat center center/cover;
-}
-
-.site-header.sh-2015 {
-    background: url("../images/2015/gallery/shanghai.JPG") no-repeat center center/cover;
-}
-.site-header.cd-2015 {
-    background: url("../images/2015/gallery/chengdou.JPG") no-repeat center center/cover;
-}
-
-
-.site-header.bj-2014 {
-    background: url("../images/2014/gallery/p17.jpeg") no-repeat center center/cover;
-}
-
 .valign-center {
     display: -webkit-box;
     display: -webkit-flex;
@@ -210,6 +194,72 @@ h1, h2, h3, h4, h5, h6 {
 .schedule {}
 .schedule .date-col{
     display: none;
+}
+
+.speaker-brief-topic {}
+.speaker-brief-topic  .speaker-brief .thumbnail{
+    border: 0;
+    margin-bottom: 40px;
+}
+.speaker-brief-topic .speaker-brief .thumbnail .caption{
+    min-height: 160px;
+}
+.speaker-brief-topic .speaker-brief .avatar{
+    width: 100%;
+    max-width: 230px;
+}
+.speaker-brief-topic .speaker-brief .name{
+    text-align: center;
+}
+.speaker-brief-topic .speaker-brief .brief{}
+.speaker-brief-topic .speaker-brief .brief .p {
+    text-indent: 2em;
+}
+
+.speaker-brief-topic .speaker-brief .brief .hide-text {
+    display: none;
+}
+
+.speaker-brief-topic .speaker-topic .thumbnail {
+    border-top:4px solid #246baf;
+}
+
+.speaker-brief-topic .speaker-topic .thumbnail .media{
+    margin: 15px 0;
+}
+
+.speaker-brief-topic .speaker-topic .thumbnail .media .media-heading{
+    font-size: 16px;
+}
+
+.speaker-brief-topic .speaker-topic .avatar{
+    width: 64px;
+    height: 64px;
+}
+
+.speaker-brief-topic .speaker-topic .topic {
+    text-align: center;
+    color: #246baf;
+    font-size: 22px;
+    font-weight: 400;
+    padding:10px 0;
+}
+
+.speaker-brief-topic .speaker-topic .by-speaker {
+    text-align: right;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+.speaker-brief-topic .speaker-topic .summary .p{
+    text-indent: 2em;
+}
+
+.speaker-brief-topic .speaker-topic .caption{
+    min-height: 150px;
 }
 
 .speaker {}
