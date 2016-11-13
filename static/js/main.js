@@ -70,6 +70,19 @@ function getCurrPage(url) {
     return null;
 }
 
+/**
+ * 延时N秒自动触发:批量更新指定容器的所有图片src
+ * fix lazyload.js not work and bootstrap carousel only show first image
+ *
+ */
+function lazyCarouselImg() {
+    setTimeout(function(){
+        $('.carousel-inner img.lazy').each(function(){
+            $(this).attr('src', $(this).attr('data-original'));
+        });
+    }, 5000);
+}
+
 $(function(){
     /**
      * 关闭弹出层
