@@ -212,11 +212,20 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 .speaker-brief-topic .speaker-brief .brief{}
+
 .speaker-brief-topic .speaker-brief .brief .p {
     text-indent: 2em;
 }
 
-.speaker-brief-topic .speaker-brief .brief .hide-text {
+.speaker-brief-topic .speaker-brief .brief span {
+    color:#333;
+}
+
+.speaker-brief-topic .speaker-brief .brief .tmp-placeholder {
+    display: none;
+}
+
+.speaker-brief-topic .speaker-brief .brief .show-all {
     display: none;
 }
 
@@ -337,16 +346,19 @@ h1, h2, h3, h4, h5, h6 {
 .team {}
 
 .team .volunteer {
-    margin-bottom: 36px;
+    margin-bottom: 15px;
     position: relative;
-    overflow: hidden;
 }
 
 .team .volunteer img{
-    width: 100%;
+    max-width: 100%;
 }
 
-.team .volunteer span {
+.team .volunteer .brief{
+    min-height: 70px;
+}
+
+.team .volunteer .brief span {
     display: block;
     font-size: 14px;
     color:#777777;
@@ -357,6 +369,12 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     overflow: hidden;
 }
+
+.team .volunteer .image-holder .avatar{
+    width: 100%;
+    max-width: 230px;
+}
+
 
 .team .volunteer .image-holder:hover .hover-state{
     opacity:1;
@@ -370,6 +388,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .team .volunteer .volunteer-name {
     color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
 }
 
 .team .volunteer .hover-state {
@@ -497,6 +518,21 @@ h1, h2, h3, h4, h5, h6 {
         width: 660px;
         height: 412px;
     }
+
+
+    .speaker-brief-topic .speaker-brief .brief .hide-text {
+        display: none;
+    }
+
+
+    .speaker-brief-topic .speaker-brief .brief .tmp-placeholder {
+        display: inline;
+    }
+
+    .speaker-brief-topic .speaker-brief .brief .show-all {
+        display: inline;
+    }
+
 }
 
 @media (max-width: 767px) {
