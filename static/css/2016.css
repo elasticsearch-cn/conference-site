@@ -197,6 +197,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .speaker-brief-topic {}
+
+.speaker-brief-topic  .speaker-brief .thumbnail:hover {
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
 .speaker-brief-topic  .speaker-brief .thumbnail{
     border: 0;
     margin-bottom: 40px;
@@ -231,6 +236,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .speaker-brief-topic .speaker-topic .thumbnail {
     border-top:4px solid #246baf;
+}
+
+.speaker-brief-topic .speaker-topic .thumbnail:hover {
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
 }
 
 .speaker-brief-topic .speaker-topic .thumbnail .media{
@@ -310,9 +319,40 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
 }
 
+.sponsor {}
+.personal-sponsorship {
+    margin-top:10px;
+}
+.personal-sponsorship a{text-decoration:none;}
+.personal-sponsorship a:link{text-decoration:none;}
+.personal-sponsorship a:visited{text-decoration:none;}
+.personal-sponsorship a:hover{text-decoration:none;}
+.personal-sponsorship a:active{text-decoration:none;}
+.personal-sponsorship a {
+    cursor: pointer;
+    display: inline-block;
+    color:rgba(0,0,0,.6);
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 80px;
+    text-align: center;
+    vertical-align: baseline;
+    text-transform: none;
+    background: #E8E8E8;
+    padding: 4px 8px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.personal-sponsorship a:hover {
+    background-color: #E0E0E0;
+    border-color: #E0E0E0;
+    color: rgba(0,0,0,.8);
+}
+
+
 .partner .partner-box {
     opacity: 0.5;
-    height: 150px;
+    height: 100px;
     width: 150px;
     margin: 25px auto;
     -webkit-transition: 0.5s all linear;
