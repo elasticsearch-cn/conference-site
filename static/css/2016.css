@@ -383,6 +383,10 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid lightblue;
 }
 
+.partner .title-mt {
+    margin-top: 60px;
+}
+
 .team {}
 
 .team .volunteer {
