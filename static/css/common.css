@@ -13,6 +13,12 @@ p {
 
 }
 
+.clear-link a{text-decoration:none;}
+.clear-link a:link{text-decoration:none;}
+.clear-link a:visited{text-decoration:none;}
+.clear-link a:hover{text-decoration:none;}
+.clear-link a:active{text-decoration:none;}
+
 .icon.icon-weibo {
     background: white  url("../images/logo/weibo-logo-48x48.png") no-repeat center;
     background-size: auto 80%;

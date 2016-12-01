@@ -320,14 +320,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sponsor {}
+
 .personal-sponsorship {
     margin-top:10px;
 }
-.personal-sponsorship a{text-decoration:none;}
-.personal-sponsorship a:link{text-decoration:none;}
-.personal-sponsorship a:visited{text-decoration:none;}
-.personal-sponsorship a:hover{text-decoration:none;}
-.personal-sponsorship a:active{text-decoration:none;}
+
 .personal-sponsorship a {
     cursor: pointer;
     display: inline-block;
