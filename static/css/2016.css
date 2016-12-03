@@ -207,11 +207,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 40px;
 }
 .speaker-brief-topic .speaker-brief .thumbnail .caption{
-    min-height: 160px;
+    min-height: 250px;
 }
 .speaker-brief-topic .speaker-brief .avatar{
     width: 100%;
     max-width: 230px;
+    min-height: 230px;
 }
 .speaker-brief-topic .speaker-brief .name{
     text-align: center;

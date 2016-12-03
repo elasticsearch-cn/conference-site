@@ -10,7 +10,7 @@
     <meta name="renderer" content="webkit">
     <meta name="keywords" content="Elastic 中国大会 2016,Elastic,ES,ES大会 Elastic Stack，ELK，elasticsearch、logstash、kibana、beats等相关技术交流探讨">
     <meta name="description" content="Elastic 中国大会 2016,Elastic,ES,ES大会 Elastic Stack，ELK，elasticsearch、logstash、kibana、beats等相关技术交流探讨">
-    <link rel="shortcut icon" type="image/png" href="/static/images/logo/elastic-logo-32x32.jpg">
+    <link rel="shortcut icon" type="image/png" href="/static/images/logo/elastic-logo-32x32.png">
 
     <title>Elastic 中国开发者大会 2016</title>
 
@@ -177,7 +177,7 @@
                 </tr>
                 <tr>
                     <td>17:40-18:10</td>
-                    <td>杨永辉@美团   《美团日志收集和日志分析平台》</td>
+                    <td>高攀@百度   《Baidu对Elasticsearch的优化改进》</td>
                 </tr>
                 <tr>
                     <td>18:10-18:25</td>
@@ -307,13 +307,11 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img class=" img-circle img-responsive avatar" src="/static/images/2016/speakers/yyh.jpg" alt="杨永辉">
+                    <img class=" img-circle img-responsive avatar" src="/static/images/2016/speakers/gp.jpg" alt="高攀">
                     <div class="caption">
-                        <h3 class="name">杨永辉</h3>
+                        <h3 class="name">高攀</h3>
                         <div class="brief">
-                            <div class="p">11年毕业于中科院自动化所（计算机应用硕士） 11年到15年在阿里巴巴工作，先后从事搜索和广告相关的事情。</div>
-                            <div class="p">15年7月加入美团数据平台，负责数据收集通道的建设，包括日志收集、DB业务库收集、Kafka数据分发层、ES实时数据分析等相关系统。</div>
-                            <div class="p">期间我们开发了自己的日志收集agent、并针对大数据场景对Kafka进行定制开发，目前在积极最近公司ES平台的建设和推广。</div>
+                            <div class="p">百度大数据部高级工程师，专注OLAP、OLTP大数据分析处理技术，负责百度Elasticsearch的开发与维护。</div>
                         </div>
                     </div>
                 </div>
@@ -699,20 +697,25 @@
                             <div class="col-sm-4 col-md-3">
                                 <div class="media">
                                     <div class="pull-left">
-                                        <img class=" avatar" src="/static/images/2016/speakers/yyh.jpg" alt="杨永辉">
+                                        <img class=" avatar" src="/static/images/2016/speakers/gp.jpg" alt="高攀">
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="media-heading">杨永辉</h4>
-                                        <div>美团,数据收集通道负责人</div>
+                                        <h4 class="media-heading">高攀</h4>
+                                        <div>百度,大数据部高级工程师</div>
                                         <div><em>17:40-18:10</em></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-8 col-md-9">
-                                <div class="topic">美团日志收集和日志分析平台</div>
+                                <div class="topic">Baidu对Elasticsearch的优化改进</div>
                                 <div class="summary">
-                                    <div class="p">主要介绍美团整个数据收集通道和日志分析平台建设。</div>
-                                    <div class="p">包括自研的日志采集agent支持sockek和文件两种收集方案、统一的日志格式规范、binlog收集、Kafka的监控平台、针对大数据量场景对kafka做的定制优化、为解决业务日志debug和trace的统一日志中心（ES）、公司统一数据检索平台（ES）的建设等。</div>
+                                    <div class="p">介绍百度版本Elasticsearch的多项重大改进:</div>
+                                    <div class="p">1、增加分布式SQL查询层，兼容MySQL协议</div>
+                                    <div class="p">2、增加权限管理系统</div>
+                                    <div class="p">3、支持online schema change</div>
+                                    <div class="p">4、引入DistributedLog解决脑裂和数据一致性问题</div>
+                                    <div class="p">5、支持跨机房数据同步</div>
+                                    <div class="p">6、支持多租户资源隔离</div>
                                 </div>
                             </div>
                         </div>
