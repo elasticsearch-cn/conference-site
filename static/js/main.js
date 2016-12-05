@@ -89,8 +89,9 @@ $(function(){
      */
     $('#layer-shade').on('click', function(){
         $(this).css('display','none');
-        $('#layer').css('display','none');
+        $('.layer').css('display','none');
     });
+
 
     //回到顶部
     $(".right-tool").on("click",'.go-top', function(){
@@ -107,6 +108,11 @@ $(function(){
     }).on("mouseout",'.share-qrcode', function(){
         $(this).children('.text').hide();
         $(this).children('.img').show();
+    });
+
+    $(".show-live-url").on("click", function(){
+        $('#layer-shade').show();
+        $('#layer-elastic-cn').show();
     });
 
     $(window).scroll(function(){

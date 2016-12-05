@@ -62,7 +62,7 @@ p {
 }
 
 
-#layer-shade {
+#layer-shade,#layer-elastic-cn {
     display: none;
 }
 .layer-shade {
@@ -97,8 +97,17 @@ p {
     text-align: center;
 }
 
+.show-qrcode .layer-content.no-padding{
+    padding: 10px;
+}
+
 .layer-content .qrcode {
     width: 200px;
+    min-height: 240px;
+}
+
+.layer-content.no-padding .qrcode {
+    width: 220px;
     min-height: 240px;
 }
 
