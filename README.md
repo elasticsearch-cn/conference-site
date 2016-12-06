@@ -1,2 +1,2 @@
-# escc-web v2.2.4
+# escc-web v2.2.5
 Elastic 中国开发者大会 官方网站
