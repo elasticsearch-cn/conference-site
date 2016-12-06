@@ -65,6 +65,12 @@
         <h1>Elastic 中国开发者大会 2016</h1>
         <h2>2016-12-10 08:00 至 2016-12-10 18:00  周六 </h2>
         <h2>北京海淀区中关村皇冠假日酒店，北京，中国</h2>
+        <div class="countdown">
+            <div class="tips">距离大会开幕还剩余</div>
+            <span id="clock"></span>
+            <!--<span id="clock"><span>3</span> 天 <span>08</span> 小时 <span>59</span> 分钟 <span>18</span> 秒</span>-->
+        </div>
+
         <!--<a type="button" class="btn btn-success btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">赞助商合作</a>-->
         <!--<a type="button" class="btn btn-success btn-lg" target="_blank" href="http://event.3188.la/460820612/">购买门票</a>-->
         <!--<a type="button" class="btn btn-success btn-lg show-live-url" target="_blank" href="javascript:void(0)">视频直播</a>-->
@@ -859,6 +865,10 @@
                     <li class="personal-sponsorship clear-link"><a >王晓阳</a></li>
                     <li class="personal-sponsorship clear-link"><a >高永超</a></li>
                     <li class="personal-sponsorship clear-link"><a >朱雪寒</a></li>
+                    <li class="personal-sponsorship clear-link"><a >陈磊</a></li>
+                    <li class="personal-sponsorship clear-link"><a >滕常龙</a></li>
+                    <li class="personal-sponsorship clear-link"><a >殷冰涛</a></li>
+                    <li class="personal-sponsorship clear-link"><a >陈泽云</a></li>
                 </ul>
             </div>
         </div>
@@ -1062,7 +1072,6 @@
                 <address>
                     <p>地铁:海淀黄庄地铁站C1出口向东350米</p>
                 </address>
-                <a type="button" class="btn btn-success btn-lg go-ticket" target="_blank" href="http://event.3188.la/460820612/">购买门票</a>
             </div>
             <div class="col-sm-9">
                 <div class="map" id="mapContainer"></div>
@@ -1134,8 +1143,10 @@
 
 <script src="/static/bootstrap/js/jquery.min.js"></script>
 <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/plugins/jquery.countdown.min.js"></script>
 <script src="/static/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 <script src="/static/js/main.js"></script>
+<script src="/static/js/date-util.js"></script>
 <script>
     $(function(){
         //展开,查看全部
@@ -1143,7 +1154,36 @@
             $(this).hide();
             $(this).parents('.brief').find(".tmp-placeholder").hide();
             $(this).parents('.brief').find(".hide-text").show();
-        })
+        });
+
+        // 大会倒计时控制逻辑
+        var startDateStr = "2016-12-10 08:00:00";
+        var now = new Date();
+        var date = new Date(startDateStr);
+        date.add('h', 10);
+        if(now > date) {
+            $('#clock').html('大会已结束!').parent().find('.tips').hide();
+        } else {
+            $('#clock').countdown(startDateStr)
+                    .on('update.countdown', function(event) {
+                        var format = '<span>%H</span> 小时 <span>%M</span> 分钟 <span>%S</span> 秒';
+                        if(event.offset.totalDays > 0) {
+                            format = '<span>%-d</span> 天 ' + format;
+                        }
+                        if(event.offset.weeks > 0) {
+                            format = '<span>%-w</span> 周 ' + format;
+                        }
+                        $(this).html(event.strftime(format));
+                    })
+                    .on('finish.countdown', function(event) {
+                        $(this).html('大会正在进行中...')
+                                .parent().addClass('disabled')
+                                .find('.tips').hide();
+
+                    });
+        }
+
+
     })
 </script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4&s=1"></script>

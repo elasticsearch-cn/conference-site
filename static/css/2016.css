@@ -510,6 +510,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact {}
 
+.countdown {
+    min-height: 100px;
+    margin-top: 8%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+.countdown .tips{
+    font-size: 1.2em;
+}
+#clock {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+}
+
+#clock span {
+    display: inline-block;
+    font-size: 2.8em;
+    color: white;
+    padding: 0 2px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
 .footer {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -575,6 +602,21 @@ h1, h2, h3, h4, h5, h6 {
         display: inline;
     }
 
+    .countdown{
+        padding: 10px 30px;
+    }
+    .countdown .tips{
+        font-size: 1.6em;
+    }
+    #clock {
+        font-size: 1.5em;
+    }
+
+    #clock span {
+        font-size: 4em;
+        padding:0 10px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -591,7 +633,6 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-custom .navbar-nav>.open>a, .navbar-custom .navbar-nav>.open>a:focus, .navbar-custom .navbar-nav>.open>a:hover {
         color: #777;
     }
-
 }
 
 @media (min-width: 768px) and (max-width:991px) {
