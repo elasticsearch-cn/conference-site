@@ -1166,7 +1166,7 @@
         } else {
             $('#clock').countdown(startDateStr)
                     .on('update.countdown', function(event) {
-                        var format = '<span>%H</span> 小时 <span>%M</span> 分钟 <span>%S</span> 秒';
+                        var format = '<span>%H</span> 时 <span>%M</span> 分 <span>%S</span> 秒';
                         if(event.offset.totalDays > 0) {
                             format = '<span>%-d</span> 天 ' + format;
                         }
