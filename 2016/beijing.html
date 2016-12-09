@@ -72,8 +72,10 @@
 
         <!--<a type="button" class="btn btn-success btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">赞助商合作</a>-->
         <!--<a type="button" class="btn btn-success btn-lg" target="_blank" href="http://event.3188.la/460820612/">购买门票</a>-->
-        <!--<a type="button" class="btn btn-success btn-lg show-live-url" target="_blank" href="javascript:void(0)">视频直播</a>-->
-        <!--<a type="button" class="btn btn-success btn-lg show-live-url" target="_blank" href="javascript:void(0)">摄影直播</a>-->
+        <div class="show-live" style="display: none;">
+            <a type="button" class="btn btn-success btn-lg show-live-url" target="_blank" href="javascript:void(0)">视频直播</a>
+            <a type="button" class="btn btn-success btn-lg show-live-url" target="_blank" href="javascript:void(0)">摄影直播</a>
+        </div>
     </div>
 </header>
 <!-- 首页大图 end -->
@@ -1159,11 +1161,13 @@
 
         // 大会倒计时控制逻辑
         var startDateStr = "2016-12-10 08:00:00";
+
         var now = new Date();
         var date = new Date(startDateStr);
         date.add('h', 10);
         if(now > date) {
             $('#clock').html('大会已结束!').parent().find('.tips').hide();
+            $(".show-live").hide();
         } else {
             $('#clock').countdown(startDateStr)
                     .on('update.countdown', function(event) {
@@ -1180,6 +1184,7 @@
                         $(this).html('大会正在进行中...')
                                 .parent().addClass('disabled')
                                 .find('.tips').hide();
+                        $(".show-live").show();
 
                     });
         }
