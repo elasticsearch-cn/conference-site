@@ -65,17 +65,20 @@
         <h1>Elastic 中国开发者大会 2016</h1>
         <h2>2016-12-10 08:00 至 2016-12-10 18:00  周六 </h2>
         <h2>北京海淀区中关村皇冠假日酒店，北京，中国</h2>
-        <div class="countdown">
-            <div class="tips">距离大会开幕还剩余</div>
-            <span id="clock"></span>
+        <!--<div class="countdown">-->
+            <!--<div class="tips">距离大会开幕还剩余</div>-->
+            <!--<span id="clock"></span>-->
+        <!--</div>-->
+        <div class="countdown" style="min-height: 40px;line-height: 40px;">
+            <div class="tips">大会已结束!</div>
         </div>
 
         <!--<a type="button" class="btn btn-success btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/nECSP4">赞助商合作</a>-->
         <!--<a type="button" class="btn btn-success btn-lg" target="_blank" href="http://event.3188.la/460820612/">购买门票</a>-->
-        <div class="show-live" style="display: none;">
-            <a type="button" class="btn btn-success btn-lg show-live-url" target="_blank" href="javascript:void(0)">视频直播</a>
-            <a type="button" class="btn btn-success btn-lg show-live-url" target="_blank" href="javascript:void(0)">摄影直播</a>
-        </div>
+        <!--<div class="show-live" style="display: none;">-->
+            <!--<a type="button" class="btn btn-success btn-lg show-live-url" target="_blank" href="javascript:void(0)">视频直播</a>-->
+            <!--<a type="button" class="btn btn-success btn-lg show-live-url" target="_blank" href="javascript:void(0)">摄影直播</a>-->
+        <!--</div>-->
     </div>
 </header>
 <!-- 首页大图 end -->
@@ -317,15 +320,17 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img class=" img-circle img-responsive avatar" src="/static/images/2016/speakers/gp.jpg" alt="高攀">
+                    <img class=" img-circle img-responsive avatar" src="/static/images/2016/speakers/lxh.jpg" alt="李学辉">
                     <div class="caption">
-                        <h3 class="name">高攀</h3>
+                        <h3 class="name">李学辉</h3>
                         <div class="brief">
-                            <div class="p">百度大数据部高级工程师，专注OLAP、OLTP大数据分析处理技术，负责百度Elasticsearch的开发与维护。</div>
+                            <div class="p">瀚思安信技术总监，Apache CloudStack Committer， CloudStack 中国社区创办人；曾发起并合作编写《CloudStack 入门指南》。HCAHD（Hortonworks Hadoop 2.0）认证开发者及管理员。目前主要从事大数据金融安全方向的研究和产品开发。</div>
+                            <div class="p">平时爱好：各种球类，会不会玩都喜欢；喜欢动漫；近半年喜欢跑步，游泳。</div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="thumbnail">
                     <img class=" img-circle img-responsive avatar" src="/static/images/2016/speakers/lzw.jpg" alt="李振炜">
@@ -368,6 +373,17 @@
                             <div class="p">目前加入趋势科技（中国）南京研发中心，任职高级研发工程师，从事移动安全专家系统开发工作。目标是打造一套业界top one的海量移动病毒分析侦测平台。</div>
                             <div class="p">目前我们team主要从事对Android/ios/Mac平台的病毒样本分析研究工作，作为工程团队的我们，主要致力于提供一套分布式移动病毒分析，侦测系统。并且在探索构建一套基于Elasticsearch的<span class="tmp-placeholder">......</span><a class="show-all" href="javascript:void(0)">查看全部</a><span class="hide-text">规则引擎系统，旨在为公司提供一套病毒分析，检索，情报收集的基础平台。</span></div>
                             <div class="p hide-text">同时，我们team也在探索将service容器化，尝试使用基于Microservice的交互架构，并尝试将Kubernetes应用于Docker实例的管理，以充分利用服务器资源和配置隔离。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img class=" img-circle img-responsive avatar" src="/static/images/2016/speakers/gp.jpg" alt="高攀">
+                    <div class="caption">
+                        <h3 class="name">高攀</h3>
+                        <div class="brief">
+                            <div class="p">百度大数据部高级工程师，专注OLAP、OLTP大数据分析处理技术，负责百度Elasticsearch的开发与维护。</div>
                         </div>
                     </div>
                 </div>
@@ -1160,34 +1176,34 @@
         });
 
         // 大会倒计时控制逻辑
-        var startDateStr = "2016-12-10 08:00:00";
-
-        var now = new Date();
-        var date = new Date(startDateStr);
-        date.add('h', 10);
-        if(now > date) {
-            $('#clock').html('大会已结束!').parent().find('.tips').hide();
-            $(".show-live").hide();
-        } else {
-            $('#clock').countdown(startDateStr)
-                    .on('update.countdown', function(event) {
-                        var format = '<span>%H</span> 时 <span>%M</span> 分 <span>%S</span> 秒';
-                        if(event.offset.totalDays > 0) {
-                            format = '<span>%-d</span> 天 ' + format;
-                        }
-                        if(event.offset.weeks > 0) {
-                            format = '<span>%-w</span> 周 ' + format;
-                        }
-                        $(this).html(event.strftime(format));
-                    })
-                    .on('finish.countdown', function(event) {
-                        $(this).html('大会正在进行中...')
-                                .parent().addClass('disabled')
-                                .find('.tips').hide();
-                        $(".show-live").show();
-
-                    });
-        }
+//        var startDateStr = "2016-12-10 08:00:00";
+//
+//        var now = new Date();
+//        var date = new Date(startDateStr);
+//        date.add('h', 10);
+//        if(now > date) {
+//            $('#clock').html('大会已结束!').parent().find('.tips').hide();
+//            $(".show-live").hide();
+//        } else {
+//            $('#clock').countdown(startDateStr)
+//                    .on('update.countdown', function(event) {
+//                        var format = '<span>%H</span> 时 <span>%M</span> 分 <span>%S</span> 秒';
+//                        if(event.offset.totalDays > 0) {
+//                            format = '<span>%-d</span> 天 ' + format;
+//                        }
+//                        if(event.offset.weeks > 0) {
+//                            format = '<span>%-w</span> 周 ' + format;
+//                        }
+//                        $(this).html(event.strftime(format));
+//                    })
+//                    .on('finish.countdown', function(event) {
+//                        $(this).html('大会正在进行中...')
+//                                .parent().addClass('disabled')
+//                                .find('.tips').hide();
+//                        $(".show-live").show();
+//
+//                    });
+//        }
 
 
     })
