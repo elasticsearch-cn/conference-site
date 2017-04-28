@@ -1,7 +1,7 @@
 Elastic 中国开发者大会 网站更新日志
 
-v0.2.2-master (released 2017-04-28):
-大会官网第二版(v0.2.2)对外发布
+v2.4-master (released 2017-04-28):
+大会官网第二版(v2.4)对外发布
 1.新增大会精彩视频和图片等资料
 contributors:
 medcl(medcl@elastic.co)
