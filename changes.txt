@@ -1,13 +1,8 @@
 Elastic 中国开发者大会 网站更新日志
 
-v0.1-master (released 2015-10-16):
-大会官网第一版发布
-contributors:
-medcl(medcl@elastic.co)
-thanq(thanq1@gmail.com)
-
-v0.2-dev (released 2016-09-07):
-大会官网第二版demo
+v0.2.2-master (released 2017-04-28):
+大会官网第二版(v0.2.2)对外发布
+1.新增大会精彩视频和图片等资料
 contributors:
 medcl(medcl@elastic.co)
 liaosy(lsy8921@gmail.com)
@@ -17,3 +12,9 @@ v0.2.1-master (released 2016-09-07):
 contributors:
 medcl(medcl@elastic.co)
 liaosy(lsy8921@gmail.com)
+
+v0.1-master (released 2015-10-16):
+大会官网第一版发布
+contributors:
+medcl(medcl@elastic.co)
+thanq(thanq1@gmail.com)

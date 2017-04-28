@@ -32,7 +32,7 @@ a.elastic-logo span {
 }
 
 .site-header.bj-2016 {
-    background: url("../images/2016/bg/header_2016.jpg") no-repeat center center/cover;
+    background: url("../images/2016/bg/bg_header_2016.jpg") no-repeat center center/cover;
 }
 
 .valign-center {
@@ -53,7 +53,7 @@ a.elastic-logo span {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .site-header .intro {
