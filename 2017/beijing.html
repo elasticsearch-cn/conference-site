@@ -57,8 +57,8 @@ Elastic 由 Benchmark Capital、Index Ventures 及 NEA 投资，总部位于阿�
 <header id="site-header" class="site-header bj-2017 valign-center">
     <div class="intro">
         <h1>Elastic 中国开发者大会 2017</h1>
-        <h2>2017-08 <small>(具体日期待定)</small> </h2>
-        <h2>中国, 北京 <small>(具体地址待定)</small></h2>
+        <h2>2017-08</h2>
+        <h2>中国, 北京</h2>
 
         <a type="button" class="btn btn-success btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/iKID9SE">演讲者申请</a>
     </div>
@@ -85,14 +85,14 @@ Elastic 由 Benchmark Capital、Index Ventures 及 NEA 投资，总部位于阿�
 </footer>
 <!-- 底部 end -->
 
-<div id="layer-elastic-cn" class="layer show-qrcode layer-anim">
-    <div class="layer-content no-padding">
-        <div class="qrcode">
-            <img src="/static/images/qrcode_for_elasticsearch_cn_weixin.jpg">
-            <div class="des">微信关注"Elastic中文社区"公众号,获取直播地址</div>
-        </div>
-    </div>
-</div>
+<!--<div id="layer-elastic-cn" class="layer show-qrcode layer-anim">-->
+    <!--<div class="layer-content no-padding">-->
+        <!--<div class="qrcode">-->
+            <!--<img src="/static/images/qrcode_for_elasticsearch_cn_weixin.jpg">-->
+            <!--<div class="des">微信关注"Elastic中文社区"公众号,获取直播地址</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
 <!-- 右侧悬浮小工具 start -->
 <!--<div id="layer-shade" class="layer-shade opacity"></div>-->
@@ -125,11 +125,11 @@ Elastic 由 Benchmark Capital、Index Ventures 及 NEA 投资，总部位于阿�
 <script>
     $(function(){
         //展开,查看全部
-        $(".speaker-brief-topic .brief").on('click', '.show-all', function(){
-            $(this).hide();
-            $(this).parents('.brief').find(".tmp-placeholder").hide();
-            $(this).parents('.brief').find(".hide-text").show();
-        });
+//        $(".speaker-brief-topic .brief").on('click', '.show-all', function(){
+//            $(this).hide();
+//            $(this).parents('.brief').find(".tmp-placeholder").hide();
+//            $(this).parents('.brief').find(".hide-text").show();
+//        });
 
         // 大会倒计时控制逻辑
 //        var startDateStr = "2016-12-10 08:00:00";
@@ -164,24 +164,24 @@ Elastic 由 Benchmark Capital、Index Ventures 及 NEA 投资，总部位于阿�
 
     })
 </script>
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4&s=1"></script>
-<script type="text/javascript">
+<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4&s=1"></script>-->
+<!--<script type="text/javascript">-->
 
-    var map = new BMap.Map("mapContainer");
+    <!--var map = new BMap.Map("mapContainer");-->
 
-    var point = new BMap.Point(116.329609,39.981415);
+    <!--var point = new BMap.Point(116.329609,39.981415);-->
 
-    map.centerAndZoom(point, 15);
+    <!--map.centerAndZoom(point, 15);-->
 
-    map.addControl(new BMap.NavigationControl());
+    <!--map.addControl(new BMap.NavigationControl());-->
 
-    map.addControl(new BMap.ScaleControl());
-    map.addControl(new BMap.OverviewMapControl());
+    <!--map.addControl(new BMap.ScaleControl());-->
+    <!--map.addControl(new BMap.OverviewMapControl());-->
 
-    var marker = new BMap.Marker(point);
+    <!--var marker = new BMap.Marker(point);-->
 
-    map.addOverlay(marker);
+    <!--map.addOverlay(marker);-->
 
-</script>
+<!--</script>-->
 </body>
 </html>
