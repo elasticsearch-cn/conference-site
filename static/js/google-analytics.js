@@ -8,3 +8,12 @@
 
 ga('create', 'UA-86815857-1', 'auto');
 ga('send', 'pageview');
+
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f8350ce45522ff3e567678b37f7c5599";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
