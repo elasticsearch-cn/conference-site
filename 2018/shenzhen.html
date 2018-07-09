@@ -15,6 +15,69 @@
     <link href="../static/css/2018.css" rel="stylesheet">
     <link href="../static/css/common.css" rel="stylesheet">
 
+
+<style type="text/css">
+
+.vidbacking-active-body-back{
+    position: fixed;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 1;
+    transition: 2s opacity;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.vidbacking-active-block-back{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.vidbacking{
+    display: none;
+}
+.vidmask-body-back{
+    background: url(videooverlay1.png) repeat;
+    opacity: 0.4;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -50;
+    display: block;
+}
+.vidmask-block-back{
+    background: url(videooverlay1.png) repeat;
+    opacity: 1;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: auto;
+    z-index: -50;
+    display: block;
+}
+
+.video-back{display:block;padding:200px 0px;text-align:center;}
+.video-back h1{display:block;text-align:center;color:#fff;text-shadow:2px 2px 4px #000;font-size:50px;}
+.video-back p{display:block;color:#fff;text-shadow:2px 2px 1px #000;margin:0px;padding:0px;margin-bottom:20px;}
+.video-back img{width:150px;}
+</style>
+
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -36,11 +99,14 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
+                <li><a data-scroll href="#intro">大会介绍</a></li>
+
                 <!-- <li><a data-scroll href="#schedule">会议日程</a></li> -->
                 <!-- <li><a data-scroll href="#speaker">嘉宾介绍</a></li> -->
-                <!-- <li><a data-scroll href="#conf-address">会议地址</a></li> -->
                 <li><a data-scroll href="#contact">合作联系</a></li>
                 <!-- <li><a href="#">购买门票</a></li> -->
+                <li><a data-scroll href="#conf-address">会议地址</a></li>
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="history-conf"></span>往届 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -58,7 +124,7 @@
 <header id="site-header" class="site-header sz-2018 valign-center">
     <div class="intro">
         <h1>Elastic 中国开发者大会 2018</h1>
-        <h2>2018-11-09 13:00至 2018-11-10 18:00</h2>
+        <h2>2018-11-10 13:00-18:00</h2>
         <h2>深圳，中国</h2>
         <h2>金茂深圳JW万豪酒店</h2>
         <a type="button" class="btn btn-primary btn-lg"  href="http://elasticsearch.mikecrm.com/6LGkKK0">赞助合作</a>
@@ -67,7 +133,7 @@
 </header>
 <!-- 首页大图 end -->
 <!-- 大会介绍 start -->
-<section class="section bg-grey team">
+<section id="intro" class="section bg-grey team">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -75,15 +141,39 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 ">
-                <p class="about-text">Elastic 中国开发者大会 2018（Elastic Developers China 2018）是由 Elastic 官方在中国举办的第二次开发者大会，
-                    前身 ESCC (Elasticsearch China Conference) 是由 Elastic 中文社区每年定期举办的线下交流活动，
-                    会议主要围绕 Elastic 的开源产品: Elasticsearch、Logstash、Kibana 和 Beats，探讨在搜索、数据实时分析、日志分析、安全等领域的实践与应用。                </p>
+
+
+
+
+
+            <div class="col-md-12 "><p style="font-size: 16px">Elastic 中国开发者大会 2018（Elastic Developers China 2018）是由 Elastic 官方在中国举办的第二次开发者大会，主要围绕 Elastic 的开源产品: Elasticsearch、Logstash、Kibana 和 Beats，探讨在搜索、数据实时分析、日志分析、安全等领域的实践与应用。
+<br/><br/>
+
+Elastic Stack 作为目前世界上最流行的数据搜索与实时分析引擎套件，其产品累计下载次数已超过两亿五千万次，全球很多著名的公司都在使用，如：Facebook，eBay，IBM，Microsoft，Uber，Cisco 等等。在国内也是广受欢迎，各行各业从一线互联网公司到传统的行业都能找到使用 Elasticsearch 的身影。Elastic 的开源技术正越来越受到众多开发者的青睐，已然成为大数据领域分析工具的最佳选择。
+<br/><br/>
+而 Elastic 中国开发者大会作为中国国内唯一一个专门讨论 Elastic 开源技术的大会，是中国最权威和最具实力干货的技术大会，其专业性和内容的质量一直以来在业内都是有口皆碑，大会最早发起于 2013 年初一个很小的线下聚会，之后每年迅速成长，上一届在北京的大会参会者接近 500 人，往年大会的演讲嘉宾有来自 Elastic 官方、百度、腾讯、阿里巴巴、360、微博、美团、58、苏宁等众多公司的技术专家，带来过众多精彩的分享，与会听众大多为大数据领域相关的架构师、技术经理与一线开发工程师和运维工程师。
+<br/><br/>
+我们本着非盈利目的来举办大会，今年的大会定在 11 月份，第一次将地点选在深圳这个充满活力的城市，举办 Elastic 开发者大会的目的是为中国广大的 Elastic 开发者提供一个技术交流和学习切磋的地方，汇集业界众多的成功案例，集思广益，发散思维，促进社区和行业的进步。
+
+
+                </p>
             </div>
         </div>
     </div>
 </section>
 <!-- 大会介绍 end -->
+<section id="contact">
+</section>
+<div class="clearfix"></div>
+ <div class="video-back">
+    <video poster="video-cover.png" autoplay muted loop class="vidbacking">
+        <source src="clip1.mp4" type="video/mp4">
+    </video>
+    <div class="center" style="color: white; font-size: 40px">
+      赞助与合作，请加微信：medcl123<br/>或是填写<a  style="color: white"  href="http://elasticsearch.mikecrm.com/6LGkKK0">赞助合作申请表</a><br/>
+    </div>
+</div>
+<div class="clearfix"></div>
 
 <!-- 合作赞助 start -->
 <section id="partner" class="section bg-white partner">
@@ -109,6 +199,7 @@
 
 
 </section>
+
 <!-- 合作赞助 end -->
 
 <!-- 志愿者 start -->
@@ -123,36 +214,26 @@
 <!-- 直播 start -->
 <!-- 直播 end -->
 <!-- 地址 start -->
-<!--<section id="conf-address" class="section bg-grey conf-address">-->
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class="col-sm-3">-->
-                <!--<h3 class="section-title">会议地址</h3>-->
-                <!--<address>-->
-                    <!--<p>广东省深圳市福田区深南大道6005号<br>金茂深圳JW万豪酒店</p>-->
-                <!--</address>-->
-            <!--</div>-->
-            <!--<div class="col-sm-9">-->
-                <!--<div class="map" id="mapContainer"></div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</section>-->
-<!-- 地址 end -->
-<!-- 联系我们 start -->
-<section id="contact" class="section bg-white contact">
+<section id="conf-address" class="section bg-grey conf-address">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                <h3 class="section-title"> </h3>
+            <div class="col-sm-3">
+                <h3 class="section-title">会议地址</h3>
+                <address>
+                    <p>广东省深圳市福田区深南大道6005号<br>金茂深圳JW万豪酒店</p>
+                </address>
             </div>
-            <div class="col-sm-8 " >
-                <p class="lead">赞助与合作，请加微信：<strong>medcl123</strong></p>
+            <div class="col-sm-9">
+                <div class="map" id="mapContainer"></div>
             </div>
         </div>
-
     </div>
 </section>
+<!-- 地址 end -->
+<!-- 联系我们 start -->
+
+
+
 <!-- 联系我们 end -->
 <!-- 底部 start -->
 <footer class="footer">
@@ -183,12 +264,27 @@
 </ul>
 <!-- 右侧悬浮小工具 end -->
 
+
+
+
+
+<script src="../static/bootstrap/js/jquery.min.js"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+<script src="../static/js/main.js"></script>
+
+<script type="text/javascript" src="../static/js/jquery.vidbacking.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.video-back').vidbacking();
+});
+</script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4&s=1"></script>
 <script type="text/javascript">
 
     var map = new BMap.Map("mapContainer");
 
-    var point = new BMap.Point(114.038853,22.542316);
+    var point = new BMap.Point(114.038314,22.542826);
 
     map.centerAndZoom(point, 15);
 
@@ -202,9 +298,5 @@
     map.addOverlay(marker);
 
 </script>
-<script src="../static/bootstrap/js/jquery.min.js"></script>
-<script src="../static/bootstrap/js/bootstrap.min.js"></script>
-<script src="../static/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-<script src="../static/js/main.js"></script>
 </body>
 </html>
