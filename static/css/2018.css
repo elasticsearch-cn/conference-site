@@ -209,22 +209,38 @@ h1, h2, h3, h4, h5, h6 {
 .speaker-brief-topic  .speaker-brief .thumbnail{
     border: 0;
     margin-bottom: 40px;
+    min-height: 322px;
 }
 .speaker-brief-topic .speaker-brief .thumbnail .caption{
-    min-height: 250px;
+    min-height: 50px;
 }
 .speaker-brief-topic .speaker-brief .avatar{
     width: 100%;
-    max-width: 230px;
-    min-height: 230px;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    padding: 5px;
 }
+
+.speaker-brief-topic .speaker-brief .avatar-outer{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    transition: all .25s;
+    background-color: #fff;
+    border: 1px solid #e1e4e9;
+}
+
 .speaker-brief-topic .speaker-brief .name{
     text-align: center;
+    color: #1f63af;
 }
 .speaker-brief-topic .speaker-brief .brief{}
 
 .speaker-brief-topic .speaker-brief .brief .p {
-    text-indent: 2em;
+    text-align: center;
 }
 
 .speaker-brief-topic .speaker-brief .brief span {
