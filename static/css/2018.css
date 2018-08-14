@@ -602,10 +602,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .quotes-wrapper {
-    margin: 70px auto;
-    padding: 80px 0 0;
+
+    padding: 40px 0 0;
     text-align: center;
-    border-top: 1px solid #CCCCCC;
+    border-top: 1px solid #e7e7e7;
 }
 .quotes-wrapper svg {
     width: 100%;
