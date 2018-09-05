@@ -203,6 +203,90 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+.schedule {
+    background-color: #007fff;
+    color: #fff;
+}
+.schedule .schedule-table {
+    position: relative;
+    margin: auto auto;
+    background-color: #007fff;
+    border: 1px solid #fff;
+    border-left: 0;
+    z-index: 1;
+}
+
+.schedule .schedule-table .schedule-table-header {
+    background-color: #2290ff;
+}
+.schedule .schedule-table tr {
+    display: block;
+    min-height: 80px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.schedule .schedule-table tr td:nth-child(1) {
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: 600;
+}
+.schedule .schedule-table tr td {
+    display: inline-block;
+    min-height: 80px;
+    box-sizing: border-box;
+}
+.schedule .schedule-table tr td:nth-child(2) {
+    width: 873px;
+    border-left: 1px solid #fff;
+}
+.schedule .schedule-table tr .col-item-group {
+    display: -ms-flexbox;
+    display: flex;
+}
+.schedule .schedule-table tr td.room-title .col-item, .schedule .schedule-table tr td.lighttalk-header .col-item {
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+.schedule .schedule-table tr .col-item{
+    border-right: 1px solid #fff;
+}
+.schedule .schedule-table tr .col-item:last-child {
+    border-right: none;
+}
+.schedule .schedule-table tr .col-item {
+    padding: 20px 20px;
+    -ms-flex: 1;
+    flex: 1;
+    box-sizing: border-box;
+}
+.schedule .schedule-table tr .col-item.time {
+    width: 80px;
+    flex: none;
+}
+.schedule .schedule-table tr td.spare-time {
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.schedule .schedule-table .schedule-table-header {
+    background-color: #2290ff;
+}
+.schedule .speech-content .speech-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffd916;
+}
+.schedule .speech-content .speech-des {
+    margin-top: 8px;
+}
+
+
 .speaker-brief-topic {}
 
 .speaker-brief-topic  .speaker-brief .thumbnail:hover {
