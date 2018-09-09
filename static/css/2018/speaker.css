@@ -1,0 +1,86 @@
+
+.section {
+    padding: 80px 0;
+}
+
+.speaker .wrap {
+    width: 960px;
+    margin: 0 auto;
+    size: 16px;
+}
+
+.speaker .speaker-section {
+    padding-top: 60px;
+    display: table;
+    width: 100%;
+}
+
+.speaker .speaker-avatar {
+    float: left;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.speaker .speaker-avatar img {
+    width: 100%;
+}
+.speaker .speaker-info {
+    padding-top: 16px;
+}
+.speaker .speaker-info, .speaker-des, .speech {
+    float: right;
+    width: calc(100% - 220px);
+}
+.speaker .speaker-name, .speech-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+.speaker .speaker-job {
+    margin-top: 10px;
+    color: #666;
+}
+.speaker .speaker-des, .speech-des {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.speaker .speech {
+    margin-top: 32px;
+}
+.speaker .speech-title {
+    line-height: 1.4;
+}
+
+@media (max-width: 1000px) {
+    .speaker .wrap {
+        width: 90%;
+    }
+    .speaker .speaker-section {
+        margin-bottom: 30px;
+    }
+    .speaker .speaker-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .speaker  .speaker-info {
+        padding-top: 0;
+        width: calc(100% - 100px);
+        height: 80px;
+    }
+
+    .speaker .speaker-name {
+        margin-top: 10px;
+    }
+    .speaker .speaker-name, .speech-title {
+        font-size: 18px;
+    }
+    .speaker .speaker-job {
+        margin-top: 6px;
+    }
+    .speaker .speaker-des, .speech {
+        width: 100%;
+    }
+    .speaker .speaker-des {
+        margin-top: 18px;
+    }
+}
