@@ -205,6 +205,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .speaker-brief-topic {}
 
+.speaker-brief-topic a:hover{text-decoration:none;}
+
 .speaker-brief-topic  .speaker-brief .thumbnail:hover {
     box-shadow: 0 0 6px rgba(0,0,0,0.2);
 }
@@ -361,7 +363,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 30px;
 }
 
-.conf-address {}
+.conf-address {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
 .conf-address .go-ticket{
     margin-bottom: 15px;
 }
@@ -549,7 +554,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .map {
     width: 100%;
-    height: 470px;
+    height: 500px;
     background: #ecf1f4;
     overflow: hidden;
 }
