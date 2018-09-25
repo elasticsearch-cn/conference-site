@@ -398,20 +398,21 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(0,0,0,.8);
 }
 
+.partner .partner-section {
+    margin: auto;
+    text-align: center;
+    float: none;
+}
+
 
 .partner .partner-box {
-    opacity: 0.8;
-    height: 100px;
-    width: 150px;
-    margin: 25px auto;
+    height: auto;
+    width: 180px;
+    margin: 25px;
     -webkit-transition: 0.5s all linear;
     transition: 0.5s all linear;
     vertical-align: middle;
-    display: table-cell;
-}
-
-.partner .partner-box:hover {
-    opacity: 1;
+    display: inline-block;
 }
 
 .partner .partner-box>img {
@@ -738,6 +739,11 @@ svg:not(:root) {
     }
     .navbar-custom .navbar-nav>.open>a, .navbar-custom .navbar-nav>.open>a:focus, .navbar-custom .navbar-nav>.open>a:hover {
         color: #777;
+    }
+
+    .partner .partner-box {
+        margin: 10px;
+        width: 150px;
     }
 }
 
