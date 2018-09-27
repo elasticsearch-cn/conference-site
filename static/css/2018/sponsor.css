@@ -24,6 +24,9 @@ h3 {
     overflow: hidden;
     display: inline-block;
 }
+.sponsor .sponsor-logo.media-partner {
+    width: 150px;
+}
 .sponsor .sponsor-logo img {
     width: 100%;
 }

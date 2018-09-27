@@ -415,6 +415,10 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
 }
 
+.partner .partner-box.media-partner {
+    width: 140px;
+}
+
 .partner .partner-box>img {
     width: 100%;
 }
