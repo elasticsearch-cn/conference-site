@@ -1,0 +1,81 @@
+a.elastic-logo span {
+    padding-left: 60px;
+}
+h3 {
+    font-weight: 500;
+}
+
+.guide {
+    background: rebeccapurple;
+}
+
+.guide .wrap {
+    width: 760px;
+    margin: 0 auto;
+    size: 14px;
+}
+
+.guide .wrap .item{
+    margin: 15px 0;
+    clear: both;
+}
+.guide .wrap .item .title{
+    font-size: 20px;
+    padding: 5px 20px;
+    max-width: 100%;
+    display: inline-block;
+    color: rgb(254, 254, 254);
+    font-weight: 500;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: rgba(230, 40, 23, 0.498039);
+    box-sizing: border-box !important;
+    word-wrap: break-word !important;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.guide .wrap .item img{
+    margin: 5px 0 10px 0;
+    width: 100%;
+}
+
+.guide .wrap .item ul.hotel{
+    padding:0;
+    margin: 0;
+}
+
+.guide .wrap .item ul.hotel li{
+    list-style: none;
+    float: left;
+    width: 300px;
+    min-height: 100px;
+    padding:10px 30px;
+    margin:0 30px;
+}
+
+.guide .wrap .item ul.hotel li img{
+    width: 100%;
+}
+
+.guide .guide-section {
+    padding-top: 20px;
+    display: table;
+    width: 100%;
+}
+
+.guide .guide-logo {
+    float: left;
+    width: 180px;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
+}
+
+@media (max-width: 1000px) {
+    .guide .wrap {
+        width: 90%;
+    }
+    .guide .guide-section {
+        margin-bottom: 30px;
+    }
+}
