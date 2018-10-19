@@ -66,6 +66,7 @@ a.elastic-logo span {
     width: 100%;
     z-index: 1;
     padding: 0 15px;
+    margin-top:100px;
 }
 
 .site-header .intro h2 {
@@ -572,12 +573,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .countdown {
     min-height: 100px;
-    margin-top: 8%;
+    margin-top: 3%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
     display: inline-block;
     padding: 8px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: 0 0 6px rgba(110, 110, 255, 0.5);
 }
 
 .countdown .tips{
