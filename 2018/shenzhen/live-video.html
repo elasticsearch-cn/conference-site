@@ -34,6 +34,11 @@
             margin: 30px 0 10px;
         }
 
+        .video-live {
+            width:960px;
+            height:540px;
+        }
+
         .float-right {
             position: fixed;
             right: 10px;
@@ -45,6 +50,21 @@
 
         .float-right img {
             width: 100%;
+        }
+
+
+        @media (max-width: 768px) {
+            .video-live {
+                width:100%;
+                height:240px;
+            }
+            .float-right {
+                position: relative;
+                right: 0;
+                top:0;
+                text-align: center;
+                margin: auto;
+            }
         }
     </style>
 
@@ -87,7 +107,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 center">
-                <iframe width="960" height="540" scrolling="No"  noresize="noresize" frameborder="0"  src="https://play.itdks.com/watch/1136646?player"></iframe>
+                <iframe class="video-live" scrolling="No"  noresize="noresize" frameborder="0"  src="https://play.itdks.com/watch/1136646?player"></iframe>
             </div>
         </div>
     </div>
@@ -96,11 +116,11 @@
 
 <div class="float-right">
     <div>
-        <div>直播源站:</div>
+        <div>直播源站</div>
         <a target="_blank" href="https://www.itdks.com/eventlist/detail/2594"><img src="/static/images/2018/sponsors/dks.png"></a>
     </div>
     <div>
-        <div style="margin: 10px 0;">手机观看:</div>
+        <div style="margin: 10px 0;">手机观看</div>
         <img src="/static/images/2018/others/qr_video_live_itdkx.png">
     </div>
 </div>
@@ -112,6 +132,9 @@
     </div>
 </footer>
 <!-- 底部 end -->
+
+<script src="/static/bootstrap/js/jquery.min.js"></script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
