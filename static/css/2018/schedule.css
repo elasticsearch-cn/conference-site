@@ -63,13 +63,22 @@ a.elastic-logo span {
 .schedule .schedule-pc tr td .speech-content {
     padding: 20px 10px;
 }
+.schedule .speech-content  {
+    display: block;
+    cursor: pointer;
+}
+.schedule a.speech-content:hover  {
+    text-decoration: none;
+
+}
 .schedule .speech-content .speech-title {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     color: #1f63af;
 }
 .schedule .speech-content .speech-des {
     margin-top: 8px;
+    color:#313131;
 }
 
 
@@ -109,6 +118,8 @@ a.elastic-logo span {
 }
 .m-schedule-time, .m-schedule-timeline, .m-speech-content {
     float: left;
+    display: block;
+    cursor: pointer;
 }
 .m-schedule-timeline::after {
     position: absolute;
@@ -155,6 +166,9 @@ a.elastic-logo span {
 .m-speech-content {
     width: calc(100% - 50px - 20px);
 }
+a.m-speech-content:hover {
+    text-decoration: none;
+}
 .m-speech-content .m-speech-title {
     font-size: 16px;
     font-weight: 500;
@@ -164,6 +178,7 @@ a.elastic-logo span {
 .m-speech-content .m-speech-des {
     margin-top: 6px;
     font-size: 14px;
+    color: #313131;
 }
 
 /*日程安排*/
