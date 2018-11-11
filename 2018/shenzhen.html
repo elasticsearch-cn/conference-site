@@ -115,10 +115,10 @@
                 <li><a href="shenzhen/guide.html">参会指南</a></li>
                 <li><a href="shenzhen/volunteer.html">志愿者</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="history-conf"></span>观看直播 <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="history-conf"></span>直播回看 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a target="_blank" href="shenzhen/live-video.html">视频直播</a></li>
-                        <li><a target="_blank" href="http://wx.plusx.cn/activity/live/3891487?uniqCode=vSNpVTiY2Y">图片直播</a></li>
+                        <li><a target="_blank" href="http://play.itdks.com/watch/1136646">视频直播回看</a></li>
+                        <li><a target="_blank" href="http://wx.plusx.cn/activity/live/3891487?uniqCode=vSNpVTiY2Y">图片直播回看</a></li>
                     </ul>
                 </li>
 
@@ -143,18 +143,20 @@
         <h2>深圳，中国</h2>
         <h2>金茂深圳JW万豪酒店 三楼金茂宴会厅</h2>
 
+        <a type="button" class="btn btn-primary btn-lg" target="_blank"  href="http://play.itdks.com/watch/1136646">直播回看</a>
+        <a type="button" class="btn btn-primary btn-lg" target="_blank"  href="http://wx.plusx.cn/activity/live/3891487?uniqCode=vSNpVTiY2Y">精彩图片</a>
         <!--<a type="button" class="btn btn-primary btn-lg"  href="//elasticsearch.mikecrm.com/6LGkKK0">赞助合作</a>-->
         <!--<a type="button" class="btn btn-primary btn-lg"  href="//elasticsearch.mikecrm.com/uXH61JL">演讲申请</a>-->
         <!--<a type="button" class="btn btn-success btn-lg"  href="//elasticsearch.mikecrm.com/LJHBYd8">志愿者申请</a>-->
 
-        <div class="countdown">
-            <div class="live-btn-toggle" style="display: none">
-                <a type="button" class="btn btn-primary btn-lg"  href="shenzhen/live-video.html">视频直播</a>
-                <a type="button" class="btn btn-primary btn-lg"  href="http://wx.plusx.cn/activity/live/3891487?uniqCode=vSNpVTiY2Y">图片直播</a>
-            </div>
-            <div class="tips">大会开幕倒计时</div>
-            <span id="clock"></span>
-        </div>
+        <!--<div class="countdown">-->
+            <!--<div class="live-btn-toggle" style="display: none">-->
+                <!--<a type="button" class="btn btn-primary btn-lg"  href="shenzhen/live-video.html">视频直播</a>-->
+                <!--<a type="button" class="btn btn-primary btn-lg"  href="http://wx.plusx.cn/activity/live/3891487?uniqCode=vSNpVTiY2Y">图片直播</a>-->
+            <!--</div>-->
+            <!--<div class="tips">大会开幕倒计时</div>-->
+            <!--<span id="clock"></span>-->
+        <!--</div>-->
         <!--<div class="countdown" style="min-height: 40px;line-height: 40px;">-->
         <!--<div class="tips">大会已结束!</div>-->
         <!--</div>-->
@@ -693,34 +695,34 @@ Elastic Stack（ 或者叫 ELK ） 作为目前世界上最流行的数据搜索
         $('.video-back').vidbacking();
     });
     // 大会倒计时控制逻辑
-    var startDateStr = "2018-11-10 08:00:00";
-
-    var now = new Date();
-    var date = new Date(startDateStr);
-    date.add('h', 11);
-    if(now > date) {
-        $('#clock').html('大会已结束!').parent().find('.tips').hide();
-        $(".countdown").css("line-height","80px");
-        $(".show-live").hide();
-        $(".live-btn-toggle").hide();
-    } else {
-        $('#clock').countdown(startDateStr)
-            .on('update.countdown', function(event) {
-                var format = '<span>%H</span> 时 <span>%M</span> 分 <span>%S</span> 秒';
-                if(event.offset.totalDays > 0 || event.offset.weeks > 0) {
-                    format = '<span>%-D</span> 天 ' + format;
-                }
-                $(this).html(event.strftime(format));
-            })
-            .on('finish.countdown', function(event) {
-                $(this).html('大会正在进行中...')
-                    .parent().addClass('disabled')
-                    .find('.tips').hide();
-                $(".countdown").css("line-height","80px");
-                $(".show-live").show();
-                $(".live-btn-toggle").show();
-            });
-    }
+    // var startDateStr = "2018-11-10 08:00:00";
+    //
+    // var now = new Date();
+    // var date = new Date(startDateStr);
+    // date.add('h', 11);
+    // if(now > date) {
+    //     $('#clock').html('大会已结束!').parent().find('.tips').hide();
+    //     $(".countdown").css("line-height","80px");
+    //     $(".show-live").hide();
+    //     $(".live-btn-toggle").hide();
+    // } else {
+    //     $('#clock').countdown(startDateStr)
+    //         .on('update.countdown', function(event) {
+    //             var format = '<span>%H</span> 时 <span>%M</span> 分 <span>%S</span> 秒';
+    //             if(event.offset.totalDays > 0 || event.offset.weeks > 0) {
+    //                 format = '<span>%-D</span> 天 ' + format;
+    //             }
+    //             $(this).html(event.strftime(format));
+    //         })
+    //         .on('finish.countdown', function(event) {
+    //             $(this).html('大会正在进行中...')
+    //                 .parent().addClass('disabled')
+    //                 .find('.tips').hide();
+    //             $(".countdown").css("line-height","80px");
+    //             $(".show-live").show();
+    //             $(".live-btn-toggle").show();
+    //         });
+    // }
 </script>
 <script type="text/javascript" src="//api.map.baidu.com/api?v=3.0&ak=DDU325vxk16zPn6DKlS6Qffx"></script>
 <script type="text/javascript">
