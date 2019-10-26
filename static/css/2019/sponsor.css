@@ -1,0 +1,69 @@
+a.elastic-logo span {
+    padding-left: 60px;
+}
+h3 {
+    font-weight: 500;
+}
+
+.sponsor .wrap {
+    width: 960px;
+    margin: 0 auto;
+    size: 16px;
+}
+
+.sponsor .sponsor-section {
+    padding-top: 20px;
+    display: table;
+    width: 100%;
+}
+
+.sponsor .sponsor-logo {
+    float: left;
+    width: 180px;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
+}
+.sponsor .sponsor-logo.media-partner {
+    width: 150px;
+}
+.sponsor .sponsor-logo img {
+    width: 100%;
+}
+.sponsor .sponsor-name, .sponsor-des {
+    float: right;
+    width: calc(100% - 220px);
+}
+.sponsor .sponsor-name{
+    padding-top: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #313131;
+}
+.sponsor .sponsor-des{
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+    .sponsor .wrap {
+        width: 90%;
+    }
+    .sponsor .sponsor-section {
+        margin-bottom: 30px;
+    }
+    .sponsor .sponsor-logo {
+        width: 180px;
+        height: auto;
+        float: none;
+    }
+    .sponsor .sponsor-name {
+        padding-top: 0;
+    }
+    .sponsor .sponsor-des{
+        width: 100%;
+    }
+    .sponsor .sponsor-name, .sponsor-des {
+        float: none;
+    }
+}

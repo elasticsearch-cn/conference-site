@@ -753,7 +753,3 @@ svg:not(:root) {
         padding:15px 10px;
     }
 }
-
-#navbar ul {
-  display:none;
-}
