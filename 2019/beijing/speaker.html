@@ -82,11 +82,8 @@
 </nav>
 <!-- 导航 end -->
 
-<h3 class="section-title">嘉宾介绍</h3>
-<h1 class="section-title">待定</h1>
-
 <!-- 嘉宾介绍 start -->
-<section id="speaker" class="section bg-white speaker" style="display:none">
+<section id="speaker" class="section bg-white speaker">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -96,136 +93,172 @@
     </div>
     
     <div class="wrap">
-        <div class="speaker-section" id="joen">
+        <div class="speaker-section" id="yudonggeng">
             <div class="speaker-avatar">
-                <img src="/static/images/2019/speakers/joen.png">
+                <img src="/static/images/2019/speakers/yudonggeng.png">
             </div>
             <div class="speaker-info">
-                <div class="speaker-name">Joen Van Driel</div>
-                <div class="speaker-job">Elastic VP APJ</div>
+                <div class="speaker-name">于冬耕</div>
+                <div class="speaker-job">eBay 软件工程师</div>
             </div>
-            <div class="speaker-des">Joen Van Driel 是 Elastic 副总裁，负责管理 Elastic 在亚太区的业务。Joen 在技术行业拥有超过二十年的丰富经验，主要专注于销售管理、战略和业务开发等方向。在担任此岗位之前，他曾在甲骨文 (Oracle) 担任云应用部门的副总裁，还曽在谷歌 (Google) 担任 Google Cloud 部门的国家经理，而且还在 Google Enterprise Search、Adobe 和 Salesforce.com 担任过领导职位。Joen 出生于韩国，并且在中国香港、新加坡、澳大利亚、爱尔兰、菲律宾和荷兰都生活过。他目前定居荷兰，有两个孩子。Joen 拥有阿姆斯特丹大学的金融经济学博士学位。</div>
+            <div class="speaker-des">eBay Data Service 部门软件工程师，负责eBay内部Elasticsearch平台Pronto团队。Pronto项目团队管理和维护了eBay内部绝大部分Elasticsearch集群（100+），同时构建和提供了各种服务扩展。</div>
             <div class="speech">
-                <div class="speech-title">演讲：Opening</div>
-                <div class="speech-des">
-                    Elastic 亚太区副总裁致开场发言，介绍 Elastic 最新进展和趋势。
+                <div class="speech-title">演讲：Elasticsearch eBay 内部服务扩展实践</div>
+                <div class="speech-des"> 
+                    随着Elasticsearch目前在ebay内部广泛使用和推进，Pronto平台服务不仅仅局限于基础的PDMR服务，更结合不同应用的实际需求和eBay的内部技术，实现了一系列服务扩展, 包含sizing service，diagnostic service，index mgmt service, security service, business data alerting service等等。                
                 </div>
             </div>
         </div>
-        <div class="speaker-section" id="galen">
+        <div class="speaker-section" id="xingrao">
             <div class="speaker-avatar">
-                <img src="/static/images/2018/speakers/galen.png">
+                <img src="/static/images/2019/speakers/xingrao.png">
             </div>
             <div class="speaker-info">
-                <div class="speaker-name">Galen Wang</div>
-                <div class="speaker-job">Elastic China Country Manager</div>
+                <div class="speaker-name">邢骁</div>
+                <div class="speaker-job">华泰证券 信息安全架构师</div>
             </div>
-            <div class="speaker-des">王刚（Galen），目前任职 Elastic 中国区总经理，从事 IT 行业22年，曾就职国内外大型IT企业例如 Lenovo，Salesforce.com, SAP, 甲骨文等；曾任 Salesforce.com 中国区销售总监，SAP 销售总监，甲骨文 ERP 总经理等职位；对管理软件（ERP/HCM/CRM）领域，云计算领域（SaaS/PaaS/IaaS）有着多年的经验和深度理解。王刚先生拥有中国石油大学学历和中国人民大学 MBA 学历。</div>
+            <div class="speaker-des">华泰证券安全架构师，主要研究方向包括安全平台建设、安全攻防、容器安全等</div>
             <div class="speech">
-                <div class="speech-title"></div>
+                <div class="speech-title">演讲：Elatic&CK: 基于Elastic Stack和ATT&CK实现威胁检测与狩猎</div>
                 <div class="speech-des">
+                    MITRE ATT＆CK矩阵将所有已知的战术用一种易于理解的格式进行排列，极大的帮助安全人员快速覆盖攻击者的入侵边界和技术手段。本议题介绍使用Elastic技术栈构建基于ATT&CK框架的安全检测平台，我们盘点ATT&CK中攻击者常用的攻击手段，从数据收集、清洗、存储入手，实现基于ElasticSearch的规则场景、多源关联分析，以及基线和异常行为检测。同时，本次议题还会介绍利用ElasticSearch进行威胁的分析狩猎的实践经验，帮助安全分析人员实现威胁的可发现、可展示和可回溯。
                 </div>
             </div>
         </div>
-        <div class="speaker-section" id="monica">
+        <div class="speaker-section" id="jgq">
             <div class="speaker-avatar">
-                <img src="/static/images/2019/speakers/monica.png">
+                <img src="/static/images/2019/speakers/jgq.png">
             </div>
             <div class="speaker-info">
-                <div class="speaker-name">Monica Sarbu</div>
-                <div class="speaker-job">Elastic Beats Team lead</div>
+                <div class="speaker-name">姜国强</div>
+                <div class="speaker-job">腾讯 高级数据库架构师</div>
             </div>
-            <div class="speaker-des">Monica Sarbu 在 Elastic 领导 Ingest（数据采集）团队，负责管理热门的开源项目 Beats 和 Logstash。Monica 是 Beats 的联合创始人，并且还是 Packetbeat 开源项目的创始人。她曾花 5 年时间研究适用于 VoIP 网络的完整监测和故障排查解决方案，并于此过程中在应用程序监测方面获得了丰富经验。</div>
+            <div class="speaker-des">
+                    2016年加入腾讯，负责腾讯Elasticsearch、时序数据库等系统的研发工作，为腾讯云、内部用户提供高可用、高性能、低成本的搜索分析服务。曾在百度负责大数据OLAP分析相关工作，原Apache Doris存储层负责人。个人热衷于技术研究，长期专注于大数据分析、分布式系统相关领域。</div>
             <div class="speech">
-                <div class="speech-title">演讲：Logging, Metrics, and APM: The Operations Trifecta</div>
+                <div class="speech-title">演讲：腾讯万亿级Elasticsearch技术解密</div>
                 <div class="speech-des">
-                    从日志、指标到 APM，运维分析的三连击。
+                    Elasticsearch（ES）作为开源首选的分布式搜索分析引擎，通过一套系统轻松满足用户的日志实时分析、全文检索、结构化数据分析等多种需求，大幅降低大数据时代挖掘数据价值的成本。腾讯在公司内部丰富的场景中大规模使用ES，同时联合Elastic公司在腾讯云上提供内核增强版的ES云服务。大规模、丰富的应用场景推动着腾讯对原生ES进行系统性的高可用、高性能、低成本等优化，目前已支撑起每天万亿级吞吐的超大集群。本次分享的主要内容如下：1. ES 在腾讯的广泛应用：从搜索分析到时序数据服务，从内部业务到云上服务；2. ES 内核实践：高可用、高性能、低成本架构介绍；3. 腾讯ES未来规划及开源贡献。
                 </div>
             </div>
         </div>
-        <div class="speaker-section" id="lcz">
+
+        <div class="speaker-section" id="zhaoqingrong">
             <div class="speaker-avatar">
-                <img src="/static/images/2018/speakers/lcz.png">
+                <img src="/static/images/2019/speakers/zhaoqingrong.png">
             </div>
             <div class="speaker-info">
-                <div class="speaker-name">李崇哲</div>
-                <div class="speaker-job">Elastic CodeSearch Team Lead</div>
+                <div class="speaker-name">赵情融</div>
+                <div class="speaker-job">滴滴出行 专家工程师</div>
             </div>
-            <div class="speaker-des">李崇哲是Insight.io联合创始人，致力于开发基于Elasticsearch的类IDE源代码搜索与浏览平台。李崇哲在Insight.io被收购之后加入Elastic，现任Elastic Code Search产品的Team L。在创立Insight.io之前李崇哲在Linkedin先后任资深工程师和技术主管，是Linkedin中国落地团队的创始成员, 并参与开发了Linkedin的推荐系统和广告系统，期间发表了多项专利。 李崇哲拥有上海交通大学电子与计算机工程本科和卡内基梅隆电子与计算机工程硕士学位。</div>
+            <div class="speaker-des">2018加入滴滴，现任专家工程师一职，滴滴搜索团队负责人，全面负责滴滴搜索平台的建设工作。在加入滴滴之前，在阿里巴巴工作多年，有丰富的平台建设经验。</div>
             <div class="speech">
-                <div class="speech-title">演讲：如在 IDE 中一样搜索代码库：预先了解即将推出的 Elastic Code Search</div>
+                <div class="speech-title">演讲：滴滴ElasticSearch集群跨版本升级以及平台重构​</div>
                 <div class="speech-des">
-                    GitHub 固然很好，但若尝试用其来搜索代码，则未必如此；<br>
-                    代码搜索为何重要；<br>
-                    Web 上的代码智能、语义化；<br>
-                    将代码智能与 APM 和日志加以整合。
+                    2019年滴滴ES团队将维护的30多个ES集群，3500多个ES节点，8PB的数据，从2.3.3跨大版本无缝升级到6.6.1。
+                    在对用户查询写入基本零影响和改动的前提下，解决了ES跨大版本协议不兼容、文件格式不兼容、mapping不兼容等难题，整个过程对绝大部分用户完全透明。
+                    同时还完成了Arius的架构升级，取得了单机查询性能提升40%，整体集群cpu下降10%，写入tps提升30%，集群资源使用率提升20%、0故障、运维成本下降60%的成绩，并在引擎上进行了一系列定制开发，并向社区贡献了4个PR。
                 </div>
             </div>
         </div>
-        <div class="speaker-section" id="Michael-Russell">
+
+        <div class="speaker-section" id="jiangjiang">
             <div class="speaker-avatar">
-                <img src="/static/images/2018/speakers/Michael-Russell.png">
+                <img src="/static/images/2019/speakers/jiangjiang.png">
             </div>
             <div class="speaker-info">
-                <div class="speaker-name">Michael Russell</div>
-                <div class="speaker-job">Elastic Software Engineer - Infrastructure</div>
+                <div class="speaker-name">姜江</div>
+                <div class="speaker-job">新东方 运维架构师</div>
             </div>
-            <div class="speaker-des">Michael 是一名来自澳大利亚的软件工程师，任职于 Elastic 的基础架构团队，他目前居住在荷兰乌特勒支。为了帮助软件公司推出优秀软件，并助力用户取得成功，他每天都专注于构建方方面面的内容。他对开发久经考验的基础架构充满无限热情，并且对监测和自动化拥有极其浓厚的兴趣。他最近的一个开源项目是 kuberwatcher (https://github.com/elastic/kuberwatcher)，此工具可根据 Kubernetes 标签和注释生成 Watcher 监测警报。他同时还在从事一个名为 lope 的个人项目 (https://github.com/Crazybus/lope)，该项目利用 Docker 在所有环境和操作系统中通过相同的操作来进行开发、部署和测试工具调试。</div>
+            <div class="speaker-des">
+                10余年运维从业经历。专注运维自动化，容器技术和中间件技术。 目前就职新东方平台架构组，负责新东方paas平台的落地和实践。</div>
+            <div class="speech">
+                <div class="speech-title">演讲：从docker到k8s:新东方生产ELK的进化史</div>
+                <div class="speech-des">
+                    新东方一直在寻找splunk的替代方案，从2017年开始研究elastic stack，同年容器平台的探索基本明朗。在对比了第三方es商业管理平台方案后，我们决定尝试利用容器技术来管理elk stack，降低elk的拥有和管理成本。
+                    我们摸索了将近三年时间，从最初的ansible方案，到利用docker和rancher 1.6编排引擎，到现在的k8s。期间形成了一整套软硬结合的管理方案，运维过程全部基于容器技术。目前整套平台已经应用到新东方的安全感知，TIDB和redis的慢日志分析，API 服务质量分析。同时新东方的在线业务系统也全面拥抱es,形成了写数据库读es的架构。
+                    本次分享将详细介绍这些应用的架构和落地方案。希望能对大家的工作有所启发和借鉴。
+                </div>
+            </div>
+        </div>
+
+        <div class="speaker-section" id="lvliang">
+            <div class="speaker-avatar">
+                <img src="/static/images/2019/speakers/lvliang.png">
+            </div>
+            <div class="speaker-info">
+                <div class="speaker-name">吕梁</div>
+                <div class="speaker-job">蚂蚁金服(杭州)网络技术有限公司 高级开发工程师</div>
+            </div>
+            <div class="speaker-des">蚂蚁金服ZSearch通用搜索平台开发者，目前研究基于es的向量检索和es集群使用k8s管控</div>
             <div class="speech">
                 <div class="speech-title">演讲：Running infrastructure at Elastic with Elastic</div>
                 <div class="speech-des">
-                    Michael 是 Elastic 基础架构团队的一名软件工程师。基础架构团队负责构建和运行方方面面的内容，从而帮助软件公司推出优秀的软件。该团队在日常工作过程中会尽可能多地采用 Elastic 产品，因为这样我们就可以尽早获得反馈并测试新功能。在此次演讲过程中，Michael 会带领大家完整浏览我们的 Stack 产品，也会与大家分享我们如何借助自身产品来完成工作。
+                    在蚂蚁金服的人脸识别类业务对于向量搜索有非常大的诉求，我们在es上进行了相关探索，包括 brute force 使用es的binary docvalue类型直接计算，并且使用java panama项目中的vector api加速，以及集成阿里巴巴达摩院的向量搜索引擎proxima与lucene作为es的底层双引擎，在海外人脸欺诈识别和人脸支付业务中起到了非常好的效果，我们希望能够向大家分享这一技术探索。
                 </div>
             </div>
         </div>
-        <div class="speaker-section" id="wb1">
+
+        <div class="speaker-section" id="weibin">
             <div class="speaker-avatar">
-                <img src="/static/images/2018/speakers/wb1.png">
+                <img src="/static/images/2019/speakers/weibin.png">
             </div>
             <div class="speaker-info">
-                <div class="speaker-name">吴斌</div>
-                <div class="speaker-job">Elastic 首席架构师，Monash大学计算机硕士</div>
+                <div class="speaker-name">魏彬</div>
+                <div class="speaker-job">普翔科技 CTO</div>
             </div>
             <div class="speaker-des">十年IT行业经验，经历了软件工程师到架构师的全方位磨练。专注于海量数据处理、挖掘、分析和企业级搜索等领域。 十分熟悉分布式应用，高可用架构和自动化技术。对AI在商业产品和公司业务中的应用也积累了一定的经验。并且有海外世界百强大学六年的教学经验。曾为世界顶级金融机构开发、运维团队进行过云计算技术培训。 现任Elastic架构师，负责公司亚太地区事务。致力于应用Elastic的先进技术产品解决企业数据应用问题。</div>
             <div class="speech">
-                <div class="speech-title"></div>
+                <div class="speech-title">演讲：Elasticsearch 多版本多集群自动化运维管理实践</div>
                 <div class="speech-des">
+                    普翔科技作为 elastic 中国的战略级合作伙伴，服务了国内数十家客户，为他们提供安全可靠及时的 Elastic 产品运维管理服务。其中 Elasticsearch 集群的运维管理是核心工作，一个难点是 Elasticsearch 发展迅速，版本多样，从 2 到 7 多种多样，不同版本之间在配置和 api 上会存在差异；另一个难点是集群数量多，一些大型客户内部有数十个集群，集群规模也各有不同，从 5 个节点到 50 个节点都存在。面对这种多版本多集群的运维管理需求，我们在尝试了多种方案后，结合实际运维中的遇到的问题，将系统调优、最佳实践、日常管理操作、监控告警等进行抽象整理后，形成了一个多版本多集群的自动化管理产品。本次分享会和大家介绍多版本多集群的运维管理实践，希望对大家在 Elasticsearch 运维管理方面有所帮助。
+                </div>
+            </div>
+        </div>
 
-                </div>
-            </div>
-        </div>
-        <div class="speaker-section" id="mark">
+        <div class="speaker-section" id="limeng">
             <div class="speaker-avatar">
-                <img src="/static/images/2018/speakers/elastic-default.jpg">
+                <img src="/static/images/2019/speakers/limeng.png">
             </div>
             <div class="speaker-info">
-                <div class="speaker-name">Mark Walkom</div>
-                <div class="speaker-job">Elastic APAC Community Team Leader</div>
+                <div class="speaker-name">李猛</div>
+                <div class="speaker-job">技术架构师/Elastic认证工程师</div>
             </div>
-            <div class="speaker-des">Mark 在澳大利亚 IT 行业拥有 15 年的工作经验，主要专注于 Linux 系统的管理工作。他是 DevOpsDays Sydney 2016 和 linux.conf.au 2018 组织团队的成员之一，并且在无数次行业大会和会议上发表过演讲，他同时还是悉尼和新西兰 Elastic 用户群的创始人。在过去 6 年内，Mark 深入参与了很多 Elasticsearch、Elasticsearch 姐妹项目以及社区的很多事务。他目前在 Elastic 负责领导 APJ 社区团队。</div>
+            <div class="speaker-des">Elastic-stack产品深度用户，2012/2013年接触Elasticsearch，对Elastic-Stack开发、架构、运维等方面有深入体验，实践过多种ES项目，最暴力的大数据分析应用，最复杂的业务系统应用等。</div>
             <div class="speech">
-                <div class="speech-title">演讲：Being Elastic: The Who, The Where, The How</div>
+                <div class="speech-title">演讲：DB到ES数据实时同步之路</div>
                 <div class="speech-des">
-                    致力于分布式产品的公司出品的……由分布式团队开发的……分布式系统。欢迎加入此次讨论并深入了解 Elastic 公司。我们是谁。我们在哪里。我们的工作方式。是什么让 Elastic 如此灵活？身为一名 Elastician，我们具有哪些品质？我们真正关注哪些内容？为了开创更美好的未来，我们的伟大抱负声明是什么？
+                    关系型数据库天然具备最严格的事务特性，有效的保证数据一致性，但在高效查询方面显得很无力；Elasticsearch天然具备高效的查询能力，但在数据一致性方面却是先天缺陷；
+                    要将DB与ES的优点结合首要解决数据同步问题 ，特别是业务应用的近似实时同步需求。本次就将基于CDC做实时同步的技术实践方案跟大家分享探讨。
                 </div>
             </div>
         </div>
-        <div class="speaker-section" id="alvin">
+
+        <div class="speaker-section" id="gaopan">
             <div class="speaker-avatar">
-                <img src="/static/images/2018/speakers/alvin.png">
+                <img src="/static/images/2019/speakers/gaopan.png">
             </div>
             <div class="speaker-info">
-                <div class="speaker-name">Alvin Chen</div>
-                <div class="speaker-job">Elastic Principal Product Manager</div>
+                <div class="speaker-name">高攀</div>
+                <div class="speaker-job">贝壳找房（北京）科技有限公司 搜索平台负责人</div>
             </div>
-            <div class="speaker-des">Alvin Chen 是一个技术控，对技术问题充满无限热情，同时他还十分热衷于旅行。作为 Elastic 产品管理团队的一员，他专注于 Logstash、Hadoop 生态系统集成以及整体数据采集战略。他之前曾就职于天睿 (Teradata)，负责 Hadoop 产品组合；还曾就职于惠普 (Hewlett-Packard)，负责制定大数据解决方案。他拥有加州大学伯克利分校计算机科学专业的文学学士学位，并且发表了一项有关分布式系统的专利。</div>
+            <div class="speaker-des">原百度Elasticsearch负责人，现负责贝壳搜索平台</div>
             <div class="speech">
-                <div class="speech-title">演讲：Elastic Product Updates & Roadmap</div>
+                <div class="speech-title">演讲：基于ES构建贝壳找房搜索中台</div>
                 <div class="speech-des">
-                    Elastic Stack  产品的最新特性与项目里程牌介绍。
+                    一、ES在贝壳的使用情况 <br>
+                        部署近300个节点，16套集群，支撑公司300+业务线，包括二手、新房、租赁等核心搜索业务，每天处理查询10亿+次，是贝壳最核心的服务之一。 <br>
+                    二、贝壳搜索中台演化之路 <br>
+                        如何构建企业级搜索中台？如何快速对业务赋能？如何自助接入，简化运维？如何解放劳动力，降本提效？ <br>
+                    三、稳定性99.99%的挑战 <br>
+                        如何在高并发场景下保证99.99%的稳定性？如何保证数据一致性，治理慢查询？事前事中事后应该做哪些事情？有哪些血泪教训？<br>
+                    四、总结与展望 <br>
+                           中台建设，服务治理的总结及未来规划。 <br>
                 </div>
             </div>
         </div>
+
+        <!--
         <div class="speaker-section" id="andy">
             <div class="speaker-avatar">
                 <img src="/static/images/2018/speakers/andy.png">
@@ -244,6 +277,7 @@
                 </div>
             </div>
         </div>
+
         <div class="speaker-section" id="medcl">
             <div class="speaker-avatar">
                 <img src="/static/images/2018/speakers/medcl.png">
@@ -516,43 +550,6 @@
                 </div>
             </div>
         </div>
-        <!--<div class="speaker-section" id="wxf">-->
-            <!--<div class="speaker-avatar">-->
-                <!--<img src="/static/images/2018/speakers/wxf.png">-->
-            <!--</div>-->
-            <!--<div class="speaker-info">-->
-                <!--<div class="speaker-name">吴晓凡</div>-->
-                <!--<div class="speaker-job">法狗狗 技术总监</div>-->
-            <!--</div>-->
-            <!--<div class="speaker-des">法狗狗（深圳）科技有限公司技术总监； 天问智能文本分析系统总负责人； 法国里昂大学优秀毕业生； 多年大数据、机器学习研发与DevOps经验。</div>-->
-            <!--<div class="speech">-->
-                <!--<div class="speech-title">演讲：更好的检索技术如何能帮助政府增加工作效率</div>-->
-                <!--<div class="speech-des">-->
-                    <!--1. 如何应对实时TB级的复杂文档检索任务<br>-->
-                    <!--2. 如何应对大规模智能咨询场景<br>-->
-                    <!--3. 未来的政务工作需要使用与NLP技术结合的检索技术-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <div class="speaker-section" id="jgq">
-            <div class="speaker-avatar">
-                <img src="/static/images/2018/speakers/jgq.png">
-            </div>
-            <div class="speaker-info">
-                <div class="speaker-name">姜国强</div>
-                <div class="speaker-job">腾讯TEG基础架构部高级研发工程师</div>
-            </div>
-            <div class="speaker-des">腾讯TEG基础架构部高级研发工程师，负责腾讯云Elasticsearch、时序数据库（CTSDB）的技术研发工作，支持腾讯云、公司内部用户的数据分析需求。曾在百度工作5年，参与Apache Doris等多套分析系统的研发工作，具有丰富的大数据分析经验。</div>
-            <div class="speech">
-                <div class="speech-title">演讲：Elasticsearch 在腾讯的实践</div>
-                <div class="speech-des">
-                    ES在腾讯有非常大量的应用，本次分享主要包含：
-                    <br>1. ES在腾讯的发展和现状。
-                    <br>2. 腾讯使用ES遇到的挑战：ES在腾讯的使用场景严苛，超大集群、高并发写入、海量存储。
-                    <br>3. 腾讯对ES的优化：我们在集群可靠性、性能、成本方面的优化实践。
-                </div>
-            </div>
-        </div>
         <div class="speaker-section" id="gct">
             <div class="speaker-avatar">
                 <img src="/static/images/2018/speakers/gct.png">
@@ -613,6 +610,7 @@
                 </div>
             </div>
         </div>
+        -->
     </div>
 </section>
 <!-- 嘉宾介绍 end -->
