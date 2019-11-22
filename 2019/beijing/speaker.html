@@ -175,8 +175,8 @@
             <div class="speech">
                 <div class="speech-title">演讲：从Docker到K8s：新东方生产ELK的进化史</div>
                 <div class="speech-des">
-                    新东方一直在寻找splunk的替代方案，从2017年开始研究elastic stack，同年容器平台的探索基本明朗。在对比了第三方es商业管理平台方案后，我们决定尝试利用容器技术来管理elk stack，降低elk的拥有和管理成本。
-                    我们摸索了将近三年时间，从最初的ansible方案，到利用docker和rancher 1.6编排引擎，到现在的k8s。期间形成了一整套软硬结合的管理方案，运维过程全部基于容器技术。目前整套平台已经应用到新东方的安全感知，TIDB和redis的慢日志分析，API 服务质量分析。同时新东方的在线业务系统也全面拥抱es,形成了写数据库读es的架构。
+                    新东方一直在寻找splunk的替代方案，从2017年开始研究Elastic Stack，同年容器平台的探索基本明朗。在对比了第三方ES商业管理平台方案后，我们决定尝试利用容器技术来管理ELK Stack，降低ELK的拥有和管理成本。
+                    我们摸索了将近三年时间，从最初的ansible方案，到利用Docker和rancher 1.6编排引擎，到现在的k8s。期间形成了一整套软硬结合的管理方案，运维过程全部基于容器技术。目前整套平台已经应用到新东方的安全感知，TIDB和redis的慢日志分析，API 服务质量分析。同时新东方的在线业务系统也全面拥抱es,形成了写数据库读es的架构。
                     本次分享将详细介绍这些应用的架构和落地方案。希望能对大家的工作有所启发和借鉴。
                 </div>
             </div>
@@ -211,7 +211,7 @@
             <div class="speech">
                 <div class="speech-title">演讲：Elasticsearch 多版本多集群自动化运维管理实践</div>
                 <div class="speech-des">
-                    普翔科技作为 elastic 中国的战略级合作伙伴，服务了国内数十家客户，为他们提供安全可靠及时的 Elastic 产品运维管理服务。其中 Elasticsearch 集群的运维管理是核心工作，一个难点是 Elasticsearch 发展迅速，版本多样，从 2 到 7 多种多样，不同版本之间在配置和 api 上会存在差异；另一个难点是集群数量多，一些大型客户内部有数十个集群，集群规模也各有不同，从 5 个节点到 50 个节点都存在。面对这种多版本多集群的运维管理需求，我们在尝试了多种方案后，结合实际运维中的遇到的问题，将系统调优、最佳实践、日常管理操作、监控告警等进行抽象整理后，形成了一个多版本多集群的自动化管理产品。本次分享会和大家介绍多版本多集群的运维管理实践，希望对大家在 Elasticsearch 运维管理方面有所帮助。
+                    普翔科技作为 Elastic 中国的战略级合作伙伴，服务了国内数十家客户，为他们提供安全可靠及时的 Elastic 产品运维管理服务。其中 Elasticsearch 集群的运维管理是核心工作，一个难点是 Elasticsearch 发展迅速，版本多样，从 2 到 7 多种多样，不同版本之间在配置和 api 上会存在差异；另一个难点是集群数量多，一些大型客户内部有数十个集群，集群规模也各有不同，从 5 个节点到 50 个节点都存在。面对这种多版本多集群的运维管理需求，我们在尝试了多种方案后，结合实际运维中的遇到的问题，将系统调优、最佳实践、日常管理操作、监控告警等进行抽象整理后，形成了一个多版本多集群的自动化管理产品。本次分享会和大家介绍多版本多集群的运维管理实践，希望对大家在 Elasticsearch 运维管理方面有所帮助。
                 </div>
             </div>
         </div>
@@ -292,7 +292,7 @@
             <div class="speech">
                 <div class="speech-title">演讲：网易基于 Elasticsearch 构建通用搜索系统的实践</div>
                 <div class="speech-des">
-                    网易杭州研究院搜索平台为网易集团内部各项业务提供了通用性的搜索功能及服务，近两年来，我们开始逐步的基于开源 Elasticsearch 构建通用搜索平台。目前，基于 es 构建的通用搜索平台在网易内部已承接起电商、教育、音乐等产品的搜索业务，而在构建平台的过程中我们也对 es 的部署管理、索引/集群管理、安全、搜索功能、多机房高可用、多端数据集成及同步等多方面做了优化和改进。本次分享主要介绍网易在构建基于 Elasticsearch 通用搜索系统过程中的这些实践和优化。
+                    网易杭州研究院搜索平台为网易集团内部各项业务提供了通用性的搜索功能及服务，近两年来，我们开始逐步的基于开源 Elasticsearch 构建通用搜索平台。目前，基于 ES 构建的通用搜索平台在网易内部已承接起电商、教育、音乐等产品的搜索业务，而在构建平台的过程中我们也对 ES 的部署管理、索引/集群管理、安全、搜索功能、多机房高可用、多端数据集成及同步等多方面做了优化和改进。本次分享主要介绍网易在构建基于 Elasticsearch 通用搜索系统过程中的这些实践和优化。
                 </div>
             </div>
         </div>
@@ -326,9 +326,9 @@
             <div class="speech">
                 <div class="speech-title">演讲：阿里云Elasticsearch大规模集群治理及内核优化实践</div>
                 <div class="speech-des">
-                    1. 介绍阿里云es的产品功能，在elk生态、易用性、高可用等方面做的工作 <br>
-                    2. 介绍阿里云es如何运维数万台数据服务节点，如何用统一架构支撑多样化的运维需求，保证公有云paas平台的平滑稳定 <br>
-                    3. 介绍阿里云es在内核优化方向做的探索与实践工作，包括计算存储分离架构、达摩院向量检索引擎proxima、离线构建优化elasticBuild、达摩院分词插件alinlp等功能的设计与实现
+                    1. 介绍阿里云ES的产品功能，在ELK生态、易用性、高可用等方面做的工作 <br>
+                    2. 介绍阿里云ES如何运维数万台数据服务节点，如何用统一架构支撑多样化的运维需求，保证公有云paas平台的平滑稳定 <br>
+                    3. 介绍阿里云ES在内核优化方向做的探索与实践工作，包括计算存储分离架构、达摩院向量检索引擎proxima、离线构建优化ElasticBuild、达摩院分词插件alinlp等功能的设计与实现
                 </div>
             </div>
         </div>
@@ -427,7 +427,7 @@
             </div>
             <div class="speaker-info">
                 <div class="speaker-name">李捷</div>
-                <div class="speaker-job">Elastic 资深顾问</div>
+                <div class="speaker-job">Elastic 高级解决方案架构师</div>
             </div>
             <div class="speaker-des">13年IT从业经验，Elasticsearch真爱粉，喜欢在不同技术和具体解决方案上做探索。</div>
             <div class="speech">
@@ -444,7 +444,7 @@
             </div>
             <div class="speaker-info">
                 <div class="speaker-name">朱杰</div>
-                <div class="speaker-job">Elastic 资深顾问</div>
+                <div class="speaker-job">Elastic 首席解决方案架构师</div>
             </div>
             <div class="speaker-des">专注于Elastic Stack的解决方案的设计和咨询。在加入Elastic之前，Jerry有十五年软件开发经验，涉及服务器端程序、Web、移动开发等多个领域。在大数据分析领域也有十年实践经验，熟悉Hadoop生态、Elastic Stack。</div>
             <div class="speech">
