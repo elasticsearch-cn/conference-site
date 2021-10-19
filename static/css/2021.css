@@ -154,6 +154,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     background-color: transparent;
 }
+.navbar-header {
+    position: relative;
+}
 .navbar-solid {
     border-bottom: 1px solid #e5e5e5!important;
     background-color: #f8f8f8 !important;
@@ -164,11 +167,21 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-solid .navbar-header a.elastic-logo span{
     color: #777;
     padding-left:40px;
+    white-space:nowrap;
 }
 .navbar-solid .navbar-header a.elastic-logo {
     background-size: auto 80%;
     background-position: 0;
     padding:15px 15px;
+}
+.navbar-header .icon-bar-wrap {
+    background-color: #f8f8f8;
+    width: 64px;
+    height: 49px;
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    display: none;
 }
 
 .navbar-solid .navbar-nav > li > a:focus, .navbar-solid .navbar-nav > li > a:hover {
@@ -745,6 +758,9 @@ svg:not(:root) {
     .partner .partner-box {
         margin: 10px;
         width: 150px;
+    }
+    .navbar-header .icon-bar-wrap {
+        display: inline-block;
     }
 }
 
