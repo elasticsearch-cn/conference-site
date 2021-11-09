@@ -5,6 +5,9 @@ a.elastic-logo span {
 .schedule {
     color: #313131;
 }
+h3 {
+    font-weight: 500;
+}
 
 .schedule-pc {
     position: relative;

@@ -43,6 +43,7 @@ h3 {
 .sponsor .sponsor-des{
     margin-top: 10px;
     line-height: 1.6;
+    word-break: break-all;
 }
 
 @media (max-width: 1000px) {

@@ -12,6 +12,27 @@ p {
     display:block;
 
 }
+ul.dropdown-menu>li>a {
+    padding: 8px 20px;
+    text-align: center;
+}
+.navbar ul.nav>li>a {
+    min-width: 80px;
+    text-align: center;
+}
+.navbar-solid ul.nav>li>a, .navbar-solid .navbar-header a.navbar-brand {
+    height: 60px;
+    line-height: 30px;
+}
+.navbar-header .navbar-toggle {
+    margin-right:8px;
+}
+.section {
+    padding: 20px 0;
+}
+.section.section-first {
+    margin-top: 60px;
+}
 
 .clear-link a{text-decoration:none;}
 .clear-link a:link{text-decoration:none;}
@@ -231,6 +252,7 @@ p {
     font-size: 24px;
 }
 
+
 @media (max-width: 767px) {
     .right-tool {
         right: 5px;
@@ -246,6 +268,32 @@ p {
     .right-tool li.go-top span{
         color: #fff;
         font-size: 18px;
+    }
+    .navbar .navbar-header a.elastic-logo span {
+        padding-left:45px!important;
+    }
+    .navbar-custom {
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
+    .navbar .navbar-header a.navbar-brand {
+        height: 50px;
+        line-height: 25px;
+        font-size:16px!important;
+    }
+    .navbar-solid .navbar-header a.navbar-brand {
+        height: 50px;
+        line-height: 25px;
+        font-size:16px!important;
+    }
+    .navbar-header a.elastic-logo {
+        background-size: auto 80%!important;
+        background-position: 5px center!important;
+        padding: 15px 5px!important;
+    }
+    .navbar-solid ul.nav>li>a {
+        height: 40px;
+        line-height: 20px;
     }
 }
 
