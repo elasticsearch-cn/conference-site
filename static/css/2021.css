@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
 .partner .partner-box {
     height: auto;
     width: 180px;
-    margin: 25px;
+    margin: 15px;
     -webkit-transition: 0.5s all linear;
     transition: 0.5s all linear;
     vertical-align: middle;
