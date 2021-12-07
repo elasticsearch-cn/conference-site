@@ -33,7 +33,6 @@ h3 {
     width: calc(100% - 220px);
 }
 .sponsor .sponsor-name{
-    padding-top: 16px;
     font-size: 20px;
     font-weight: 400;
     color: #313131;
@@ -86,5 +85,6 @@ h3 {
     }
     .sponsor .sponsor-name, .sponsor-des {
         float: none;
+        width: calc(100% - 20px);
     }
 }
