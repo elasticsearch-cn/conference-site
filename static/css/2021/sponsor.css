@@ -78,7 +78,7 @@ h3 {
         float: none;
     }
     .sponsor .sponsor-name {
-        padding-top: 0;
+        padding-top: 10px;
     }
     .sponsor .sponsor-des{
         width: 100%;
