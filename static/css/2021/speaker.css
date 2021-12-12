@@ -16,6 +16,7 @@
     height: 180px;
     border-radius: 50%;
     overflow: hidden;
+    border: 1px solid #e1e4e9;
 }
 .speaker .speaker-avatar img {
     width: 100%;
