@@ -107,25 +107,26 @@
             </div>
             <div class="speaker-des">专注于 Elastic Stack 的解决方案的设计和咨询。在加入 Elastic 之前，Jerry 有十五年软件开发经验，涉及服务器端程序、Web、移动开发等多个领域。在大数据分析领域也有十年实践经验，熟悉 Hadoop 生态、Elastic Stack。</div>
             <div class="speech">
-                <div class="speech-title">演讲：利用 Elasticsearch 新功能实现低成本日志方案</div>
+                <div class="speech-title">演讲：Elastic Stack 7系新功能在各种业务场景下的应用</div>
                 <div class="speech-des">
-                    日志场景对于 Elasticsearch 一直有成本上面的抱怨，特别是在低阶日志处理阶段，主要是日志文本的简单搜索匹配，没有太多分析，所以对于成本是非常敏感的。因此业界也出现了很多以 Loki 为代表的低成本日志方案，通过不对原始日志创建索引等等方法来节约存储成本。然而 ELK 社区并不熟悉 Elasticsearch 的新功能已经可以实现同样的低成本方案。本主题就是系统性阐述这个低成本方案的实现。
+                    从2019年4月11日发布7.0到2021年12月8日发布7.16，历时2年8个月，17个功能版本，是Elastic历史上跨度最长，版本最多的系列。
+                    而社区很多用户还停留在5和6版本，对于很多7的新功能并没有全面的了解。在这个主题里面我会把新功能分门别类，并放到具体的业务场景里面去介绍，从而让听众可以高效地掌握这些新功能的设计目的和应用场景。
                 </div>
             </div>
         </div>
-        <div class="speaker-section" id="guojialiang">
+        <div class="speaker-section" id="weizijun">
             <div class="speaker-avatar">
-                <img src="/static/images/2021/speakers/guojialiang.png">
+                <img src="/static/images/2021/speakers/weizijun.png">
             </div>
             <div class="speaker-info">
-                <div class="speaker-name">郭嘉梁</div>
+                <div class="speaker-name">魏子珺</div>
                 <div class="speaker-job">阿里巴巴技术专家</div>
             </div>
-            <div class="speaker-des">郭嘉梁，阿里巴巴技术专家，2017年加入阿里巴巴，负责阿里云Elasticsearch日志存储引擎的研发工作，致力于为用户提供海量日志场景下，高可用、高性能、低成本的搜索分析服务。</div>
+            <div class="speaker-des">阿里云Elasticsearch内核专家，Elasticsearch Top 100 Contributer</div>
             <div class="speech">
-                <div class="speech-title">演讲：阿里云ES面向海量日志存储的优化思路与心法</div>
+                <div class="speech-title">演讲：用Elasticsearch做TSDB-阿里云与Elastic社区在时序引擎共建的技术分享</div>
                 <div class="speech-des">
-                    阿里云Elasticsearch面向海量日志的分析检索场景，提供了高性价比的Openstore多级存储解决方案，使总体部署成本降低了60%。本次演讲旨在分享Openstore多级存储架构，以及引擎内核的优化思路，主要包括：1. Openstore多级存储架构2. 查询性能优化方案3. 智能缓存技术4. 查询的资源隔离技术5. 阿里云ES日志存储的未来规划。
+                    时序数据是ES可观察性很关键的一类场景，当前使用ES存储时序数据存在最佳实践使用门槛过高，存储容量过大，查询语句复杂等问题。阿里云联合Elastic社区共同打造的时序引擎，旨在降低用户的使用门槛，提供高性能、低成本的TSDB。本次分享会介绍ES最新的TSDB特性的设计和原理
                 </div>
             </div>
         </div>
@@ -161,19 +162,19 @@
                 </div>
             </div>
         </div>
-        <div class="speaker-section" id="weizijun">
+        <div class="speaker-section" id="guojialiang">
             <div class="speaker-avatar">
-                <img src="/static/images/2021/speakers/weizijun.png">
+                <img src="/static/images/2021/speakers/guojialiang.png">
             </div>
             <div class="speaker-info">
-                <div class="speaker-name">魏子珺</div>
+                <div class="speaker-name">郭嘉梁</div>
                 <div class="speaker-job">阿里巴巴技术专家</div>
             </div>
-            <div class="speaker-des">阿里云Elasticsearch内核专家，Elasticsearch Top 100 Contributer</div>
+            <div class="speaker-des">郭嘉梁，阿里巴巴技术专家，2017年加入阿里巴巴，负责阿里云Elasticsearch日志存储引擎的研发工作，致力于为用户提供海量日志场景下，高可用、高性能、低成本的搜索分析服务。</div>
             <div class="speech">
-                <div class="speech-title">演讲：用Elasticsearch做TSDB-阿里云与Elastic社区在时序引擎共建的技术分享</div>
+                <div class="speech-title">演讲：阿里云ES面向海量日志存储的优化思路与心法</div>
                 <div class="speech-des">
-                    时序数据是ES可观察性很关键的一类场景，当前使用ES存储时序数据存在最佳实践使用门槛过高，存储容量过大，查询语句复杂等问题。阿里云联合Elastic社区共同打造的时序引擎，旨在降低用户的使用门槛，提供高性能、低成本的TSDB。本次分享会介绍ES最新的TSDB特性的设计和原理
+                    阿里云Elasticsearch面向海量日志的分析检索场景，提供了高性价比的Openstore多级存储解决方案，使总体部署成本降低了60%。本次演讲旨在分享Openstore多级存储架构，以及引擎内核的优化思路，主要包括：1. Openstore多级存储架构2. 查询性能优化方案3. 智能缓存技术4. 查询的资源隔离技术5. 阿里云ES日志存储的未来规划。
                 </div>
             </div>
         </div>
