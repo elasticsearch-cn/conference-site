@@ -162,6 +162,12 @@
                     企业在使用ELK在应对日志场景的需求时，在成本、日志容灾、冷热多级存储、横向扩展效率、并发性能及稳定性相关问题上，往往需要投入不少集成封装，机器冗余，运维相关的人和资源的投入。阿里云Elasticsearch通过Serverless的方式，充分利用云端的服务化产品能力的优势，帮助企业解决痛点问题，助力企业的数字化转型。
                 </div>
             </div>
+            <div class="speech">
+                <div class="speech-title">演讲：从 ELK 到 EFK —结合 Flink 和 Elasticsearch 新特性重构全观测方案</div>
+                <div class="speech-des">
+                    在企业业务系统越发复杂的今天，日志的并发量越来越高，传统的ELK架构，受制于Logstash在性能、稳定性上的局限性，在解决日志全观测相关问题时会遇到或多或少的问题。看看阿里云基于EFK(Elasticsearch+Flink+Kibana)的解决方案，是如何解决相关问题的。
+                </div>
+            </div>
         </div>
         <div class="speaker-section" id="guojialiang">
             <div class="speaker-avatar">
@@ -338,6 +344,21 @@
                     <br>ByteES 之生态
                     <br>ByteES 之容器
                     <br>ByteES 之未来
+                </div>
+            </div>
+        </div>
+        <div class="speaker-section" id="tangming">
+            <div class="speaker-avatar">
+                <img src="/static/images/2021/speakers/tangming.png">
+            </div>
+            <div class="speaker-info">
+                <div class="speaker-name">汤明</div>
+                <div class="speaker-job">字节跳动 高级开发工程师</div>
+            </div>
+            <div class="speech">
+                <div class="speech-title">演讲：Elasticsearch mini batch loader - 海量导入实时索引外部构建方案</div>
+                <div class="speech-des">
+                    ES在字节跳动有着大规模的使用。为了应对实时数据的快速增长、提供极高的写入性能、降低读写资源竞争，我们基于Flink实现了在ES集群之外以mini batch的方式实时构建索引并传输至ES集群的方案，单节点写入速度达到每秒近百万，相较于离线外部构建索引的方式，实时外部构建索引的主要难点是数据一致性问题，本次分享将介绍期间遇到的主要困难，解决方案，以及详细的性能指标。
                 </div>
             </div>
         </div>
