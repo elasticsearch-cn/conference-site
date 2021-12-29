@@ -71,11 +71,19 @@ h3 {
     display: inline-block;
 }
 
+
+.guide .im {
+    width: 60%;
+}
+
 @media (max-width: 1000px) {
     .guide .wrap {
         width: 90%;
     }
     .guide .guide-section {
         margin-bottom: 30px;
+    }
+    .guide .im {
+        width: 100%;
     }
 }
