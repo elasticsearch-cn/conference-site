@@ -1,9 +1,6 @@
 .schedule {
     color: #313131;
 }
-h3 {
-    font-weight: 500;
-}
 
 .schedule-pc {
     position: relative;
@@ -54,7 +51,7 @@ h3 {
     font-size: 20px;
     text-align: center;
     line-height: 80px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .schedule .schedule-pc tr td.spare-time {
     font-size: 16px;
@@ -131,7 +128,7 @@ h3 {
 }
 .m-schedule-header .m-schedule-title {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .m-schedule-content {
     padding-bottom: 32px;
