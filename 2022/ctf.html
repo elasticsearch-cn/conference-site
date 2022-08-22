@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
-    <meta name="keywords" content="Elastic 中国开发者大会 2022,Elastic,ES,ES大会 Elastic Stack，ELK，elasticsearch、logstash、kibana、beats等相关技术交流探讨">
-    <meta name="description" content="Elastic 中国开发者大会 2022（Elastic Dev Day China 2022）是由 Elastic 官方在中国举办的第四次开发者大会，主要围绕 Elastic 的开源产品: Elasticsearch、Logstash、Kibana 和 Beats，探讨在搜索、数据实时分析、日志分析、安全等领域的实践与应用。">
+    <meta name="keywords"
+        content="Elastic 中国开发者大会 2022,Elastic,ES,ES大会 Elastic Stack，ELK，elasticsearch、logstash、kibana、beats等相关技术交流探讨">
+    <meta name="description"
+        content="Elastic 中国开发者大会 2022（Elastic Dev Day China 2022）是由 Elastic 官方在中国举办的第四次开发者大会，主要围绕 Elastic 的开源产品: Elasticsearch、Logstash、Kibana 和 Beats，探讨在搜索、数据实时分析、日志分析、安全等领域的实践与应用。">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Elastic 中国开发者大会 2022">
     <meta property="og:image" content="https://conf.elasticsearch.cn/static/images/logo/elastic-logo-300x300.png">
@@ -28,14 +31,18 @@
         .ctf .ctf-part {
             padding-bottom: 20px;
         }
+
         .ctf-ul li {
-            list-style:disc;
+            list-style: disc;
         }
+
         .ctf-ul .sub-ul li {
-            list-style:decimal;
+            list-style: decimal;
         }
+
         .ctf .ctf-video-intro {
-            height:600px;width: 840px
+            height: 600px;
+            width: 840px
         }
 
         @media (max-width: 1000px) {
@@ -43,12 +50,14 @@
                 width: 90%;
             }
         }
+
         @media (max-width: 768px) {
             .ctf .wrap {
                 width: 90%;
             }
+
             .ctf .ctf-video-intro {
-                height:240px;
+                height: 240px;
                 width: 100%
             }
         }
@@ -61,152 +70,161 @@
     <![endif]-->
 
 </head>
-<body  data-spy="scroll" data-target="#site-nav">
-<!-- 微信分享默认图 -->
-<div style="display:none;"><img src="/static/images/logo/elastic-logo-300x300.jpg" alt=""></div>
-<!-- 导航 start -->
-<nav id="site-nav" class="navbar navbar-default navbar-fixed-top navbar-solid">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand elastic-logo" href="../2022/index.html">
-                <span>Elastic 中国开发者大会 2022</span>
-            </a>
-            <div class="icon-bar-wrap">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+
+<body data-spy="scroll" data-target="#site-nav">
+    <!-- 微信分享默认图 -->
+    <div style="display:none;"><img src="/static/images/logo/elastic-logo-300x300.jpg" alt=""></div>
+    <!-- 导航 start -->
+    <nav id="site-nav" class="navbar navbar-default navbar-fixed-top navbar-solid">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand elastic-logo" href="../2022/index.html">
+                    <span>Elastic 中国开发者大会 2022</span>
+                </a>
+                <div class="icon-bar-wrap">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a data-scroll href="./index.html">大会介绍</a></li>
+                    <li data-scroll class="active"><a href="#">CTF介绍</a></li>
+                    <li><a href="./schedule.html">大会议程</a></li>
+                    <li><a href="./speaker.html">嘉宾介绍</a></li>
+                    <li><a href="./sponsor.html">赞助合作</a></li>
+                    <li><a href="./volunteer.html">志愿者</a></li>
+                    <li><a href="./guide.html">参会指南</a></li>
+                    <!--                <li><a href="./live.html">直播入口</a></li>-->
+                    <!--                <li><a data-scroll href="./index.html#ticket">购票</a></li>-->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><span class="history-conf"></span>往届 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/2019/index.html">2019</a></li>
+                            <li><a href="/2018/index.html">2018</a></li>
+                            <li><a href="/2017/index.html">2017</a></li>
+                            <li><a href="/2016/index.html">2016</a></li>
+                            <li><a href="/2015/index.html">2015</a></li>
+                            <li><a href="/2014/index.html">2014</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a data-scroll href="./index.html">大会介绍</a></li>
-                <li data-scroll class="active"><a href="#">CTF介绍</a></li>
-                <li><a href="./schedule.html">大会议程</a></li>
-                <li><a href="./speaker.html">嘉宾介绍</a></li>
-                <li><a href="./sponsor.html">赞助合作</a></li>
-                <li><a href="./volunteer.html">志愿者</a></li>
-                <li><a href="./guide.html">参会指南</a></li>
-<!--                <li><a href="./live.html">直播入口</a></li>-->
-<!--                <li><a data-scroll href="./index.html#ticket">购票</a></li>-->
+    </nav>
+    <!-- 导航 end -->
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="history-conf"></span>往届 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/2019/index.html">2019</a></li>
-                        <li><a href="/2018/index.html">2018</a></li>
-                        <li><a href="/2017/index.html">2017</a></li>
-                        <li><a href="/2016/index.html">2016</a></li>
-                        <li><a href="/2015/index.html">2015</a></li>
-                        <li><a href="/2014/index.html">2014</a></li>
+    <!-- 嘉宾介绍 start -->
+    <section id="ctf" class="section section-first bg-white ctf">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Elastic安全：CTF夺旗游戏 （Capture the Flag）</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="ctf-part">
+                <h3>CTF 介绍</h3>
+                <div>
+                    CTF是 "Capture the Flag" (夺旗)的缩写，是一种基于计算机的比赛，通过上手实践教授信息安全技能。<br>
+                    选手通过完成识别潜在威胁的任务来获得积分，并确保计算机和网络免受虚拟攻击。<br>
+                    个人或团队根据速度和准确性获得积分。在规定的时间结束时，拥有最多分的个人或团队被宣布为赢家。<br>
+                </div>
+                <p style="margin-top: 10px;">下面由 Elastic 资深解决方案架构师 Lex Li 带来的CTF视频讲解：</p>
+                <iframe class="ctf-video-intro" src="//player.bilibili.com/player.html?bvid=BV1Am4y1X73X&page=1"
+                    scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+            </div>
+            <div class="ctf-part">
+                <h3>本次线上 CTF 赛事时间段</h3>
+                <div>
+                    2022-10-28 12:00 ~ 23:59，持续12小时。
+                </div>
+            </div>
+            <div class="ctf-part">
+                <h3>本次线上 CTF 游戏入口</h3>
+                <div>
+                    <p><strong>竞赛页面：</strong>https://elasticsecurityctf-apac.ctfd.io/register</p>
+                    <p><strong>威胁捕获页面：</strong>https://ela.st/elastic-security-ctf-china</p>
+                    <p>注：访问用户名和密码将会于1.7号中午12点在"Elastic开发者大会2021@深圳"微信群内公布，敬请关注！（需要参加CTF夺旗游戏的小伙伴可以加微信：<strong>lsy965145175</strong>
+                        拉你入群）</p>
+                </div>
+            </div>
+            <div class="ctf-part">
+                <h3>挑战目的</h3>
+                <ul class="ctf-ul">
+                    <li>参加者在离开时应该知道Elastic Security是什么</li>
+                    <li>带着成就感离开（而不是失败感）</li>
+                    <li>享受到安全分析的乐趣</li>
+                </ul>
+            </div>
+            <div class="ctf-part">
+                <h3>CTF 构成</h3>
+                <div>
+                    使用Elastic Security 7.12采集的数据集
+                    <ul class="ctf-ul">
+                        <li>没有Elastic Agent/Endpoint Security</li>
+                        <li>以Windows为中心（Winlogbeat + Packetbeat + Sysmon）</li>
+                        <li>包含主机数据与网络数据</li>
+                        <li>主要使用 Kibana 上的可视化工具 (Lens)和Elastic Security App</li>
                     </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- 导航 end -->
-
-<!-- 嘉宾介绍 start -->
-<section id="ctf" class="section section-first bg-white ctf">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">Elastic安全：CTF夺旗游戏 （Capture the Flag）</h3>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="wrap">
-        <div class="ctf-part">
-            <h3>CTF 介绍</h3>
-            <div>
-                CTF是 "Capture the Flag" (夺旗)的缩写，是一种基于计算机的比赛，通过上手实践教授信息安全技能。<br>
-                选手通过完成识别潜在威胁的任务来获得积分，并确保计算机和网络免受虚拟攻击。<br>
-                个人或团队根据速度和准确性获得积分。在规定的时间结束时，拥有最多分的个人或团队被宣布为赢家。<br>
-            </div>
-            <p style="margin-top: 10px;">下面由 Elastic 资深解决方案架构师 Lex Li 带来的CTF视频讲解：</p>
-            <iframe class="ctf-video-intro" src="//player.bilibili.com/player.html?bvid=BV1Am4y1X73X&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-        </div>
-        <div class="ctf-part">
-            <h3>本次线上 CTF 赛事时间段</h3>
-            <div>
-                2022-10-14 12:00 ~ 23:59，持续12小时。
-            </div>
-        </div>
-        <div class="ctf-part">
-            <h3>本次线上 CTF 游戏入口</h3>
-            <div>
-                <p><strong>竞赛页面：</strong>https://elasticsecurityctf-apac.ctfd.io/register</p>
-                <p><strong>威胁捕获页面：</strong>https://ela.st/elastic-security-ctf-china</p>
-                <p>注：访问用户名和密码将会于1.7号中午12点在"Elastic开发者大会2021@深圳"微信群内公布，敬请关注！（需要参加CTF夺旗游戏的小伙伴可以加微信：<strong>lsy965145175</strong> 拉你入群）</p>
-            </div>
-        </div>
-        <div class="ctf-part">
-            <h3>挑战目的</h3>
-            <ul class="ctf-ul">
-                <li>参加者在离开时应该知道Elastic Security是什么</li>
-                <li>带着成就感离开（而不是失败感）</li>
-                <li>享受到安全分析的乐趣</li>
-            </ul>
-        </div>
-        <div class="ctf-part">
-            <h3>CTF 构成</h3>
-            <div>
-                使用Elastic Security 7.12采集的数据集
-                <ul class="ctf-ul">
-                    <li>没有Elastic Agent/Endpoint Security</li>
-                    <li>以Windows为中心（Winlogbeat + Packetbeat + Sysmon）</li>
-                    <li>包含主机数据与网络数据</li>
-                    <li>主要使用 Kibana 上的可视化工具 (Lens)和Elastic Security App</li>
-                </ul>
-            </div>
-        </div>
-        <div class="ctf-part">
-            <h3>挑战过程（27项挑战）</h3>
-            <div>
-                <ul class="ctf-ul">
-                    <li>在网页上访问CTF游戏的参与界面，并进行注册</li>
-                    <li>游戏开始后，完成顺序出现的挑战（必须解决上一个挑战，才能解锁下一个挑战）</li>
-                    <ul class="ctf-ul sub-ul">
-                        <li>在CTF页面上阅读挑战的细节</li>
-                        <li>在Kibana上进行分析，寻找答案</li>
-                        <li>在CTF上填入正确答案</li>
-                        <li>解锁下一个挑战</li>
+            <div class="ctf-part">
+                <h3>挑战过程（27项挑战）</h3>
+                <div>
+                    <ul class="ctf-ul">
+                        <li>在网页上访问CTF游戏的参与界面，并进行注册</li>
+                        <li>游戏开始后，完成顺序出现的挑战（必须解决上一个挑战，才能解锁下一个挑战）</li>
+                        <ul class="ctf-ul sub-ul">
+                            <li>在CTF页面上阅读挑战的细节</li>
+                            <li>在Kibana上进行分析，寻找答案</li>
+                            <li>在CTF上填入正确答案</li>
+                            <li>解锁下一个挑战</li>
+                        </ul>
+                        <li>每项挑战完成后，获得10个积分</li>
+                        <li>当挑战遇到困难时，可选择消耗5个积分来获取提示</li>
+                        <li>一共27项挑战，半个小时的挑战时间</li>
+                        <li>最终积分最多的个人或团队将获得冠军</li>
                     </ul>
-                    <li>每项挑战完成后，获得10个积分</li>
-                    <li>当挑战遇到困难时，可选择消耗5个积分来获取提示</li>
-                    <li>一共27项挑战，半个小时的挑战时间</li>
-                    <li>最终积分最多的个人或团队将获得冠军</li>
-                </ul>
+                </div>
             </div>
-        </div>
-        <div class="ctf-part">
-            <h3>本次 CTF 奖品设置</h3>
-            <div>
-                <ul class="ctf-ul">
-                    <li>冠军奖杯、亚军奖杯</li>
-                    <li>Elastic 官方提供价值$400 美金的 Elastic 认证工程师考试券</li>
-                </ul>
-                (注：奖品仅限大会已报名参会用户，非大会参会用户成绩无效)
+            <div class="ctf-part">
+                <h3>本次 CTF 奖品设置</h3>
+                <div>
+                    <ul class="ctf-ul">
+                        <li>冠军奖杯、亚军奖杯</li>
+                        <li>Elastic 官方提供价值$400 美金的 Elastic 认证工程师考试券</li>
+                    </ul>
+                    (注：奖品仅限大会已报名参会用户，非大会参会用户成绩无效)
+                </div>
             </div>
+            <p>本次 CTF 的获奖结果将在10月29日的大会上午颁奖环节宣布。​</p>
+            <p>本次活动的最终解释权归 Elastic 中国开发者大会所有。</p>
         </div>
-        <p>本次 CTF 的获奖结果将在10月15日的大会上午颁奖环节宣布。​</p>
-        <p>本次活动的最终解释权归 Elastic 中国开发者大会所有。</p>
-    </div>
-</section>
-<!-- 嘉宾介绍 end -->
+    </section>
+    <!-- 嘉宾介绍 end -->
 
-<!-- 底部 start -->
-<footer class="footer">
-    <div class="container">
-        Copyright © 2011-<script>document.write(new Date().getFullYear());</script> <span> · <a href="//elasticsearch.cn/" target="blank">Elastic中文社区</a></span>, 本活动遵循 <a href="https://www.elastic.co/community/codeofconduct">Elastic 社区行为准则</a>.
-    </div>
-</footer>
-<!-- 底部 end -->
-<script src="/static/bootstrap/js/jquery.min.js"></script>
-<script src="/static/bootstrap/js/bootstrap.min.js"></script>
-<script language="javascript" charset="utf-8" src="/static/js/google-analytics.js"></script>
+    <!-- 底部 start -->
+    <footer class="footer">
+        <div class="container">
+            Copyright © 2011-
+            <script>document.write(new Date().getFullYear());</script> <span> · <a href="//elasticsearch.cn/"
+                    target="blank">Elastic中文社区</a></span>, 本活动遵循 <a
+                href="https://www.elastic.co/community/codeofconduct">Elastic 社区行为准则</a>.
+        </div>
+    </footer>
+    <!-- 底部 end -->
+    <script src="/static/bootstrap/js/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script language="javascript" charset="utf-8" src="/static/js/google-analytics.js"></script>
 </body>
+
 </html>

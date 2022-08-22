@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
-    <meta name="keywords" content="Elastic 中国开发者大会 2022,Elastic,ES,ES大会 Elastic Stack，ELK，elasticsearch、logstash、kibana、beats等相关技术交流探讨">
-    <meta name="description" content="Elastic 中国开发者大会 2022（Elastic Dev Day China 2022）是由 Elastic 官方在中国举办的第四次开发者大会，主要围绕 Elastic 的开源产品: Elasticsearch、Logstash、Kibana 和 Beats，探讨在搜索、数据实时分析、日志分析、安全等领域的实践与应用。">
+    <meta name="keywords"
+        content="Elastic 中国开发者大会 2022,Elastic,ES,ES大会 Elastic Stack，ELK，elasticsearch、logstash、kibana、beats等相关技术交流探讨">
+    <meta name="description"
+        content="Elastic 中国开发者大会 2022（Elastic Dev Day China 2022）是由 Elastic 官方在中国举办的第四次开发者大会，主要围绕 Elastic 的开源产品: Elasticsearch、Logstash、Kibana 和 Beats，探讨在搜索、数据实时分析、日志分析、安全等领域的实践与应用。">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Elastic 中国开发者大会 2022">
     <meta property="og:image" content="https://conf.elasticsearch.cn/static/images/logo/elastic-logo-300x300.png">
     <meta property="og:url" content="https://conf.elasticsearch.cn">
-    
+
     <link rel="shortcut icon" type="image/png" href="/static/images/logo/elastic-logo-300x300.png">
     <title>Elastic 中国开发者大会 2022</title>
 
@@ -25,401 +28,412 @@
     <![endif]-->
 
 </head>
-<body  data-spy="scroll" data-target="#site-nav">
-<!-- 微信分享默认图 -->
-<div style="display:none;"><img src="/static/images/logo/elastic-logo-300x300.jpg" alt=""></div>
-<!-- 导航 start -->
-<nav id="site-nav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand elastic-logo" href="../2022/index.html">
-                <span>Elastic Dev Day China 2022</span>
-            </a>
-            <div class="icon-bar-wrap">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+
+<body data-spy="scroll" data-target="#site-nav">
+    <!-- 微信分享默认图 -->
+    <div style="display:none;"><img src="/static/images/logo/elastic-logo-300x300.jpg" alt=""></div>
+    <!-- 导航 start -->
+    <nav id="site-nav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand elastic-logo" href="../2022/index.html">
+                    <span>Elastic Dev Day China 2022</span>
+                </a>
+                <div class="icon-bar-wrap">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a data-scroll href="#intro">大会介绍</a></li>
+                    <li><a href="./ctf.html">CTF介绍</a></li>
+                    <li><a href="./schedule.html">大会议程</a></li>
+                    <li><a href="./speaker.html">嘉宾介绍</a></li>
+                    <li><a href="./sponsor.html">赞助合作</a></li>
+                    <li><a href="./volunteer.html">志愿者</a></li>
+                    <li><a href="./guide.html">参会指南</a></li>
+                    <!--                <li><a href="./live.html">直播入口</a></li>-->
+                    <!--                <li><a data-scroll href="#ticket" target="_blank">购票</a></li>-->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><span class="history-conf"></span>往届 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/2019/index.html">2019</a></li>
+                            <li><a href="/2018/index.html">2018</a></li>
+                            <li><a href="/2017/index.html">2017</a></li>
+                            <li><a href="/2016/index.html">2016</a></li>
+                            <li><a href="/2015/index.html">2015</a></li>
+                            <li><a href="/2014/index.html">2014</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a data-scroll href="#intro">大会介绍</a></li>
-                <li><a href="./ctf.html">CTF介绍</a></li>
-                <li><a href="./schedule.html">大会议程</a></li>
-                <li><a href="./speaker.html">嘉宾介绍</a></li>
-                <li><a href="./sponsor.html">赞助合作</a></li>
-                <li><a href="./volunteer.html">志愿者</a></li>
-                <li><a href="./guide.html">参会指南</a></li>
-<!--                <li><a href="./live.html">直播入口</a></li>-->
-<!--                <li><a data-scroll href="#ticket" target="_blank">购票</a></li>-->
+    </nav>
+    <!-- 导航 end -->
+    <!-- 首页大图 start -->
+    <header id="site-header" class="site-header sz-2018 valign-center">
+        <div class="intro">
+            <h1>Elastic 中国开发者大会 2022</h1>
+            <h2>时间：2022-10-29 08:00-18:00</h2>
+            <h2>地点：深圳市福田区深圳好日子皇冠假日酒店</h2>
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="history-conf"></span>往届 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/2019/index.html">2019</a></li>
-                        <li><a href="/2018/index.html">2018</a></li>
-                        <li><a href="/2017/index.html">2017</a></li>
-                        <li><a href="/2016/index.html">2016</a></li>
-                        <li><a href="/2015/index.html">2015</a></li>
-                        <li><a href="/2014/index.html">2014</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <!--        <a type="button" class="btn btn-primary btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/uXH61JL">演讲申请</a>-->
+            <!--        <a type="button" class="btn btn-primary btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/6LGkKK0">赞助合作申请</a>-->
+            <!--        <a type="button" class="btn btn-primary btn-lg"  href="http://elasticsearch.mikecrm.com/ObJH8pp">志愿者申请</a>-->
+
+            <!--<div class="countdown">-->
+            <!--        <div class="live-btn-toggle" style="display: block">-->
+            <!--            <a type="button" class="btn btn-primary btn-lg" href="./live.html">视频直播</a>-->
+            <!--            <a type="button" class="btn btn-primary btn-lg" href="https://live.photoplus.cn/live/pc/25269871/#/live">图片直播</a>-->
+            <!--        </div>-->
+            <!--<div class="tips">大会开幕倒计时</div>-->
+            <!--<span id="clock"></span>-->
+            <!--</div>-->
+            <!--<div class="countdown" style="min-height: 40px;line-height: 40px;">-->
+            <!--<div class="tips">大会已结束!</div>-->
+            <!--</div>-->
+
         </div>
-    </div>
-</nav>
-<!-- 导航 end -->
-<!-- 首页大图 start -->
-<header id="site-header" class="site-header sz-2018 valign-center">
-    <div class="intro">
-        <h1>Elastic 中国开发者大会 2022</h1>
-        <h2>时间：2022-10-15 08:00-18:00</h2>
-        <h2>地点：深圳市南山区圣淘沙酒店.翡翠店四楼</h2>
+    </header>
+    <!-- 首页大图 end -->
 
-<!--        <a type="button" class="btn btn-primary btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/uXH61JL">演讲申请</a>-->
-<!--        <a type="button" class="btn btn-primary btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/6LGkKK0">赞助合作申请</a>-->
-<!--        <a type="button" class="btn btn-primary btn-lg"  href="http://elasticsearch.mikecrm.com/ObJH8pp">志愿者申请</a>-->
-
-        <!--<div class="countdown">-->
-<!--        <div class="live-btn-toggle" style="display: block">-->
-<!--            <a type="button" class="btn btn-primary btn-lg" href="./live.html">视频直播</a>-->
-<!--            <a type="button" class="btn btn-primary btn-lg" href="https://live.photoplus.cn/live/pc/25269871/#/live">图片直播</a>-->
-<!--        </div>-->
-        <!--<div class="tips">大会开幕倒计时</div>-->
-        <!--<span id="clock"></span>-->
-        <!--</div>-->
-        <!--<div class="countdown" style="min-height: 40px;line-height: 40px;">-->
-        <!--<div class="tips">大会已结束!</div>-->
-        <!--</div>-->
-
-    </div>
-</header>
-<!-- 首页大图 end -->
-
-<!-- 大会介绍 start -->
-<section id="intro" class="section bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">大会介绍</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 ">
-                <p style="font-size: 16px">
-                Elastic 中国开发者大会 2022 是由 Elastic 官方、Elastic 中文社区和极限科技联合主办的开发者大会，作为中国国内唯一一个专门讨论 Elasticsearch 开源技术的大会，是中国最权威和最具实力干货的技术大会，其专业性和内容的质量一直以来在业内都是有口皆碑，大会最早发起于 2013 年初一个很小的线下聚会，之后每年迅速成长，往年大会的演讲嘉宾有来自 Elastic 官方、百度、腾讯、阿里巴巴、360、微博、美团、58、苏宁等众多公司的技术专家，带来过众多精彩的分享，与会听众大多为大数据领域相关的架构师、技术经理与一线开发工程师和运维工程师。
-                <br/><br/>
-                我们本着非盈利目的来举办大会，今年的大会将于2022年10月15号在深圳举行，举办开发者大会的目的是为中国广大的 Elasticsearch 开发者提供一个技术交流和学习切磋的地方，汇集业界众多的成功案例，集思广益，发散思维，促进社区和行业的进步。
-                <br/><br/>
-                大会将提前半天组织一场线上游戏赛事：《Elastic安全：CTF夺旗游戏》，CTF 是 "Capture the Flag" (夺旗)的缩写，是一种基于计算机的比赛，通过上手实践教授信息安全技能。
-                赛事时间段：2022-10-14 12:00 ~ 23:59，赛后冠亚军将获得 Elastic 官方提供价值 $400 美金的 Elastic 认证工程师考试券，详情参见 <a href="./ctf.html">CTF介绍</a>。
-                <br/><br/>
-                鉴于当前疫情防控形势，为保障每位参会者健康和安全，根据深圳市相关防疫要求，经大会组委会评估，本次大会防疫措施制定如下：<a href="./guide.html#eg">防疫须知</a>。
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- 大会介绍 end -->
-
-<!-- 大会组委会 start -->
-<section id="committee" class="section section-first bg-white committee">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">大会组委会</h3>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="committee-box">
+    <!-- 大会介绍 start -->
+    <section id="intro" class="section bg-white">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-4 col-sm-3 col-md-2">
-                    <div class="committee-user">
-                        <div class="image-holder">
-                            <img class=" avatar" src="/static/images/2018/speakers/medcl.png" alt="曾勇">
-                        </div>
-                        <div class="brief">
-                            <h2 class="committee-user-name">曾勇</h2>
-                            <span class="committee-user-desc">Elastic中文社区主席</span>
+                <div class="col-md-12">
+                    <h3 class="section-title">大会介绍</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <p style="font-size: 16px">
+                        Elastic 中国开发者大会 2022 是由 Elastic 官方、Elastic 中文社区和极限科技联合主办的开发者大会，作为中国国内唯一一个专门讨论 Elasticsearch
+                        开源技术的大会，是中国最权威和最具实力干货的技术大会，其专业性和内容的质量一直以来在业内都是有口皆碑，大会最早发起于 2013
+                        年初一个很小的线下聚会，之后每年迅速成长，往年大会的演讲嘉宾有来自 Elastic
+                        官方、百度、腾讯、阿里巴巴、360、微博、美团、58、苏宁等众多公司的技术专家，带来过众多精彩的分享，与会听众大多为大数据领域相关的架构师、技术经理与一线开发工程师和运维工程师。
+                        <br /><br />
+                        我们本着非盈利目的来举办大会，今年的大会将于2022年10月29号在深圳举行，举办开发者大会的目的是为中国广大的 Elasticsearch
+                        开发者提供一个技术交流和学习切磋的地方，汇集业界众多的成功案例，集思广益，发散思维，促进社区和行业的进步。
+                        <br /><br />
+                        大会将提前半天组织一场线上游戏赛事：《Elastic安全：CTF夺旗游戏》，CTF 是 "Capture the Flag"
+                        (夺旗)的缩写，是一种基于计算机的比赛，通过上手实践教授信息安全技能。
+                        赛事时间段：2022-10-28 12:00 ~ 23:59，赛后冠亚军将获得 Elastic 官方提供价值 $400 美金的 Elastic 认证工程师考试券，详情参见 <a
+                            href="./ctf.html">CTF介绍</a>。
+                        <br /><br />
+                        鉴于当前疫情防控形势，为保障每位参会者健康和安全，根据深圳市相关防疫要求，经大会组委会评估，本次大会防疫措施制定如下：<a href="./guide.html#eg">防疫须知</a>。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 大会介绍 end -->
+
+    <!-- 大会组委会 start -->
+    <section id="committee" class="section section-first bg-white committee">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">大会组委会</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="committee-box">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-2">
+                        <div class="committee-user">
+                            <div class="image-holder">
+                                <img class=" avatar" src="/static/images/2018/speakers/medcl.png" alt="曾勇">
+                            </div>
+                            <div class="brief">
+                                <h2 class="committee-user-name">曾勇</h2>
+                                <span class="committee-user-desc">Elastic中文社区主席</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-4 col-sm-3 col-md-2">
-                    <div class="committee-user">
-                        <div class="image-holder">
-                            <img class=" avatar" src="/static/images/2018/speakers/wb1.png" alt="吴斌">
-                        </div>
-                        <div class="brief">
-                            <h2 class="committee-user-name">吴斌</h2>
-                            <span class="committee-user-desc">Elastic中文社区主席</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-3 col-md-2">
-                    <div class="committee-user">
-                        <div class="image-holder">
-                            <img class=" avatar" src="/static/images/2019/speakers/liuzheng.png" alt="刘征">
-                        </div>
-                        <div class="brief">
-                            <h2 class="committee-user-name">刘征</h2>
-                            <span class="committee-user-desc">Elastic中文社区主席</span>
+                    <div class="col-xs-4 col-sm-3 col-md-2">
+                        <div class="committee-user">
+                            <div class="image-holder">
+                                <img class=" avatar" src="/static/images/2018/speakers/wb1.png" alt="吴斌">
+                            </div>
+                            <div class="brief">
+                                <h2 class="committee-user-name">吴斌</h2>
+                                <span class="committee-user-desc">Elastic中文社区主席</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-4 col-sm-3 col-md-2">
-                    <div class="committee-user">
-                        <div class="image-holder">
-                            <img class=" avatar" src="/static/images/2021/committee/yangqing.jpg" alt="杨青">
-                        </div>
-                        <div class="brief">
-                            <h2 class="committee-user-name">杨青</h2>
-                            <span class="committee-user-desc">Elastic中文社区主席</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-3 col-md-2">
-                    <div class="committee-user">
-                        <div class="image-holder">
-                            <img class=" avatar" src="/static/images/2021/committee/huanghua.jpg" alt="黄华">
-                        </div>
-                        <div class="brief">
-                            <h2 class="committee-user-name">黄华</h2>
-                            <span class="committee-user-desc">Elastic中文社区主席</span>
+                    <div class="col-xs-4 col-sm-3 col-md-2">
+                        <div class="committee-user">
+                            <div class="image-holder">
+                                <img class=" avatar" src="/static/images/2019/speakers/liuzheng.png" alt="刘征">
+                            </div>
+                            <div class="brief">
+                                <h2 class="committee-user-name">刘征</h2>
+                                <span class="committee-user-desc">Elastic中文社区主席</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-4 col-sm-3 col-md-2">
-                    <div class="committee-user">
-                        <div class="image-holder">
-                            <img class=" avatar" src="/static/images/2021/committee/yangzhentao.jpg" alt="杨振涛">
+                    <div class="col-xs-4 col-sm-3 col-md-2">
+                        <div class="committee-user">
+                            <div class="image-holder">
+                                <img class=" avatar" src="/static/images/2021/committee/yangqing.jpg" alt="杨青">
+                            </div>
+                            <div class="brief">
+                                <h2 class="committee-user-name">杨青</h2>
+                                <span class="committee-user-desc">Elastic中文社区主席</span>
+                            </div>
                         </div>
-                        <div class="brief">
-                            <h2 class="committee-user-name">杨振涛</h2>
-                            <span class="committee-user-desc">Elastic中文社区主席</span>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-2">
+                        <div class="committee-user">
+                            <div class="image-holder">
+                                <img class=" avatar" src="/static/images/2021/committee/huanghua.jpg" alt="黄华">
+                            </div>
+                            <div class="brief">
+                                <h2 class="committee-user-name">黄华</h2>
+                                <span class="committee-user-desc">Elastic中文社区主席</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-2">
+                        <div class="committee-user">
+                            <div class="image-holder">
+                                <img class=" avatar" src="/static/images/2021/committee/yangzhentao.jpg" alt="杨振涛">
+                            </div>
+                            <div class="brief">
+                                <h2 class="committee-user-name">杨振涛</h2>
+                                <span class="committee-user-desc">Elastic中文社区主席</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- 大会组委会 end -->
+    </section>
+    <!-- 大会组委会 end -->
 
-<!-- 提交演讲 start -->
-<section id="topic-apply" class="section bg-grey topic-apply" style="display: none">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">提交演讲</h3>
+    <!-- 提交演讲 start -->
+    <section id="topic-apply" class="section bg-grey topic-apply" style="display: none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">提交演讲</h3>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-xs-12 content">
+                    <p class="title"><strong>现在筹划中的主题公开征集演讲嘉宾，以下是征集形式与具体要求。</strong></p>
+                </div>
+                <div class="col-xs-12 content">
+                    <p class="header-title">演讲议题形式</p>
+                    <p class="title"><strong>演讲时长</strong></p>
+                    <ul>
+                        <li>30或45分钟，包括提问环节</li>
+                    </ul>
+                    <p class="title"><strong>演讲内容标准</strong></p>
+                    <ul>
+                        <li>观点：申请人演讲的观点是否明确，所阐述的内容是否吸引人，是否有助于听众在知识和经验方面的积累？</li>
+                        <li>实践：演讲内容，均以实践为出发。</li>
+                        <li>深度：演讲内容的深度将直接关系到听众的收获，听众能够从演讲中挖掘出的内容也是组委会看重的，原则上，有深度的演讲稿被采纳的机会更高。</li>
+                        <li>专业声誉：演讲人在所提交演讲涉及的专业领域的成就和从业经验也会作为评审的参考标准。</li>
+                        <li>不要广告：讲台不是厂商宣传的舞台，请不要试图在演讲时做任何形式的广告。</li>
+                        <li>听众所得：听众在演讲分享中可能的收获是组委会最关注的，这也是大会举办的重要意义。</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 content">
+                    <p class="header-title">注意事项</p>
+                    <ul>
+                        <li>在大会议程尚未完全确定之前，可自由提交演讲议题</li>
+                        <li>若内容合适，但相应专题已无空档，可优先在下届大会/Meetup获得演讲机会</li>
+                        <li>请确保您所提供的个人信息内容准确无误，一旦确认，信息将会刊登在大会官网并印制在会刊中</li>
+                        <li>请确保您在演讲内容中使用的案例已经获得第三方的认可和允许，我们将不负责由此引起的任何纠纷和问题</li>
+                        <li>确认的演讲内容将发布在主办单位的有关媒介中，包括会议演讲 PPT、现场视频等。此非强制条款，如果不同意，请提前声明</li>
+                        <li>对于已提交演讲议题的审批结果，我们将在大会开始前一个月通过电子邮件或电话联系的方式通知您</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 content">
+                    <p class="header-title">推荐机制</p>
+                    <ul>
+                        <li>如果在您心目中有非常合适的演讲人选，欢迎向组委会推荐（请在邮件中详述被推荐人的基本信息与话题信息，发送至<span><a
+                                    href="Mailto:m@elasticsearch.cn"> m@elasticsearch.cn</a></span>）</li>
+                        <li>如果您想担任演讲嘉宾，也欢迎毛遂自荐，填写相关联系信息，我们将与您联系</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-xs-12 content">
+                    <p class="header-title">主题范围供参考</p>
+                    <ul>
+                        <li>Elastic Stack 技术实践</li>
+                        <li>Elastic Stack 技术解读</li>
+                        <li>Elastic Stack 扩展开发</li>
+                        <li>日志领域的实践与案例</li>
+                        <li>安全领域的实践与案例</li>
+                        <li>搜索领域的实践与案例</li>
+                        <li>APM 领域的实践与案例</li>
+                        <li>指标分析的实践与案例</li>
+                        <li>BI 商业应用分析案例</li>
+                        <li>Elastic 在传统行业的应用</li>
+                        <li>架构变迁与平台化实践</li>
+                        <li>性能调优与分布式</li>
+                        <li>NLP 与自然语言处理</li>
+                        <li>数据接入与 ETL 数据处理</li>
+                        <li>大数据分析与实时性</li>
+                        <li>数据可视化分析与展现</li>
+                        <li>人工智能、机器学习与 AI 应用</li>
+                        <li>自动化运维、DevOps、AIOps</li>
+                        <li>开源与社区建设</li>
+                        <li>任何与 Elasticsearch 有关的酷话题</li>
+                    </ul>
+                    <p>另外，欢迎提交闪电演讲，每人5分钟，严格掐秒，紧张刺激，一共有10个空位，分享主题不限。</p>
+                    <p><b>主题递交截止时间：2021年12月10日</b></p>
+                </div>
+
+                <div class="col-xs-12 content center">
+                    <a target="_blank" type="button" class="btn btn-primary btn-lg apply-btn"
+                        href="http://elasticsearch.mikecrm.com/uXH61JL">我要申请</a>
+                </div>
+
             </div>
         </div>
-        <div class="row">
+    </section>
+    <!-- 提交演讲 end -->
 
-            <div class="col-xs-12 content">
-                <p class="title"><strong>现在筹划中的主题公开征集演讲嘉宾，以下是征集形式与具体要求。</strong></p>
+    <!-- 嘉宾介绍 start -->
+    <section id="speaker-brief-topic" class="section bg-white speaker-brief-topic">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">嘉宾介绍<small>(排名不分先后)</small></h3>
+                </div>
             </div>
-            <div class="col-xs-12 content">
-                <p class="header-title">演讲议题形式</p>
-                <p class="title"><strong>演讲时长</strong></p>
-                <ul>
-                    <li>30或45分钟，包括提问环节</li>
-                </ul>
-                <p class="title"><strong>演讲内容标准</strong></p>
-                <ul>
-                    <li>观点：申请人演讲的观点是否明确，所阐述的内容是否吸引人，是否有助于听众在知识和经验方面的积累？</li>
-                    <li>实践：演讲内容，均以实践为出发。</li>
-                    <li>深度：演讲内容的深度将直接关系到听众的收获，听众能够从演讲中挖掘出的内容也是组委会看重的，原则上，有深度的演讲稿被采纳的机会更高。</li>
-                    <li>专业声誉：演讲人在所提交演讲涉及的专业领域的成就和从业经验也会作为评审的参考标准。</li>
-                    <li>不要广告：讲台不是厂商宣传的舞台，请不要试图在演讲时做任何形式的广告。</li>
-                    <li>听众所得：听众在演讲分享中可能的收获是组委会最关注的，这也是大会举办的重要意义。</li>
-                </ul>
-            </div>
-            <div class="col-xs-12 content">
-                <p class="header-title">注意事项</p>
-                <ul>
-                    <li>在大会议程尚未完全确定之前，可自由提交演讲议题</li>
-                    <li>若内容合适，但相应专题已无空档，可优先在下届大会/Meetup获得演讲机会</li>
-                    <li>请确保您所提供的个人信息内容准确无误，一旦确认，信息将会刊登在大会官网并印制在会刊中</li>
-                    <li>请确保您在演讲内容中使用的案例已经获得第三方的认可和允许，我们将不负责由此引起的任何纠纷和问题</li>
-                    <li>确认的演讲内容将发布在主办单位的有关媒介中，包括会议演讲 PPT、现场视频等。此非强制条款，如果不同意，请提前声明</li>
-                    <li>对于已提交演讲议题的审批结果，我们将在大会开始前一个月通过电子邮件或电话联系的方式通知您</li>
-                </ul>
-            </div>
-            <div class="col-xs-12 content">
-                <p class="header-title">推荐机制</p>
-                <ul>
-                    <li>如果在您心目中有非常合适的演讲人选，欢迎向组委会推荐（请在邮件中详述被推荐人的基本信息与话题信息，发送至<span><a href="Mailto:m@elasticsearch.cn"> m@elasticsearch.cn</a></span>）</li>
-                    <li>如果您想担任演讲嘉宾，也欢迎毛遂自荐，填写相关联系信息，我们将与您联系</li>
-                </ul>
-            </div>
-
-
-            <div class="col-xs-12 content">
-                <p class="header-title">主题范围供参考</p>
-                <ul>
-                    <li>Elastic Stack 技术实践</li>
-                    <li>Elastic Stack 技术解读</li>
-                    <li>Elastic Stack 扩展开发</li>
-                    <li>日志领域的实践与案例</li>
-                    <li>安全领域的实践与案例</li>
-                    <li>搜索领域的实践与案例</li>
-                    <li>APM 领域的实践与案例</li>
-                    <li>指标分析的实践与案例</li>
-                    <li>BI 商业应用分析案例</li>
-                    <li>Elastic 在传统行业的应用</li>
-                    <li>架构变迁与平台化实践</li>
-                    <li>性能调优与分布式</li>
-                    <li>NLP 与自然语言处理</li>
-                    <li>数据接入与 ETL 数据处理</li>
-                    <li>大数据分析与实时性</li>
-                    <li>数据可视化分析与展现</li>
-                    <li>人工智能、机器学习与 AI 应用</li>
-                    <li>自动化运维、DevOps、AIOps</li>
-                    <li>开源与社区建设</li>
-                    <li>任何与 Elasticsearch 有关的酷话题</li>
-                </ul>
-                <p>另外，欢迎提交闪电演讲，每人5分钟，严格掐秒，紧张刺激，一共有10个空位，分享主题不限。</p>
-                <p><b>主题递交截止时间：2021年12月10日</b></p>
-            </div>
-
-            <div class="col-xs-12 content center">
-                <a target="_blank" type="button" class="btn btn-primary btn-lg apply-btn"  href="http://elasticsearch.mikecrm.com/uXH61JL">我要申请</a>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- 提交演讲 end -->
-
-<!-- 嘉宾介绍 start -->
-<section id="speaker-brief-topic" class="section bg-white speaker-brief-topic">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">嘉宾介绍<small>(排名不分先后)</small></h3>
-            </div>
-        </div>
-        <!--嘉宾介绍-->
-        <div class="row speaker-brief">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a class="speaker-a" target="_self" href="./speaker.html#lijie">
-                    <div class="thumbnail">
-                        <div class="avatar-outer">
-                            <img class="avatar" src="/static/images/2019/speakers/lijie.png" alt="李捷">
-                        </div>
-                        <div class="caption">
-                            <h3 class="name">李捷</h3>
-                            <div class="brief">
-                                <div class="p">Elastic</div>
-                                <div class="p">高级解决方案架构师</div>
+            <!--嘉宾介绍-->
+            <div class="row speaker-brief">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a class="speaker-a" target="_self" href="./speaker.html#lijie">
+                        <div class="thumbnail">
+                            <div class="avatar-outer">
+                                <img class="avatar" src="/static/images/2019/speakers/lijie.png" alt="李捷">
+                            </div>
+                            <div class="caption">
+                                <h3 class="name">李捷</h3>
+                                <div class="brief">
+                                    <div class="p">Elastic</div>
+                                    <div class="p">高级解决方案架构师</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a class="speaker-a" target="_self" href="./speaker.html#zhujie">
-                    <div class="thumbnail">
-                        <div class="avatar-outer">
-                            <img class="avatar" src="/static/images/2019/speakers/zhujie.png" alt="朱杰">
-                        </div>
-                        <div class="caption">
-                            <h3 class="name">朱杰</h3>
-                            <div class="brief">
-                                <div class="p">Elastic</div>
-                                <div class="p">高级解决方案架构师</div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a class="speaker-a" target="_self" href="./speaker.html#zhujie">
+                        <div class="thumbnail">
+                            <div class="avatar-outer">
+                                <img class="avatar" src="/static/images/2019/speakers/zhujie.png" alt="朱杰">
+                            </div>
+                            <div class="caption">
+                                <h3 class="name">朱杰</h3>
+                                <div class="brief">
+                                    <div class="p">Elastic</div>
+                                    <div class="p">高级解决方案架构师</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a class="speaker-a" target="_self" href="./speaker.html#liufan">
-                    <div class="thumbnail">
-                        <div class="avatar-outer">
-                            <img class="avatar" src="/static/images/2021/speakers/liufan.png" alt="刘凡">
-                        </div>
-                        <div class="caption">
-                            <h3 class="name">刘凡</h3>
-                            <div class="brief">
-                                <div class="p">Google</div>
-                                <div class="p">谷歌架构师 - 容器/DevOps领域专家</div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a class="speaker-a" target="_self" href="./speaker.html#liufan">
+                        <div class="thumbnail">
+                            <div class="avatar-outer">
+                                <img class="avatar" src="/static/images/2021/speakers/liufan.png" alt="刘凡">
+                            </div>
+                            <div class="caption">
+                                <h3 class="name">刘凡</h3>
+                                <div class="brief">
+                                    <div class="p">Google</div>
+                                    <div class="p">谷歌架构师 - 容器/DevOps领域专家</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a class="speaker-a" target="_self" href="./speaker.html#jiangguoqiang">
-                    <div class="thumbnail">
-                        <div class="avatar-outer">
-                            <img class="avatar" src="/static/images/2021/speakers/jiangguoqiang.png" alt="姜国强">
-                        </div>
-                        <div class="caption">
-                            <h3 class="name">姜国强</h3>
-                            <div class="brief">
-                                <div class="p">腾讯</div>
-                                <div class="p">腾讯云专家工程师</div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a class="speaker-a" target="_self" href="./speaker.html#jiangguoqiang">
+                        <div class="thumbnail">
+                            <div class="avatar-outer">
+                                <img class="avatar" src="/static/images/2021/speakers/jiangguoqiang.png" alt="姜国强">
+                            </div>
+                            <div class="caption">
+                                <h3 class="name">姜国强</h3>
+                                <div class="brief">
+                                    <div class="p">腾讯</div>
+                                    <div class="p">腾讯云专家工程师</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a class="speaker-a" target="_self" href="./speaker.html#weizijun">
-                    <div class="thumbnail">
-                        <div class="avatar-outer">
-                            <img class="avatar" src="/static/images/2021/speakers/weizijun.png" alt="魏子珺">
-                        </div>
-                        <div class="caption">
-                            <h3 class="name">魏子珺</h3>
-                            <div class="brief">
-                                <div class="p">阿里巴巴</div>
-                                <div class="p">阿里云 Elasticsearch 内核专家</div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a class="speaker-a" target="_self" href="./speaker.html#weizijun">
+                        <div class="thumbnail">
+                            <div class="avatar-outer">
+                                <img class="avatar" src="/static/images/2021/speakers/weizijun.png" alt="魏子珺">
+                            </div>
+                            <div class="caption">
+                                <h3 class="name">魏子珺</h3>
+                                <div class="brief">
+                                    <div class="p">阿里巴巴</div>
+                                    <div class="p">阿里云 Elasticsearch 内核专家</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a class="speaker-a" target="_self" href="./speaker.html#huangyangfeng">
-                    <div class="thumbnail">
-                        <div class="avatar-outer">
-                            <img class="avatar" src="/static/images/2021/speakers/huangyangfeng.png" alt="黄杨锋">
-                        </div>
-                        <div class="caption">
-                            <h3 class="name">黄杨锋</h3>
-                            <div class="brief">
-                                <div class="p">字节跳动</div>
-                                <div class="p">ByteES 团队负责人</div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a class="speaker-a" target="_self" href="./speaker.html#huangyangfeng">
+                        <div class="thumbnail">
+                            <div class="avatar-outer">
+                                <img class="avatar" src="/static/images/2021/speakers/huangyangfeng.png" alt="黄杨锋">
+                            </div>
+                            <div class="caption">
+                                <h3 class="name">黄杨锋</h3>
+                                <div class="brief">
+                                    <div class="p">字节跳动</div>
+                                    <div class="p">ByteES 团队负责人</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a class="speaker-a" target="_self" href="./speaker.html#baojie">
-                    <div class="thumbnail">
-                        <div class="avatar-outer">
-                            <img class="avatar" src="/static/images/2021/speakers/baojie.png" alt="鲍捷">
-                        </div>
-                        <div class="caption">
-                            <h3 class="name">鲍捷</h3>
-                            <div class="brief">
-                                <div class="p">文因互联</div>
-                                <div class="p">文因互联董事长，创始人，博士</div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a class="speaker-a" target="_self" href="./speaker.html#baojie">
+                        <div class="thumbnail">
+                            <div class="avatar-outer">
+                                <img class="avatar" src="/static/images/2021/speakers/baojie.png" alt="鲍捷">
+                            </div>
+                            <div class="caption">
+                                <h3 class="name">鲍捷</h3>
+                                <div class="brief">
+                                    <div class="p">文因互联</div>
+                                    <div class="p">文因互联董事长，创始人，博士</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a class="speaker-a" target="_self" href="./speaker.html">
-                    <div class="thumbnail" style="position: relative;">
-                    <span style="font-size: 16px;
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a class="speaker-a" target="_self" href="./speaker.html">
+                        <div class="thumbnail" style="position: relative;">
+                            <span style="font-size: 16px;
                     text-align: center;
     display: inline-block;
     position: absolute;
@@ -427,349 +441,367 @@
     top: 50%;
     margin-left: -56px;
     margin-top: -22px;">
-                        查看更多嘉宾<br/>
-                    </span>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- 嘉宾介绍 end -->
-
-<!-- 大会购票 end -->
-<section id="ticket" class="section bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">购买门票</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 ">
-                <iframe id="promote_ticket_iframe" width="100%" src="https://www.bagevent.com/widget/ticket/7899116?widget=2" frameborder="0" scrolling="no"></iframe>
-                <script>
-                    (function (i, s, o, g, r, a, m) {
-                        i['BagEventIFrameResize'] = r;
-                        i[r] = i[r] || function () {
-                            (i[r].q = i[r].q || []).push(arguments)
-                        };
-                        a = s.createElement(o),
-                            m = s.getElementsByTagName(o)[0];
-                        a.async = 1;
-                        a.src = g;
-                        m.parentNode.insertBefore(a, m)
-                    })(window, document, 'script', 'https://www.bagevent.com/resources/js/iframeResizer/iframeResizer.min.js', 'bfr');
-                    bfr('iFrameResize', {checkOrigin: false, heightCalculationMethod: 'taggedElement'}, "#promote_ticket_iframe");
-                </script>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="clearfix"></div>
-
-<!-- 合作赞助 start -->
-<section id="host" class="section bg-white partner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">主办方</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 partner-section">
-                <a class="partner-box " href="./sponsor.html#elastic">
-                    <img alt="Elastic" border="0" src="../static/images/logo/elastic-logo-H-full-color.png" title="elastic">
-                </a>
-                <a class="partner-box " href="./sponsor.html#elastic-community">
-                    <img alt="Elastic中文社区" border="0" src="../static/images/logo/elastic-community.png" title="elastic中文社区">
-                </a>
-                <a class="partner-box " href="./sponsor.html#infini">
-                    <img alt="极限科技" border="0" src="../static/images/logo/infini-cn-logo.png" title="极限科技">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section bg-white partner" style="padding: 10px;text-align: center;border-top: 1px dotted #e7e7e7;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title title-mt">战略赞助商</h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 partner-section">
-                <a class="partner-box " href="./sponsor.html#alicloud" target="_blank">
-                    <img alt="阿里云" src="/static/images/2021/sponsors/alicloud.jpg" title="阿里云">
-                </a>
-                <a class="partner-box " href="./sponsor.html#tencentcloud" target="_blank">
-                    <img alt="腾讯" src="/static/images/2021/sponsors/tencentcloud.png" title="腾讯云">
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-<section class="section bg-white partner" style="padding: 10px;text-align: center;border-top: 1px dotted #e7e7e7;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title title-mt">钻石赞助商</h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 partner-section">
-                <a class="partner-box " style="width: 280px;" href="./sponsor.html#xsky" target="_blank">
-                    <img alt="XSKY 星辰天合" src="/static/images/2021/sponsors/xsky.png" title="XSKY 星辰天合">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section bg-white partner" style="padding: 10px;text-align: center;border-top: 1px dotted #e7e7e7;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title title-mt">白金赞助商</h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 partner-section">
-                <a class="partner-box " href="./sponsor.html#cloudera" target="_blank">
-                    <img alt="Cloudera" src="/static/images/2021/sponsors/cloudera.jpg" title="Cloudera">
-                </a>
-                <a class="partner-box " href="./sponsor.html#pingcap" target="_blank">
-                    <img alt="PingCAP" src="/static/images/2021/sponsors/PingCAP.png" title="PingCAP">
-                </a>
-                <a class="partner-box " href="./sponsor.html#newmind" target="_blank">
-                    <img alt="新智锦绣科技" src="/static/images/2021/sponsors/newmind.jpg" title="新智锦绣科技">
-                </a>
-                <a class="partner-box " style="width: 140px;" href="./sponsor.html#streamnative" target="_blank">
-                    <img alt="StreamNative" src="/static/images/2021/sponsors/streamnative.jpg" title="StreamNative">
-                </a>
-                <a class="partner-box " href="./sponsor.html#zhilian" target="_blank">
-                    <img alt="智联猎头" src="/static/images/2021/sponsors/zhilian.png" title="智联猎头">
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-<section class="section bg-white partner" style="text-align: center;border-top: 1px dotted #e7e7e7;">
-
-    <div class="container" >
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title title-mt">合作社区媒体</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 partner-section">
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="CSDN">
-                    <img alt="CSDN" src="/static/images/2021/sponsors/csdn.png" />
-                </a>
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="掘金">
-                    <img alt="掘金" src="/static/images/2021/sponsors/juejin.png" />
-                </a>
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="Gitee">
-                    <img alt="gitee" src="/static/images/2021/sponsors/gitee.png" />
-                </a>
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="开源中国">
-                    <img alt="OSCHINA" src="/static/images/2018/sponsors/osc.png" />
-                </a>
-                <a class="partner-box media-partner" style="width: 240px;" href="./sponsor.html#partners" target="_blank" title="VIVO互联网技术">
-                    <img alt="zabbix" src="/static/images/2021/sponsors/vivo.png" />
-                </a>
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="百格活动">
-                    <img alt="bagevent" src="/static/images/2018/sponsors/bagevent.png" />
-                </a>
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="D.O工作室">
-                    <img alt="D.O" src="/static/images/2021/sponsors/D.O.png" />
-                </a>
-                <a class="partner-box media-partner" style="width: 240px;" href="./sponsor.html#partners" target="_blank">
-                    <img alt="ChinaDevOps社区" src="/static/images/2019/sponsors/chinedevops.png" title="ChinaDevOps社区">
-                </a>
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="MongoDB中文社区">
-                    <img alt="mongoing" src="/static/images/2021/sponsors/mongoing.png" />
-                </a>
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="dbaplus社群">
-                    <img alt="dbaplus" src="/static/images/2021/sponsors/dbaplus.png" />
-                </a>
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="zabbix中国">
-                    <img alt="zabbix" src="/static/images/2021/sponsors/zabbix.png" />
-                </a>
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="活动行">
-                    <img alt="活动行" src="/static/images/2021/sponsors/huodongxing.png" />
-                </a>
-                <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="51CTO" style="width: 120px;" >
-                    <img alt="51CTO" src="/static/images/2021/sponsors/51CTO.png" />
-                </a>
-            </div>
-        </div>
-    </div>
-
-</section>
-<!-- 合作赞助 end -->
-
-<!-- 精彩图集 start -->
-<section id="gallery" class="section bg-white gallery">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title title-mt">2019年北京开发者大会精彩图集</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img class="conf-img" src="/static/images/2019/gallery/p1.jpg">
-                            <div class="carousel-caption">
-                            </div>
+                                查看更多嘉宾<br />
+                            </span>
                         </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p2.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p3.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p4.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p5.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p6.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p7.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p8.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p9.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p10.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p11.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p12.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p13.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p14.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="conf-img" src="/static/images/2019/gallery/p15.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
-            <div class="col-md-12" style="text-align: center;margin-top:30px;">
-                <a type="button" class="btn btn-primary btn-lg" target="_blank"  href="https://gallery.vphotos.cn/vphotosgallery/index.html?vphotowechatid=A82534CDE68C950DFD1870901F0633D5&gallery_source_code=0&toHash=&from=timeline&isappinstalled=0&code=021rnnWi2Bw2nA0krHXi25oiWi2rnnWy&state=STATE#/gallerypc">更多精彩图片</a>
+
+        </div>
+    </section>
+    <!-- 嘉宾介绍 end -->
+
+    <!-- 大会购票 end -->
+    <section id="ticket" class="section bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">购买门票</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <iframe id="promote_ticket_iframe" width="100%"
+                        src="https://www.bagevent.com/widget/ticket/7899116?widget=2" frameborder="0"
+                        scrolling="no"></iframe>
+                    <script>
+                        (function (i, s, o, g, r, a, m) {
+                            i['BagEventIFrameResize'] = r;
+                            i[r] = i[r] || function () {
+                                (i[r].q = i[r].q || []).push(arguments)
+                            };
+                            a = s.createElement(o),
+                                m = s.getElementsByTagName(o)[0];
+                            a.async = 1;
+                            a.src = g;
+                            m.parentNode.insertBefore(a, m)
+                        })(window, document, 'script', 'https://www.bagevent.com/resources/js/iframeResizer/iframeResizer.min.js', 'bfr');
+                        bfr('iFrameResize', { checkOrigin: false, heightCalculationMethod: 'taggedElement' }, "#promote_ticket_iframe");
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+
+    <!-- 合作赞助 start -->
+    <section id="host" class="section bg-white partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">主办方</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 partner-section">
+                    <a class="partner-box " href="./sponsor.html#elastic">
+                        <img alt="Elastic" border="0" src="../static/images/logo/elastic-logo-H-full-color.png"
+                            title="elastic">
+                    </a>
+                    <a class="partner-box " href="./sponsor.html#elastic-community">
+                        <img alt="Elastic中文社区" border="0" src="../static/images/logo/elastic-community.png"
+                            title="elastic中文社区">
+                    </a>
+                    <a class="partner-box " href="./sponsor.html#infini">
+                        <img alt="极限科技" border="0" src="../static/images/logo/infini-cn-logo.png" title="极限科技">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-white partner" style="padding: 10px;text-align: center;border-top: 1px dotted #e7e7e7;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title title-mt">战略赞助商</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 partner-section">
+                    <a class="partner-box " href="./sponsor.html#alicloud" target="_blank">
+                        <img alt="阿里云" src="/static/images/2021/sponsors/alicloud.jpg" title="阿里云">
+                    </a>
+                    <a class="partner-box " href="./sponsor.html#tencentcloud" target="_blank">
+                        <img alt="腾讯" src="/static/images/2021/sponsors/tencentcloud.png" title="腾讯云">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section bg-white partner" style="padding: 10px;text-align: center;border-top: 1px dotted #e7e7e7;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title title-mt">钻石赞助商</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 partner-section">
+                    <a class="partner-box " style="width: 280px;" href="./sponsor.html#xsky" target="_blank">
+                        <img alt="XSKY 星辰天合" src="/static/images/2021/sponsors/xsky.png" title="XSKY 星辰天合">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-white partner" style="padding: 10px;text-align: center;border-top: 1px dotted #e7e7e7;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title title-mt">白金赞助商</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 partner-section">
+                    <a class="partner-box " href="./sponsor.html#cloudera" target="_blank">
+                        <img alt="Cloudera" src="/static/images/2021/sponsors/cloudera.jpg" title="Cloudera">
+                    </a>
+                    <a class="partner-box " href="./sponsor.html#pingcap" target="_blank">
+                        <img alt="PingCAP" src="/static/images/2021/sponsors/PingCAP.png" title="PingCAP">
+                    </a>
+                    <a class="partner-box " href="./sponsor.html#newmind" target="_blank">
+                        <img alt="新智锦绣科技" src="/static/images/2021/sponsors/newmind.jpg" title="新智锦绣科技">
+                    </a>
+                    <a class="partner-box " style="width: 140px;" href="./sponsor.html#streamnative" target="_blank">
+                        <img alt="StreamNative" src="/static/images/2021/sponsors/streamnative.jpg"
+                            title="StreamNative">
+                    </a>
+                    <a class="partner-box " href="./sponsor.html#zhilian" target="_blank">
+                        <img alt="智联猎头" src="/static/images/2021/sponsors/zhilian.png" title="智联猎头">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section bg-white partner" style="text-align: center;border-top: 1px dotted #e7e7e7;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title title-mt">合作社区媒体</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 partner-section">
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="CSDN">
+                        <img alt="CSDN" src="/static/images/2021/sponsors/csdn.png" />
+                    </a>
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="掘金">
+                        <img alt="掘金" src="/static/images/2021/sponsors/juejin.png" />
+                    </a>
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="Gitee">
+                        <img alt="gitee" src="/static/images/2021/sponsors/gitee.png" />
+                    </a>
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="开源中国">
+                        <img alt="OSCHINA" src="/static/images/2018/sponsors/osc.png" />
+                    </a>
+                    <a class="partner-box media-partner" style="width: 240px;" href="./sponsor.html#partners"
+                        target="_blank" title="VIVO互联网技术">
+                        <img alt="zabbix" src="/static/images/2021/sponsors/vivo.png" />
+                    </a>
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="百格活动">
+                        <img alt="bagevent" src="/static/images/2018/sponsors/bagevent.png" />
+                    </a>
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="D.O工作室">
+                        <img alt="D.O" src="/static/images/2021/sponsors/D.O.png" />
+                    </a>
+                    <a class="partner-box media-partner" style="width: 240px;" href="./sponsor.html#partners"
+                        target="_blank">
+                        <img alt="ChinaDevOps社区" src="/static/images/2019/sponsors/chinedevops.png"
+                            title="ChinaDevOps社区">
+                    </a>
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank"
+                        title="MongoDB中文社区">
+                        <img alt="mongoing" src="/static/images/2021/sponsors/mongoing.png" />
+                    </a>
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank"
+                        title="dbaplus社群">
+                        <img alt="dbaplus" src="/static/images/2021/sponsors/dbaplus.png" />
+                    </a>
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank"
+                        title="zabbix中国">
+                        <img alt="zabbix" src="/static/images/2021/sponsors/zabbix.png" />
+                    </a>
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="活动行">
+                        <img alt="活动行" src="/static/images/2021/sponsors/huodongxing.png" />
+                    </a>
+                    <a class="partner-box media-partner" href="./sponsor.html#partners" target="_blank" title="51CTO"
+                        style="width: 120px;">
+                        <img alt="51CTO" src="/static/images/2021/sponsors/51CTO.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 合作赞助 end -->
+
+    <!-- 精彩图集 start -->
+    <section id="gallery" class="section bg-white gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title title-mt">2019年北京开发者大会精彩图集</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="conf-img" src="/static/images/2019/gallery/p1.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p2.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p3.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p4.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p5.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p6.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p7.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p8.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p9.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p10.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p11.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p12.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p13.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p14.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="conf-img" src="/static/images/2019/gallery/p15.jpg">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                            data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                            data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12" style="text-align: center;margin-top:30px;">
+                    <a type="button" class="btn btn-primary btn-lg" target="_blank"
+                        href="https://gallery.vphotos.cn/vphotosgallery/index.html?vphotowechatid=A82534CDE68C950DFD1870901F0633D5&gallery_source_code=0&toHash=&from=timeline&isappinstalled=0&code=021rnnWi2Bw2nA0krHXi25oiWi2rnnWy&state=STATE#/gallerypc">更多精彩图片</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 精彩图集 end -->
+
+
+    <!-- 地址 start -->
+    <section id="conf-address" class="conf-address">
+        <div class="map" id="mapContainer"></div>
+    </section>
+    <!-- 地址 end -->
+
+    <!-- 底部 start -->
+    <footer class="footer">
+        <div class="container">
+            Copyright © 2011-
+            <script>document.write(new Date().getFullYear());</script> <span> · <a href="//elasticsearch.cn/"
+                    target="blank">Elastic中文社区</a></span>, 本活动遵循 <a
+                href="https://www.elastic.co/cn/community/codeofconduct">Elastic 社区行为准则</a>.
+        </div>
+    </footer>
+    <!-- 底部 end -->
+    <!-- 右侧悬浮小工具 start -->
+    <div id="layer-shade" class="layer-shade opacity"></div>
+    <div id="layer" class="layer show-qrcode layer-anim">
+        <div class="layer-content">
+            <div class="qrcode">
+                <img src="../static/images/2016/github-escc-url.png" />
+                <div class="des">微信“扫一扫”分享给好友</div>
             </div>
         </div>
     </div>
-</section>
-<!-- 精彩图集 end -->
 
+    <ul class="right-tool">
+        <li class="share-qrcode">
+            <p class="text">微信<br>分享</p>
+            <img class="img" src="../static/images/qrcode-icon.png">
+        </li>
+        <li class="go-top">
+            <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+        </li>
+    </ul>
+    <!-- 右侧悬浮小工具 end -->
 
-<!-- 地址 start -->
-<section id="conf-address" class="conf-address">
-    <div class="map" id="mapContainer"></div>
-</section>
-<!-- 地址 end -->
-
-<!-- 底部 start -->
-<footer class="footer">
-    <div class="container">
-        Copyright © 2011-<script>document.write(new Date().getFullYear());</script> <span> · <a href="//elasticsearch.cn/" target="blank">Elastic中文社区</a></span>, 本活动遵循 <a href="https://www.elastic.co/cn/community/codeofconduct">Elastic 社区行为准则</a>.
-    </div>
-</footer>
-<!-- 底部 end -->
-<!-- 右侧悬浮小工具 start -->
-<div id="layer-shade" class="layer-shade opacity"></div>
-<div id="layer" class="layer show-qrcode layer-anim">
-    <div class="layer-content">
-        <div class="qrcode">
-            <img src="../static/images/2016/github-escc-url.png" />
-            <div class="des">微信“扫一扫”分享给好友</div>
-        </div>
-    </div>
-</div>
-
-<ul class="right-tool">
-    <li class="share-qrcode">
-        <p class="text">微信<br>分享</p>
-        <img class="img" src="../static/images/qrcode-icon.png">
-    </li>
-    <li class="go-top">
-        <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-    </li>
-</ul>
-<!-- 右侧悬浮小工具 end -->
-
-<script src="../static/bootstrap/js/jquery.min.js"></script>
-<script src="../static/bootstrap/js/bootstrap.min.js"></script>
-<script src="/static/plugins/jquery.countdown.min.js"></script>
-<script src="../static/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-<script src="../static/js/main.js"></script>
-<script src="/static/js/date-util.js"></script>
-<script src="/static/plugins/sweetalert2/sweetalert2.all.min.js"></script>
-<script>
+    <script src="../static/bootstrap/js/jquery.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/plugins/jquery.countdown.min.js"></script>
+    <script src="../static/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="/static/js/date-util.js"></script>
+    <script src="/static/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+    <script>
     // Swal.fire({
     //     imageUrl: '/static/images/2021/others/elastic_delay_notice_0528.png',
     //     imageWidth: 300,
@@ -777,33 +809,34 @@
     //     title: '大会延期公告',
     //     timer: 15000,
     //     // title: '大会延期公告',
-    //     // text: '由于1月7日深圳突发报告2例新冠病毒阳性感染者，为保障每位参会者健康和安全，Elastic中国开发者大会组委会经研究评估，决定延期至 2022-10-15 举办。对本次大会延期大会组委会表示抱歉，敬请谅解。',
+    //     // text: '由于1月7日深圳突发报告2例新冠病毒阳性感染者，为保障每位参会者健康和安全，Elastic中国开发者大会组委会经研究评估，决定延期至 2022-10-29 举办。对本次大会延期大会组委会表示抱歉，敬请谅解。',
     //     // confirmButtonText: 'OK',
     // })
-</script>
+    </script>
 
-<script type="text/javascript" src="//api.map.baidu.com/api?v=3.0&ak=DDU325vxk16zPn6DKlS6Qffx"></script>
-<script type="text/javascript">
-    var map = new BMap.Map("mapContainer");
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=3.0&ak=DDU325vxk16zPn6DKlS6Qffx"></script>
+    <script type="text/javascript">
+        var map = new BMap.Map("mapContainer");
 
-    //经纬度查询：https://api.map.baidu.com/lbsapi/getpoint/index.html
-    var point = new BMap.Point(113.928764,22.539896);
+        //经纬度查询：https://api.map.baidu.com/lbsapi/getpoint/index.html
+        var point = new BMap.Point(114.060267, 22.542839);
 
-    var marker = new BMap.Marker(point);  // 创建标注
-    map.addOverlay(marker);              // 将标注添加到地图中
-    map.centerAndZoom(point, 18);
-    var opts = {
-        width : 200,     // 信息窗口宽度
-        height: 80,     // 信息窗口高度
-        title : "深圳市圣淘沙酒店.翡翠店" , // 信息窗口标题
-    }
-    var infoWindow = new BMap.InfoWindow("地址：深圳市南山区金鸡路1号田厦翡翠明珠花园", opts);  // 创建信息窗口对象
-    map.openInfoWindow(infoWindow,point); //开启信息窗口
-    marker.addEventListener("click", function(){
-        map.openInfoWindow(infoWindow,point); //开启信息窗口
-    });
+        var marker = new BMap.Marker(point);  // 创建标注
+        map.addOverlay(marker);              // 将标注添加到地图中
+        map.centerAndZoom(point, 18);
+        var opts = {
+            width: 200,     // 信息窗口宽度
+            height: 80,     // 信息窗口高度
+            title: "深圳市深圳好日子皇冠假日酒店", // 信息窗口标题
+        }
+        var infoWindow = new BMap.InfoWindow("地址：深圳市福田区福华一路28号", opts);  // 创建信息窗口对象
+        map.openInfoWindow(infoWindow, point); //开启信息窗口
+        marker.addEventListener("click", function () {
+            map.openInfoWindow(infoWindow, point); //开启信息窗口
+        });
 
-</script>
-<script language="javascript" charset="utf-8" src="/static/js/google-analytics.js"></script>
+    </script>
+    <script language="javascript" charset="utf-8" src="/static/js/google-analytics.js"></script>
 </body>
+
 </html>
