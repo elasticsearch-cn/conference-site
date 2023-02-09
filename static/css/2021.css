@@ -715,6 +715,11 @@ svg:not(:root) {
 }
 
 @media (min-width: 768px) {
+    .committee-box > .row {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
     .navbar-custom {
         background-color: transparent;
         padding-top: 30px;
