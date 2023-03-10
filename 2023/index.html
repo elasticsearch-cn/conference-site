@@ -82,7 +82,7 @@
         <div class="intro">
             <h1>Elastic 中国开发者大会 2023</h1>
             <h2>时间：2023-04-08 08:00-18:00</h2>
-            <h2>地点：深圳市福田区深圳好日子皇冠假日酒店</h2>
+            <h2>地点：深圳深铁皇冠假日酒店</h2>
 
             <!--        <a type="button" class="btn btn-primary btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/uXH61JL">演讲申请</a>-->
             <!--        <a type="button" class="btn btn-primary btn-lg" target="_blank" href="http://elasticsearch.mikecrm.com/6LGkKK0">赞助合作申请</a>-->
@@ -793,7 +793,7 @@
         var map = new BMap.Map("mapContainer");
 
         //经纬度查询：https://api.map.baidu.com/lbsapi/getpoint/index.html
-        var point = new BMap.Point(114.060267, 22.542839);
+        var point = new BMap.Point(113.951181, 22.544732);
 
         var marker = new BMap.Marker(point);  // 创建标注
         map.addOverlay(marker);              // 将标注添加到地图中
@@ -801,9 +801,9 @@
         var opts = {
             width: 200,     // 信息窗口宽度
             height: 80,     // 信息窗口高度
-            title: "深圳市深圳好日子皇冠假日酒店", // 信息窗口标题
+            title: "深圳深铁皇冠假日酒店", // 信息窗口标题
         }
-        var infoWindow = new BMap.InfoWindow("地址：深圳市福田区福华一路28号", opts);  // 创建信息窗口对象
+        var infoWindow = new BMap.InfoWindow("地址：广东省深圳市南山区深南大道9819号", opts);  // 创建信息窗口对象
         map.openInfoWindow(infoWindow, point); //开启信息窗口
         marker.addEventListener("click", function () {
             map.openInfoWindow(infoWindow, point); //开启信息窗口
