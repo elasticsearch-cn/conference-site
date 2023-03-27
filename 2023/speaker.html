@@ -91,6 +91,26 @@
         </div>
 
         <div class="wrap">
+            <div class="speaker-section" id="medcl">
+                <div class="speaker-avatar">
+                    <img src="/static/images/2018/speakers/medcl.png" />
+                </div>
+                <div class="speaker-info">
+                    <div class="speaker-name">曾勇</div>
+                    <div class="speaker-job">极限科技创始人兼CEO、Elastic 中文社区发起人及社区主席</div>
+                </div>
+                <div class="speaker-des">曾勇(Medcl)，极限科技创始人兼 CEO，前 Elastic 亚太区布道师和中国咨询业务负责人，Elasticsearch 骨灰级玩家，Elastic
+                    中文社区的发起人兼社区主席，《Elasticsearch 搜索开发实战》作者，《Elasticsearch 权威指南》中文译版总编，Elasticsearch 若干开源插件和工具作者，正在折腾
+                    Rust 版本的实时搜索引擎。</div>
+                <div class="speech">
+                    <div class="speech-title">演讲：Elasticsearch 无缝数据迁移实践</div>
+                    <div class="speech-des">
+                        "话说产品经理和程序员最近眼神有点怪，业务迭代突然变快，Mapping 天天改，这下把运维折磨的不成人型，为了升级 Elasticsearch
+                        常常熬夜到天明。除了数据重建、版本升级，总经理天天念叨什么上云、下云，跨云，反正头大。"
+                        本次分享主要围绕上面运维同学的提到的头疼问题，给大家分享一下 Elasticsearch 如何进行数据迁移的那点事吧，希望大家早点下班，不用熬夜
+                    </div>
+                </div>
+            </div>
             <div class="speaker-section" id="lijie">
                 <div class="speaker-avatar">
                     <img src="/static/images/2019/speakers/lijie.png" />
@@ -127,25 +147,6 @@
                     </div>
                 </div>
             </div>
-            <div class="speaker-section" id="liufan">
-                <div class="speaker-avatar">
-                    <img src="/static/images/2021/speakers/liufan.png">
-                </div>
-                <div class="speaker-info">
-                    <div class="speaker-name">刘凡</div>
-                    <div class="speaker-job">谷歌 架构师 - 容器/DevOps领域专家</div>
-                </div>
-                <div class="speaker-des">
-                    刘凡拥有16年从事软件研发和技术创新工作经验，曾先后就职于Google、Pivotal/VMware、Adobe中国研发中心、IBM等大型国内外IT企业，从事软件产品研发，系统架构设计，研发管理等工作。在十多年的软件行业从业经历中，积累了丰富的分布式系统架构设计、自动化平台运维和系统稳定性调优等相关经验。近期主要专注于微服务云原生应用的开发和设计，支持多个知名客户企业进行数字化转型，对CI/CD，DevOps，敏捷开发和传统巨石应用拆分以及上云迁移拥有丰富的实战经验。
-                </div>
-                <div class="speech">
-                    <div class="speech-title">演讲：Elastic 和数据引擎在 k8s 上的最佳实践</div>
-                    <div class="speech-des">
-                        刘凡将给大家分享Elastic
-                        Stack在k8s上的实战经验总结，更会进一步解析分布式数据引擎在k8s背后得到良好支撑的关键技术，例如：StatefuleSet、Operator等等。最后会给大家带来谷歌在基于容器平台的混合云尖端技术剖析，为大家部署、管理异地、多集群点亮一盏明灯。
-                    </div>
-                </div>
-            </div>
             <div class="speaker-section" id="gaopan">
                 <div class="speaker-avatar">
                     <img src="/static/images/2021/speakers/gaopan.jpg">
@@ -178,6 +179,25 @@
                     <div class="speech-des">
                         时序数据是ES可观察性很关键的一类场景，当前使用ES存储时序数据存在最佳实践使用门槛过高，存储容量过大，查询语句复杂等问题。阿里云联合 Elastic
                         社区共同打造的时序引擎，旨在降低用户的使用门槛，提供高性能、低成本的TSDB。本次分享会介绍ES最新的TSDB特性的设计和原理
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-section" id="liufan">
+                <div class="speaker-avatar">
+                    <img src="/static/images/2021/speakers/liufan.png">
+                </div>
+                <div class="speaker-info">
+                    <div class="speaker-name">刘凡</div>
+                    <div class="speaker-job">谷歌 架构师 - 容器/DevOps领域专家</div>
+                </div>
+                <div class="speaker-des">
+                    刘凡拥有16年从事软件研发和技术创新工作经验，曾先后就职于Google、Pivotal/VMware、Adobe中国研发中心、IBM等大型国内外IT企业，从事软件产品研发，系统架构设计，研发管理等工作。在十多年的软件行业从业经历中，积累了丰富的分布式系统架构设计、自动化平台运维和系统稳定性调优等相关经验。近期主要专注于微服务云原生应用的开发和设计，支持多个知名客户企业进行数字化转型，对CI/CD，DevOps，敏捷开发和传统巨石应用拆分以及上云迁移拥有丰富的实战经验。
+                </div>
+                <div class="speech">
+                    <div class="speech-title">演讲：Elastic 和数据引擎在 k8s 上的最佳实践</div>
+                    <div class="speech-des">
+                        刘凡将给大家分享Elastic
+                        Stack在k8s上的实战经验总结，更会进一步解析分布式数据引擎在k8s背后得到良好支撑的关键技术，例如：StatefuleSet、Operator等等。最后会给大家带来谷歌在基于容器平台的混合云尖端技术剖析，为大家部署、管理异地、多集群点亮一盏明灯。
                     </div>
                 </div>
             </div>
@@ -453,10 +473,28 @@
                     <div class="speech-title">演讲：微信支付PB级金融数据高可靠的腾讯云大数据 Elasticsearch 优化实践</div>
                     <div class="speech-des">
                         很多时候大家都在关注ES的灵活性，功能，成本，性能。在金融领域，除了关心上面的技术外，会要求更高的可靠性，安全性。进一步，当数据达到PB级后，达成这些目标变得困难，本次分享尝试探讨下面内容：
-                        <br>在PB级数据场景下，针对 Elasticsearch 的安全性、可靠性所做的深入改进。
-                        <br>1，数据持续增长，无消亡，PB级集群的均衡。解决原生版本大集群数据倾斜问题。
-                        <br>2，不中断业务下的通讯加密切换。解决原生版本需要整体重启集群切换通讯加密的问题。
-                        <br>3，损失更小的跨城同步尝试。比同类方案数据同步延迟低28%(更低rpo)，cpu负载低57%(更高的业务上限)
+                        <br>1、在PB级数据场景下，针对 Elasticsearch 的安全性、可靠性所做的深入改进。
+                        <br>2、数据持续增长，无消亡，PB级集群的均衡。解决原生版本大集群数据倾斜问题。
+                        <br>3、不中断业务下的通讯加密切换。解决原生版本需要整体重启集群切换通讯加密的问题。
+                        <br>4、损失更小的跨城同步尝试。比同类方案数据同步延迟低28%(更低rpo)，cpu负载低57%(更高的业务上限)
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-section" id="luohoufu">
+                <div class="speaker-avatar">
+                    <img src="/static/images/2021/speakers/luohoufu.png" />
+                </div>
+                <div class="speaker-info">
+                    <div class="speaker-name">罗厚付</div>
+                    <div class="speaker-job">极限科技技术专家</div>
+                </div>
+                <div class="speaker-des">
+                    罗厚付，一名资深IT从业者，拥有15年的实践经验。一直以来专注于安全大数据领域，同时也涉足电商和审计等多个领域，积累了丰富的实践经验。在我的职业生涯中，不仅关注技术和产品，也致力于通过数据对公司的业务进行战略思考。作为热情、勇于探索的IT从业者，非常乐意与大家分享我的经验。
+                </div>
+                <div class="speech">
+                    <div class="speech-title">演讲：Elasticsearch 多集群管理最佳实践</div>
+                    <div class="speech-des">
+                        待更新...
                     </div>
                 </div>
             </div>
